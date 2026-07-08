@@ -1,4 +1,6 @@
 
+using Microsoft.AspNetCore.Mvc.ModelBinding;
+
 namespace SzakdolgozatErtekeloApi
 {
     public class Program
