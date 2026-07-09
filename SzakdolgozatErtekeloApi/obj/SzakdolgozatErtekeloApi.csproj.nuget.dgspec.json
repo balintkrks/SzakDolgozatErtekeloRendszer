@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Prog_gyak\\Egyetem\\Gyak\\Projekt\\SzakdolgozatErtekeloApi\\SzakdolgozatErtekeloApi.csproj": {}
+    "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\SzakdolgozatErtekeloApi.csproj": {}
   },
   "projects": {
-    "D:\\Prog_gyak\\Egyetem\\Gyak\\Projekt\\SzakdolgozatErtekeloApi\\SzakdolgozatErtekeloApi.csproj": {
+    "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\SzakdolgozatErtekeloApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Prog_gyak\\Egyetem\\Gyak\\Projekt\\SzakdolgozatErtekeloApi\\SzakdolgozatErtekeloApi.csproj",
+        "projectUniqueName": "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\SzakdolgozatErtekeloApi.csproj",
         "projectName": "SzakdolgozatErtekeloApi",
-        "projectPath": "D:\\Prog_gyak\\Egyetem\\Gyak\\Projekt\\SzakdolgozatErtekeloApi\\SzakdolgozatErtekeloApi.csproj",
-        "packagesPath": "C:\\Users\\Olivér\\.nuget\\packages\\",
-        "outputPath": "D:\\Prog_gyak\\Egyetem\\Gyak\\Projekt\\SzakdolgozatErtekeloApi\\obj\\",
+        "projectPath": "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\SzakdolgozatErtekeloApi.csproj",
+        "packagesPath": "C:\\Users\\geri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Olivér\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\geri\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,8 +39,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -82,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

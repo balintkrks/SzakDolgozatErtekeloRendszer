@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.StaticFiles;
 using SzakdolgozatErtekeloApi.DTO;
+using SzakdolgozatErtekeloApi.Services;
 
 namespace SzakdolgozatErtekeloApi.Controllers
 {
@@ -9,17 +10,31 @@ namespace SzakdolgozatErtekeloApi.Controllers
     public class AdatokController : ControllerBase
     {
         private readonly IWebHostEnvironment _env;
+        private readonly PdfService _pdfService;
 
-        public AdatokController(IWebHostEnvironment env)
+        public AdatokController(IWebHostEnvironment env, PdfService pdfService)
         {
             _env = env;
+            _pdfService = pdfService;
+            
         }
 
         //Pdf generalasa
         [HttpPost("get-pdf")]
-        public async Task<IActionResult> GetPdf(string asd)
+        public async Task<IActionResult> GetPdf([FromBody] AdatokDTO adatok)
         {
-            string path = Path.Combine(_env.ContentRootPath, "Doksik", "Biralat.pdf");
+
+            string folder = Path.Combine(_env.ContentRootPath, "Doksik");
+
+            if (!Directory.Exists(folder))
+            {
+                Directory.CreateDirectory(folder);
+            }
+
+
+            string path = Path.Combine(folder, "Biralat.pdf");
+
+            _pdfService.Generate(path, adatok);
 
             if (!System.IO.File.Exists(path))
             {

@@ -1,5 +1,7 @@
 
 using Microsoft.AspNetCore.Mvc.ModelBinding;
+using QuestPDF.Infrastructure;
+using SzakdolgozatErtekeloApi.Services;
 
 namespace SzakdolgozatErtekeloApi
 {
@@ -9,9 +11,12 @@ namespace SzakdolgozatErtekeloApi
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            QuestPDF.Settings.License = LicenseType.Community;
+
             // Add services to the container.
 
             builder.Services.AddControllers();
+            builder.Services.AddScoped<PdfService>();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
