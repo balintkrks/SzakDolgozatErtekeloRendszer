@@ -1,23 +1,18 @@
 [
   {
-    "ContainingType": "SzakdolgozatErtekeloApi.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
-    "HttpMethod": "GET",
+    "ContainingType": "SzakdolgozatErtekeloApi.Controllers.AdatokController",
+    "Method": "GetPdf",
+    "RelativePath": "szakdolgozatErtekelo/Adatok/get-pdf",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
+    "Parameters": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[SzakdolgozatErtekeloApi.WeatherForecast, SzakdolgozatErtekeloApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
+        "Name": "asd",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
-    "EndpointName": "GetWeatherForecast"
+    "ReturnTypes": []
   }
 ]
