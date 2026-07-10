@@ -46,24 +46,6 @@ function hasZero(lst) {
     }
 }
 
-function isEmpty(str) {
-    if (str === "") {
-        return true;
-    } else {
-        return false;
-    }
-}
-
-function showErrorAndFocus(msg, elemId) {
-    alert(msg);
-    let elem = document.getElementById(elemId);
-    if (elem !== null) {
-        elem.focus();
-        elem.scrollIntoView();
-    }
-    return null;
-}
-
 function getGrade(score) {
     if (score === 0) {
         return "Elégtelen (1)";
@@ -95,74 +77,6 @@ function getPointsArray(index, max) {
     }
 }
 
-function getFirstMissingPointIndex(index, max) {
-    if (index > max) {
-        return 0;
-    } else {
-        let input = document.getElementById("pont" + index);
-        if (input === null || input.value === "") {
-            return index;
-        } else {
-            return getFirstMissingPointIndex(index + 1, max);
-        }
-    }
-}
-
-function getAnswers(index, max) {
-    if (index > max) {
-        return [];
-    } else {
-        let input = document.getElementById("indok" + index);
-        let val = "";
-        if (input !== null) {
-            val = input.value;
-        }
-        return [val].concat(getAnswers(index + 1, max));
-    }
-}
-
-function getQuestionsList(nodes) {
-    if (nodes.length === 0) {
-        return [];
-    } else {
-        let input = nodes[0].querySelector("input");
-        let val = "";
-        if (input !== null) {
-            val = input.value;
-        }
-        return [val].concat(getQuestionsList(Array.prototype.slice.call(nodes, 1)));
-    }
-}
-
-function focusEmptyQuestion(nodes) {
-    if (nodes.length === 0) {
-        return false;
-    } else {
-        let input = nodes[0].querySelector("input");
-        if (input !== null && isEmpty(input.value)) {
-            alert("Hiba: A hozzáadott kérdések nem lehetnek üresek!");
-            input.focus();
-            input.scrollIntoView();
-            return true;
-        } else {
-            return focusEmptyQuestion(Array.prototype.slice.call(nodes, 1));
-        }
-    }
-}
-
-function buildErtekelesek(pts, indokok, idx) {
-    if (pts.length === 0) {
-        return [];
-    } else {
-        let obj = {
-            KriteriumId: idx,
-            Pontszam: pts[0],
-            Indoklas: indokok[0]
-        };
-        return [obj].concat(buildErtekelesek(pts.slice(1), indokok.slice(1), idx + 1));
-    }
-}
-
 function updateScore() {
     let pts = getPointsArray(1, 10);
     let total = 0;
@@ -171,16 +85,8 @@ function updateScore() {
     } else {
         total = sumList(pts);
     }
-    
-    let pontMezo = document.getElementById("osszpontszam");
-    if (pontMezo !== null) {
-        pontMezo.value = total;
-    }
-    
-    let javaslatMezo = document.getElementById("javaslat");
-    if (javaslatMezo !== null) {
-        javaslatMezo.value = getGrade(total);
-    }
+    document.getElementById("osszpontszam").textContent = total;
+    document.getElementById("javaslat").textContent = getGrade(total);
 }
 
 function attachListeners(index, max) {
@@ -207,126 +113,31 @@ function Add() {
     document.getElementById("lista").appendChild(li);
 }
 
-function getAllData(formatumKod) {
-    let name = "";
-    let nevElem = document.getElementById("nev");
-    if (nevElem !== null) {
-        name = nevElem.value;
-    }
+function getAllData() {
+    let name = document.getElementById("nev").value;
+    let neptun = document.getElementById("kod").value;
     
-    let neptun = "";
-    let neptunElem = document.getElementById("kod");
-    if (neptunElem !== null) {
-        neptun = neptunElem.value;
-    }
-
-    let szak = "";
-    let szakNode = document.getElementById("szak");
-    if (szakNode !== null) {
-        szak = szakNode.value;
-    }
-
-    let cim = "";
-    let cimNode = document.getElementById("cim");
-    if (cimNode !== null) {
-        cim = cimNode.value;
-    }
-
-    if (isEmpty(name)) {
-        return showErrorAndFocus("Hiba: A név hiányzik!", "nev");
-    }
     if (containsDigit(name)) {
-        return showErrorAndFocus("Hiba: A név nem tartalmazhat számot!", "nev");
-    }
-    
-    if (isEmpty(neptun)) {
-        return showErrorAndFocus("Hiba: A Neptun kód hiányzik!", "kod");
+        alert("A nev nem tartalmazhat szamot!");
+        return null;
     }
     if (strLength(neptun) !== 6) {
-        return showErrorAndFocus("Hiba: A Neptun kód pontosan 6 karakter kell, hogy legyen!", "kod");
-    }
-
-    if (isEmpty(szak)) {
-        return showErrorAndFocus("Hiba: A szak hiányzik!", "szak");
-    }
-    
-    if (isEmpty(cim)) {
-        return showErrorAndFocus("Hiba: A cím hiányzik!", "cim");
-    }
-
-    let missingIndex = getFirstMissingPointIndex(1, 10);
-    if (missingIndex !== 0) {
-        return showErrorAndFocus("Hiba: A(z) " + missingIndex + ". értékelési szempontnál hiányzik a pontszám!", "pont" + missingIndex);
-    }
-
-    let ul = document.getElementById("lista");
-    let kerdesekList = [];
-    if (ul !== null) {
-        kerdesekList = getQuestionsList(ul.children);
-    }
-
-    if (kerdesekList.length === 0) {
-        alert("Hiba: Legalább egy kérdést meg kell adni a hallgatónak!");
-        if (ul !== null) {
-            ul.scrollIntoView();
-        }
+        alert("A neptun kod pontosan 6 karakter kell legyen!");
         return null;
-    }
-
-    if (ul !== null && focusEmptyQuestion(ul.children)) {
-        return null;
-    }
-
-    let pts = getPointsArray(1, 10);
-    let indokok = getAnswers(1, 10);
-    let ertekelesekList = buildErtekelesek(pts, indokok, 1);
-    
-    let total = 0;
-    if (hasZero(pts)) {
-        total = 0;
-    } else {
-        total = sumList(pts);
-    }
-
-    let ertekeles = "";
-    let ertekelesNode = document.getElementById("ertekeles");
-    if (ertekelesNode !== null) {
-        ertekeles = ertekelesNode.value;
-    }
-
-    let javaslat = "";
-    let javaslatNode = document.getElementById("biralas");
-    if (javaslatNode !== null) {
-        javaslat = javaslatNode.value;
     }
 
     return {
-        Hallgato: {
-            Nev: name,
-            Neptun: neptun,
-            Szak: szak,
-            SzakdolgozatCime: cim
-        },
-        Ertekelesek: ertekelesekList,
-        OsszesitettErtekeles: total,
-        RovidSzovegesErtekeles: ertekeles,
-        JavasoltErdemjegy: getGrade(total),
-        BitraloiJavaslat: javaslat,
-        Kerdesek: kerdesekList,
-        ErtekeloSzerepe: 0,
-        Formatum: formatumKod
+        nev: name,
+        kod: neptun,
+        szak: document.getElementById("szak").value,
+        cim: document.getElementById("cim").value,
+        pontok: getPointsArray(1, 10),
+        osszpont: document.getElementById("osszpontszam").value
     };
 }
 
-function preventFormSubmit() {
-    if (typeof event !== 'undefined' && event.preventDefault) {
-        event.preventDefault();
-    }
-}
-
-function sendData(url, filename, formatumKod) {
-    preventFormSubmit();
-    let data = getAllData(formatumKod);
+function sendData(url, filename) {
+    let data = getAllData();
     if (data === null) {
         return;
     }
@@ -350,16 +161,16 @@ function sendData(url, filename, formatumKod) {
 }
 
 function downloadpdf(e) {
-    if (e) { e.preventDefault(); }
-    sendData("/api/pdf", "adatok.pdf", 0);
+    if (event) { event.preventDefault(); }
+    sendData("/api/pdf", "adatok.pdf");
 }
 
 function downloadxml(e) {
-    if (e) { e.preventDefault(); }
-    sendData("/api/xml", "adatok.xml", 1);
+    if (event) { event.preventDefault(); }
+    sendData("/api/xml", "adatok.xml");
 }
 
 function downloadlatex(e) {
-    if (e) { e.preventDefault(); }
-    sendData("/api/latex", "adatok.tex", 2);
+    if (event) { event.preventDefault(); }
+    sendData("/api/latex", "adatok.tex");
 }
