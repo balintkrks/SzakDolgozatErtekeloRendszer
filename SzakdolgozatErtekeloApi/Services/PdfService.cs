@@ -4,7 +4,7 @@ using QuestPDF.Helpers;
 using QuestPDF.Infrastructure;
 using QuestPDF.Elements;
 using SzakdolgozatErtekeloApi.DTO;
-using SzakdogaBiralatTeszt;
+using SzakdolgozatErtekeloApi.Templates;
 using Microsoft.AspNetCore.Mvc.ViewEngines;
 
 namespace SzakdolgozatErtekeloApi.Services

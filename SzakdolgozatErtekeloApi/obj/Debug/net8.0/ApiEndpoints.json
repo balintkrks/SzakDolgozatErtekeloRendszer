@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "SzakdolgozatErtekeloApi.Controllers.AdatokController",
+    "Method": "GetLaTex",
+    "RelativePath": "szakdolgozatErtekelo/Adatok/get-latex",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "asd",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SzakdolgozatErtekeloApi.Controllers.AdatokController",
     "Method": "GetPdf",
     "RelativePath": "szakdolgozatErtekelo/Adatok/get-pdf",
     "HttpMethod": "POST",
@@ -16,24 +32,35 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "SzakdolgozatErtekeloApi.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
-    "HttpMethod": "GET",
+    "ContainingType": "SzakdolgozatErtekeloApi.Controllers.AdatokController",
+    "Method": "GetWord",
+    "RelativePath": "szakdolgozatErtekelo/Adatok/get-word",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
+    "Parameters": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[SzakdolgozatErtekeloApi.WeatherForecast, SzakdolgozatErtekeloApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
+        "Name": "adatok",
+        "Type": "SzakdolgozatErtekeloApi.DTO.AdatokDTO",
+        "IsRequired": true
       }
     ],
-    "EndpointName": "GetWeatherForecast"
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SzakdolgozatErtekeloApi.Controllers.AdatokController",
+    "Method": "GetZip",
+    "RelativePath": "szakdolgozatErtekelo/Adatok/get-zip",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "asd",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

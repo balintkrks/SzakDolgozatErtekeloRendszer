@@ -11,26 +11,26 @@ namespace SzakdolgozatErtekeloApi.Controllers
     {
         private readonly IWebHostEnvironment _env;
         private readonly PdfService _pdfService;
+        private readonly WordService _wordService;
+        string folder = string.Empty;
 
-        public AdatokController(IWebHostEnvironment env, PdfService pdfService)
+        public AdatokController(IWebHostEnvironment env, PdfService pdfService, WordService wordService)
         {
             _env = env;
             _pdfService = pdfService;
-            
+            _wordService = wordService;
+            folder = Path.Combine(env.ContentRootPath, "Doksik");
         }
 
         //Pdf generalasa
         [HttpPost("get-pdf")]
-        public async Task<IActionResult> GetPdf([FromBody] AdatokDTO adatok)
+        public IActionResult GetPdf([FromBody] AdatokDTO adatok)
         {
-
-            string folder = Path.Combine(_env.ContentRootPath, "Doksik");
 
             if (!Directory.Exists(folder))
             {
                 Directory.CreateDirectory(folder);
             }
-
 
             string path = Path.Combine(folder, "Biralat.pdf");
 
@@ -39,7 +39,7 @@ namespace SzakdolgozatErtekeloApi.Controllers
             if (!System.IO.File.Exists(path))
             {
                 return NotFound();
-            }                
+            }
 
             FileExtensionContentTypeProvider provider = new FileExtensionContentTypeProvider();
 
@@ -48,7 +48,76 @@ namespace SzakdolgozatErtekeloApi.Controllers
                 contentType = "application/octet-stream";
             }
 
-            return PhysicalFile(path, "application/pdf","Biralat.pdf");
+            return PhysicalFile(path, "application/pdf", "Biralat.pdf");
+        }
+
+        //Word generalasa
+        [HttpPost("get-word")]
+        public IActionResult GetWord([FromBody] AdatokDTO adatok)
+        {
+
+            string path = Path.Combine(folder, "Biralat.docx");
+
+            _wordService.Generate(path, adatok);
+
+            if (!System.IO.File.Exists(path))
+            {
+                return NotFound();
+            }
+
+            FileExtensionContentTypeProvider provider = new FileExtensionContentTypeProvider();
+
+            if (!provider.TryGetContentType(path, out string? contentType))
+            {
+                contentType = "application/octet-stream";
+            }
+
+            return PhysicalFile(path, "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "Biralat.docx");
+        }
+
+        //LaTex generalasa
+        [HttpPost("get-latex")]
+        public IActionResult GetLaTex(string asd)
+        {
+
+            string path = Path.Combine(_env.ContentRootPath, "Doksik", "Biralat.tex");
+
+            if (!System.IO.File.Exists(path))
+            {
+                return NotFound();
+            }
+
+            FileExtensionContentTypeProvider provider = new FileExtensionContentTypeProvider();
+
+            if (!provider.TryGetContentType(path, out string? contentType))
+            {
+                contentType = "application/octet-stream";
+            }
+
+            return PhysicalFile(path, "tex/plain", "Biralat.tex");
+        }
+
+        //Zip generalasa
+        //nincs megírva
+        [HttpPost("get-zip")]
+        public IActionResult GetZip(string asd)
+        {
+
+            string path = Path.Combine(_env.ContentRootPath, "Doksik", "Biralat.tex");
+
+            if (!System.IO.File.Exists(path))
+            {
+                return NotFound();
+            }
+
+            FileExtensionContentTypeProvider provider = new FileExtensionContentTypeProvider();
+
+            if (!provider.TryGetContentType(path, out string? contentType))
+            {
+                contentType = "application/octet-stream";
+            }
+
+            return PhysicalFile(path, "tex/plain", "Biralat.tex");
         }
     }
 }

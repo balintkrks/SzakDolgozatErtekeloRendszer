@@ -1,17 +1,13 @@
 ﻿using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Wordprocessing;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using SzakdolgozatErtekeloApi.DTO;
+using SzakdolgozatErtekeloApi.Templates;
 
-namespace SzakdogaBiralatTeszt
+namespace SzakdolgozatErtekeloApi.Services
 {
     public class WordService
     {
-        public void Generate(string outputPath,AdatokDTO adatok)
+        public void Generate(string outputPath, AdatokDTO adatok)
         {
             var templatePath = Path.Combine(
                 AppContext.BaseDirectory,
@@ -25,7 +21,7 @@ namespace SzakdogaBiralatTeszt
                 true);
 
 
-            using var document = WordprocessingDocument.Open(outputPath,true);
+            using var document = WordprocessingDocument.Open(outputPath, true);
 
 
             ReplaceContentControl(document, "HallgatoNev", adatok.Hallgato.Nev);
@@ -39,7 +35,7 @@ namespace SzakdogaBiralatTeszt
             ReplaceContentControl(document, "RovidSzovegesErtekeles", adatok.RovidSzovegesErtekeles ?? "");
             ReplaceContentControl(document, "JavasoltErdemjegy", adatok.JavasoltErdemjegy ?? "");
             ReplaceContentControl(document, "BiroiJavaslat", adatok.BitraloiJavaslat ?? "");
-            ReplaceContentControl(document,"Kerdesek",string.Join("\r\n",adatok.Kerdesek.Select((x, i) => $"{i + 1}. {x}")));
+            ReplaceContentControl(document, "Kerdesek", string.Join("\r\n", adatok.Kerdesek.Select((x, i) => $"{i + 1}. {x}")));
 
             ReplaceContentControl(document, "Datum", $"Eger, {DateTime.Now:yyyy.MM.dd.}");
 
@@ -48,7 +44,7 @@ namespace SzakdogaBiralatTeszt
             document.MainDocumentPart.Document.Save();
         }
 
-        private void ReplaceContentControl(WordprocessingDocument document,string tag,string value)
+        private void ReplaceContentControl(WordprocessingDocument document, string tag, string value)
         {
             foreach (var control in document.MainDocumentPart!.Document.Descendants<SdtElement>())
             {
@@ -71,7 +67,7 @@ namespace SzakdogaBiralatTeszt
             }
         }
 
-        private void FillEvaluationTables(WordprocessingDocument document,AdatokDTO adatok)
+        private void FillEvaluationTables(WordprocessingDocument document, AdatokDTO adatok)
         {
             var criteria = EvaulationTemplate.GetDefaultCriteria();
 
