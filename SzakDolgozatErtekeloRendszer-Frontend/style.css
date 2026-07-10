@@ -15,7 +15,6 @@ body{
     overflow:hidden;
 }
 
-
 header{
     padding:25px 35px;
     display:flex;
@@ -36,34 +35,77 @@ header{
 }
 
 #adatok label{
-
     display:block;
-
     margin-bottom:8px;
-
     font-weight:bold;
 }
 
-#adatok input{
-
+#adatok input,
+#adatok select{
     width:100%;
-
     padding:12px;
-
     border:1px solid #cfcfcf;
-
     border-radius:10px;
-
     font-size:15px;
-
     box-sizing:border-box;
 }
-
 
 #ertekelesek{
     display:grid;
     grid-template-columns: repeat(2,1fr);
     gap: 25px;
+}
+
+#szoveges-szekció,
+#biraloi-szekció,
+#kerdesek-szekció {
+    margin-top: 40px;
+}
+
+#szoveges-szekció textarea,
+#biraloi-szekció textarea {
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    resize: vertical;
+    box-sizing: border-box;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+#kerdesek-lista {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 15px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.kerdes-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cfcfcf;
+    border-radius: 10px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+#uj-kerdes-gomb {
+    background: #e8ecff;
+    color: #3f5fe0;
+    border: 2px dashed #3f5fe0;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 0;
+}
+
+#uj-kerdes-gomb:hover {
+    background: #d0d8ff;
 }
 
 footer{
@@ -73,6 +115,23 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background: #f8f9ff;
+    border-top: 1px solid #e8e8e8;
+}
+
+#ossz-info p {
+    margin: 5px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#ossz-info #javaslat {
+    color: #3f5fe0;
+}
+
+#gombok {
+    display: flex;
+    gap: 10px;
 }
 
 .ertekeles{
@@ -83,61 +142,47 @@ footer{
 }
 
 .ertekeles h2{
-
-    font-size:30px;
-
+    font-size:22px;
     margin:10px 0;
-
     font-weight:700;
 }
 
 .ertekeles p{
-
     color:#555;
-
     line-height:1.5;
-
     margin-bottom:20px;
 }
 
 .number{
-
     width:55px;
-
     height:55px;
-
     border-radius:15px;
-
     background:#efefef;
-
     display:flex;
-
     justify-content:center;
-
     align-items:center;
-
     font-size:28px;
-
     color:#777;
-
     font-weight:bold;
-
     margin-bottom:20px;
-
     flex-shrink:0;
 }
 
+.pont-kijelzo {
+    font-size: 14px;
+    color: #3f5fe0;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-top: 5px;
+}
+
 header h1{
-
     color:#3f5fe0;
-
     font-size:55px;
 }
 
 header h2{
-
     font-size:38px;
-
     font-weight:500;
 }
 
@@ -149,87 +194,63 @@ header select{
 }
 
 input[type="range"]{
-
     width:100%;
-
     margin-top:15px;
-
     margin-bottom:5px;
-
+    accent-color: #3f5fe0;
 }
 
 textarea{
-
     width:100%;
-
     height:90px;
-
     border-radius:10px;
-
     border:1px solid #ccc;
-
     padding:10px;
-
     resize:vertical;
-
     box-sizing:border-box;
-
     font-size:15px;
-
     margin-top: 15px;
 }
 
 button{
-
     background:#4964e7;
-
     color:white;
-
     border:none;
-
     padding:12px 22px;
-
     border-radius:10px;
-
     cursor:pointer;
-
     font-size:15px;
-
     margin-left:10px;
 }
 
 button:hover{
-
     background:#314bd1;
 }
 
-#tartalom>h2{
-
+#tartalom > h2{
     font-size:28px;
-
     margin-top:0;
-
     margin-bottom:20px;
 }
 
-#tartalom>h1{
-
+#tartalom > h1{
     font-size:34px;
-
     margin:35px 0;
+}
+
+#szoveges-szekció h2,
+#biraloi-szekció h2,
+#kerdesek-szekció h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
 .skala{
     display:flex;
-
     font-size:12px;
-
     margin-top:0;
-
     margin-bottom: 10px;
-
     color:gray;
-
 }
 
 .skala span{
@@ -248,4 +269,37 @@ button:hover{
     display:flex;
     align-items:center;
     gap:15px;
+}
+
+.kotelezo {
+    color: #e03f3f;
+    font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+    #adatok {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #ertekelesek {
+        grid-template-columns: 1fr;
+    }
+    header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+    #gombok {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    #adatok {
+        grid-template-columns: 1fr;
+    }
 }

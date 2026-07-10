@@ -7,11 +7,7 @@ function strLength(str) {
 }
 
 function isDigit(c) {
-    if (c >= '0' && c <= '9') {
-        return true;
-    } else {
-        return false;
-    }
+    return c >= '0' && c <= '9';
 }
 
 function containsDigit(str) {
@@ -60,7 +56,7 @@ function getGrade(score) {
     } else if (score >= 45 && score <= 50) {
         return "Jeles (5)";
     } else {
-        return "";
+        return "-";
     }
 }
 
@@ -85,8 +81,18 @@ function updateScore() {
     } else {
         total = sumList(pts);
     }
+    total = Math.round(total * 10) / 10;
+
     document.getElementById("osszpontszam").textContent = total;
     document.getElementById("javaslat").textContent = getGrade(total);
+
+    for (let i = 1; i <= 10; i++) {
+        let inp = document.getElementById("pont" + i);
+        let kijelzo = document.getElementById("ertek" + i);
+        if (inp && kijelzo) {
+            kijelzo.textContent = parseFloat(inp.value);
+        }
+    }
 }
 
 function attachListeners(index, max) {
@@ -101,76 +107,142 @@ function attachListeners(index, max) {
     }
 }
 
-window.onload = function() {
-    attachListeners(1, 10);
-};
-
-function Add() {
+function ujKerdesHozzaad() {
+    let lista = document.getElementById("kerdesek-lista");
+    let sorszam = lista.children.length + 1;
     let li = document.createElement("li");
     let input = document.createElement("input");
     input.type = "text";
+    input.className = "kerdes-input";
+    input.placeholder = sorszam + ". kérdés";
     li.appendChild(input);
-    document.getElementById("lista").appendChild(li);
+    lista.appendChild(li);
+}
+
+function getKerdesek() {
+    let inputs = document.querySelectorAll(".kerdes-input");
+    let kerdesek = [];
+    inputs.forEach(function(inp) {
+        if (inp.value.trim() !== "") {
+            kerdesek.push(inp.value.trim());
+        }
+    });
+    return kerdesek;
+}
+
+function getErtekelesek() {
+    let ertekelesek = [];
+    for (let i = 1; i <= 10; i++) {
+        let pontInput = document.getElementById("pont" + i);
+        let megjegyzesInput = document.getElementById("megjegyzes" + i);
+        ertekelesek.push({
+            id: i,
+            jegy: pontInput ? parseFloat(pontInput.value) : 0,
+            megjegyzes: megjegyzesInput ? megjegyzesInput.value.trim() : ""
+        });
+    }
+    return ertekelesek;
 }
 
 function getAllData() {
-    let name = document.getElementById("nev").value;
-    let neptun = document.getElementById("kod").value;
-    
-    if (containsDigit(name)) {
-        alert("A nev nem tartalmazhat szamot!");
+    let nev = document.getElementById("nev").value.trim();
+    let neptun = document.getElementById("kod").value.trim();
+    let szak = parseInt(document.getElementById("szak").value);
+    let cim = document.getElementById("cim").value.trim();
+    let szerepkor = parseInt(document.getElementById("szerepkor").value);
+
+    if (nev === "") {
+        alert("A hallgató neve kötelező!");
+        return null;
+    }
+    if (containsDigit(nev)) {
+        alert("A hallgató neve nem tartalmazhat számot!");
         return null;
     }
     if (strLength(neptun) !== 6) {
-        alert("A neptun kod pontosan 6 karakter kell legyen!");
+        alert("A Neptun kód pontosan 6 karakter kell legyen!");
+        return null;
+    }
+    if (cim === "") {
+        alert("A szakdolgozat címe kötelező!");
         return null;
     }
 
+    let pts = getPointsArray(1, 10);
+    let total = 0;
+    if (hasZero(pts)) {
+        total = 0;
+    } else {
+        total = Math.round(sumList(pts) * 10) / 10;
+    }
+
+    let javasoltErdemjegy = getGrade(total);
+
     return {
-        nev: name,
-        kod: neptun,
-        szak: document.getElementById("szak").value,
-        cim: document.getElementById("cim").value,
-        pontok: getPointsArray(1, 10),
-        osszpont: document.getElementById("osszpontszam").value
+        hallgato: {
+            nev: nev,
+            netpun: neptun,
+            szak: szak,
+            szakdolgozatCime: cim
+        },
+        ertekelesek: getErtekelesek(),
+        osszesitettErtekeles: total,
+        rovidSzovegesErtekeles: document.getElementById("rovidErtekeles").value.trim(),
+        javasoltErdemjegy: javasoltErdemjegy,
+        bitraloiJavaslat: document.getElementById("bitraloiJavaslat").value.trim(),
+        kerdesek: getKerdesek(),
+        ertekeloSzerepe: szerepkor,
+        formatum: 0
     };
 }
 
-function sendData(url, filename) {
+const BACKEND_URL = "";
+
+function sendData(endpoint, filename) {
     let data = getAllData();
     if (data === null) {
         return;
     }
-    
-    fetch(url, {
+
+    fetch(BACKEND_URL + endpoint, {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
         },
         body: JSON.stringify(data)
-    }).then(function(response) {
+    })
+    .then(function(response) {
+        if (!response.ok) {
+            throw new Error("A szerver hibát adott vissza: " + response.status);
+        }
         return response.blob();
-    }).then(function(file) {
+    })
+    .then(function(file) {
         let objUrl = URL.createObjectURL(file);
         let link = document.createElement("a");
         link.href = objUrl;
         link.download = filename;
         link.click();
         URL.revokeObjectURL(objUrl);
+    })
+    .catch(function(err) {
+        alert("Hiba a letöltés során: " + err.message);
     });
 }
 
-function downloadpdf(e) {
-    if (event) { event.preventDefault(); }
-    sendData("/api/pdf", "adatok.pdf");
+function downloadpdf() {
+    sendData("/szakdolgozatErtekelo/Adatok/get-pdf", "Biralat.pdf");
 }
 
-function downloadxml(e) {
-    if (event) { event.preventDefault(); }
-    sendData("/api/xml", "adatok.xml");
+function downloadword() {
+    sendData("/szakdolgozatErtekelo/Adatok/get-word", "Biralat.docx");
 }
 
-function downloadlatex(e) {
-    if (event) { event.preventDefault(); }
-    sendData("/api/latex", "adatok.tex");
+function downloadlatex() {
+    sendData("/szakdolgozatErtekelo/Adatok/get-latex", "Biralat.tex");
 }
+
+window.onload = function() {
+    attachListeners(1, 10);
+    updateScore();
+};

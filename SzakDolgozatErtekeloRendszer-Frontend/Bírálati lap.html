@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,13 +10,14 @@
 <div id="kontener">
 
     <header>
-
         <h1>EKKE</h1>
-
         <h2>Szakdolgozati Bírálati Lap</h2>
-
-        <p><select><option>Konzulens</option><option>Opponens</option></select></p>
-
+        <p>
+            <select id="szerepkor">
+                <option value="0">Konzulens</option>
+                <option value="1">Opponens</option>
+            </select>
+        </p>
     </header>
 
     <hr>
@@ -24,339 +25,224 @@
     <div id="tartalom">
 
         <h2>Hallgató adatai</h2>
-        
+
         <div id="adatok">
             <div>
-                <label>A hallgató neve:</label>
-                <input type="text" id="nev">
+                <label>A hallgató neve: <span class="kotelezo">*</span></label>
+                <input type="text" id="nev" placeholder="Pl. Kovács János">
             </div>
 
             <div>
-                <label>A hallgató neptun kódja:</label>
-                <input type="text" id="kod">
+                <label>A hallgató Neptun kódja: <span class="kotelezo">*</span></label>
+                <input type="text" id="kod" placeholder="6 karakter (pl. AB1234)" maxlength="6">
             </div>
 
             <div>
-                <label>A hallgató szakja:</label>
-                <input type="text" id="szak">
+                <label>A hallgató szakja: <span class="kotelezo">*</span></label>
+                <select id="szak">
+                    <option value="0">Programtervező informatikus</option>
+                    <option value="1">Gazdasági Informatikus</option>
+                </select>
             </div>
 
             <div>
-                <label>A szakdolgozat címe:</label>
-                <input type="text" id="cim">
+                <label>A szakdolgozat címe: <span class="kotelezo">*</span></label>
+                <input type="text" id="cim" placeholder="A szakdolgozat teljes címe">
             </div>
         </div>
 
-        <h1>Értékelési szempontok </h1>
+        <h1>Értékelési szempontok</h1>
 
         <div id="ertekelesek">
+
             <div class="ertekeles">
                 <div class="cim">
                     <p class="number">1.</p>
-
-                    <h2>A szakdolgozat szerkezeti felépítése, tartalmi tagolása,alaki megjelenése.</h2>
+                    <h2>A szakdolgozat szerkezeti felépítése, tartalmi tagolása, alaki megjelenése.</h2>
                 </div>
-
                 <p>A dolgozat szerkezeti felépítése és alaki megjelenése.</p>
-
-                <input type="range" id="pont1" min="0" max="5" step="0.5">
-
+                <input type="range" id="pont1" min="0" max="5" step="0.5" value="0">
                 <div class="skala">
-
-                <span>0</span>
-                <span>0.5</span>
-                <span>1</span>
-                <span>1.5</span>
-                <span>2</span>
-                <span>2.5</span>
-                <span>3</span>
-                <span>3.5</span>
-                <span>4</span>
-                <span>4.5</span>
-                <span>5</span>
-
+                    <span>0</span><span>0.5</span><span>1</span><span>1.5</span><span>2</span>
+                    <span>2.5</span><span>3</span><span>3.5</span><span>4</span><span>4.5</span><span>5</span>
                 </div>
-
-                <textarea placeholder="Rövid indoklás"></textarea>
+                <div class="pont-kijelzo">Adott pont: <span id="ertek1">0</span></div>
+                <textarea id="megjegyzes1" placeholder="Rövid indoklás (opcionális)"></textarea>
             </div>
 
             <div class="ertekeles">
                 <div class="cim">
                     <p class="number">2.</p>
-
                     <h2>Nyelvezet és stílus</h2>
                 </div>
-
                 <p>A dolgozat nyelvezete és stílusa.</p>
-
-                <input type="range" id="pont2" min="0" max="5" step="0.5">
-
+                <input type="range" id="pont2" min="0" max="5" step="0.5" value="0">
                 <div class="skala">
-
-                <span>0</span>
-                <span>0.5</span>
-                <span>1</span>
-                <span>1.5</span>
-                <span>2</span>
-                <span>2.5</span>
-                <span>3</span>
-                <span>3.5</span>
-                <span>4</span>
-                <span>4.5</span>
-                <span>5</span>
+                    <span>0</span><span>0.5</span><span>1</span><span>1.5</span><span>2</span>
+                    <span>2.5</span><span>3</span><span>3.5</span><span>4</span><span>4.5</span><span>5</span>
                 </div>
-
-                <textarea placeholder="Rövid indoklás"></textarea>
+                <div class="pont-kijelzo">Adott pont: <span id="ertek2">0</span></div>
+                <textarea id="megjegyzes2" placeholder="Rövid indoklás (opcionális)"></textarea>
             </div>
 
             <div class="ertekeles">
                 <div class="cim">
                     <p class="number">3.</p>
-
                     <h2>Szakirodalmi háttér</h2>
                 </div>
-
                 <p>A felhasznált szakirodalom minősége.</p>
-
-                <input type="range" id="pont3" min="0" max="5" step="0.5">
-
+                <input type="range" id="pont3" min="0" max="5" step="0.5" value="0">
                 <div class="skala">
-
-                <span>0</span>
-                <span>0.5</span>
-                <span>1</span>
-                <span>1.5</span>
-                <span>2</span>
-                <span>2.5</span>
-                <span>3</span>
-                <span>3.5</span>
-                <span>4</span>
-                <span>4.5</span>
-                <span>5</span>
-
+                    <span>0</span><span>0.5</span><span>1</span><span>1.5</span><span>2</span>
+                    <span>2.5</span><span>3</span><span>3.5</span><span>4</span><span>4.5</span><span>5</span>
                 </div>
-
-                <textarea placeholder="Rövid indoklás"></textarea>
-
+                <div class="pont-kijelzo">Adott pont: <span id="ertek3">0</span></div>
+                <textarea id="megjegyzes3" placeholder="Rövid indoklás (opcionális)"></textarea>
             </div>
-        
+
             <div class="ertekeles">
                 <div class="cim">
                     <p class="number">4.</p>
-
                     <h2>A megvalósított feladat nehézsége</h2>
                 </div>
-
                 <p>A szakmai színvonal és bonyolultság.</p>
-
-                <input type="range" id="pont4" min="0" max="5" step="0.5">
-
+                <input type="range" id="pont4" min="0" max="5" step="0.5" value="0">
                 <div class="skala">
-
-                <span>0</span>
-                <span>0.5</span>
-                <span>1</span>
-                <span>1.5</span>
-                <span>2</span>
-                <span>2.5</span>
-                <span>3</span>
-                <span>3.5</span>
-                <span>4</span>
-                <span>4.5</span>
-                <span>5</span>
-
+                    <span>0</span><span>0.5</span><span>1</span><span>1.5</span><span>2</span>
+                    <span>2.5</span><span>3</span><span>3.5</span><span>4</span><span>4.5</span><span>5</span>
                 </div>
-
-                <textarea placeholder="Rövid indoklás"></textarea>
+                <div class="pont-kijelzo">Adott pont: <span id="ertek4">0</span></div>
+                <textarea id="megjegyzes4" placeholder="Rövid indoklás (opcionális)"></textarea>
             </div>
-        
+
             <div class="ertekeles">
                 <div class="cim">
                     <p class="number">5.</p>
-
-                    <h2>Megvalósítás minősége I. </h2>
+                    <h2>Megvalósítás minősége I.</h2>
                 </div>
-
                 <p>A feladat ismertetése, a célkitűzés definiálása (specifikáció, megvalósítási terv, összefüggések elemzése).</p>
-
-                <input type="range" id="pont5" min="0" max="5" step="0.5">
-
+                <input type="range" id="pont5" min="0" max="5" step="0.5" value="0">
                 <div class="skala">
-
-                <span>0</span>
-                <span>0.5</span>
-                <span>1</span>
-                <span>1.5</span>
-                <span>2</span>
-                <span>2.5</span>
-                <span>3</span>
-                <span>3.5</span>
-                <span>4</span>
-                <span>4.5</span>
-                <span>5</span>
-
+                    <span>0</span><span>0.5</span><span>1</span><span>1.5</span><span>2</span>
+                    <span>2.5</span><span>3</span><span>3.5</span><span>4</span><span>4.5</span><span>5</span>
                 </div>
-
-                <textarea placeholder="Rövid indoklás"></textarea>
+                <div class="pont-kijelzo">Adott pont: <span id="ertek5">0</span></div>
+                <textarea id="megjegyzes5" placeholder="Rövid indoklás (opcionális)"></textarea>
             </div>
 
             <div class="ertekeles">
                 <div class="cim">
                     <p class="number">6.</p>
-
                     <h2>Megvalósítás minősége II.</h2>
                 </div>
-
                 <p>Kódminőség.</p>
-
-                <input type="range" id="pont6" min="0" max="5" step="0.5">
-
+                <input type="range" id="pont6" min="0" max="5" step="0.5" value="0">
                 <div class="skala">
-
-                <span>0</span>
-                <span>0.5</span>
-                <span>1</span>
-                <span>1.5</span>
-                <span>2</span>
-                <span>2.5</span>
-                <span>3</span>
-                <span>3.5</span>
-                <span>4</span>
-                <span>4.5</span>
-                <span>5</span>
-
+                    <span>0</span><span>0.5</span><span>1</span><span>1.5</span><span>2</span>
+                    <span>2.5</span><span>3</span><span>3.5</span><span>4</span><span>4.5</span><span>5</span>
                 </div>
-
-                <textarea placeholder="Rövid indoklás"></textarea>
+                <div class="pont-kijelzo">Adott pont: <span id="ertek6">0</span></div>
+                <textarea id="megjegyzes6" placeholder="Rövid indoklás (opcionális)"></textarea>
             </div>
 
             <div class="ertekeles">
                 <div class="cim">
                     <p class="number">7.</p>
-
                     <h2>Megvalósítás minősége III.</h2>
                 </div>
-
                 <p>Fejlesztési- és felhasználói dokumentáció.</p>
-
-                <input type="range" id="pont7" min="0" max="5" step="0.5">
-
+                <input type="range" id="pont7" min="0" max="5" step="0.5" value="0">
                 <div class="skala">
-
-                <span>0</span>
-                <span>0.5</span>
-                <span>1</span>
-                <span>1.5</span>
-                <span>2</span>
-                <span>2.5</span>
-                <span>3</span>
-                <span>3.5</span>
-                <span>4</span>
-                <span>4.5</span>
-                <span>5</span>
-
+                    <span>0</span><span>0.5</span><span>1</span><span>1.5</span><span>2</span>
+                    <span>2.5</span><span>3</span><span>3.5</span><span>4</span><span>4.5</span><span>5</span>
                 </div>
-
-                <textarea placeholder="Rövid indoklás"></textarea>
+                <div class="pont-kijelzo">Adott pont: <span id="ertek7">0</span></div>
+                <textarea id="megjegyzes7" placeholder="Rövid indoklás (opcionális)"></textarea>
             </div>
 
             <div class="ertekeles">
                 <div class="cim">
                     <p class="number">8.</p>
-
-                    <h2>Megvalósítás minősége IV. </h2>
+                    <h2>Megvalósítás minősége IV.</h2>
                 </div>
-
                 <p>Tesztelés, futtatás.</p>
-
-                <input type="range" id="pont8" min="0" max="5" step="0.5">
-
+                <input type="range" id="pont8" min="0" max="5" step="0.5" value="0">
                 <div class="skala">
-
-                <span>0</span>
-                <span>0.5</span>
-                <span>1</span>
-                <span>1.5</span>
-                <span>2</span>
-                <span>2.5</span>
-                <span>3</span>
-                <span>3.5</span>
-                <span>4</span>
-                <span>4.5</span>
-                <span>5</span>
-
+                    <span>0</span><span>0.5</span><span>1</span><span>1.5</span><span>2</span>
+                    <span>2.5</span><span>3</span><span>3.5</span><span>4</span><span>4.5</span><span>5</span>
                 </div>
-
-                <textarea placeholder="Rövid indoklás"></textarea>
+                <div class="pont-kijelzo">Adott pont: <span id="ertek8">0</span></div>
+                <textarea id="megjegyzes8" placeholder="Rövid indoklás (opcionális)"></textarea>
             </div>
 
             <div class="ertekeles">
                 <div class="cim">
                     <p class="number">9.</p>
-
                     <h2>A szakdolgozat összefoglalása.</h2>
                 </div>
-
-                <input type="range" id="pont9" min="0" max="5" step="0.5">
-
+                <input type="range" id="pont9" min="0" max="5" step="0.5" value="0">
                 <div class="skala">
-
-                <span>0</span>
-                <span>0.5</span>
-                <span>1</span>
-                <span>1.5</span>
-                <span>2</span>
-                <span>2.5</span>
-                <span>3</span>
-                <span>3.5</span>
-                <span>4</span>
-                <span>4.5</span>
-                <span>5</span>
-
+                    <span>0</span><span>0.5</span><span>1</span><span>1.5</span><span>2</span>
+                    <span>2.5</span><span>3</span><span>3.5</span><span>4</span><span>4.5</span><span>5</span>
                 </div>
-
-                <textarea placeholder="Rövid indoklás"></textarea>
+                <div class="pont-kijelzo">Adott pont: <span id="ertek9">0</span></div>
+                <textarea id="megjegyzes9" placeholder="Rövid indoklás (opcionális)"></textarea>
             </div>
 
             <div class="ertekeles">
                 <div class="cim">
                     <p class="number">10.</p>
-
-                    <h2>10. Összbenyomás, konzulens/opponens véleménye</h2>
+                    <h2>Összbenyomás, konzulens/opponens véleménye</h2>
                 </div>
-
-                <input type="range" id="pont10" min="0" max="5" step="0.5">
-
+                <input type="range" id="pont10" min="0" max="5" step="0.5" value="0">
                 <div class="skala">
-                    <span>0</span>
-                    <span>0.5</span>
-                    <span>1</span>
-                    <span>1.5</span>
-                    <span>2</span>
-                    <span>2.5</span>
-                    <span>3</span>
-                    <span>3.5</span>
-                    <span>4</span>
-                    <span>4.5</span>
-                    <span>5</span>
+                    <span>0</span><span>0.5</span><span>1</span><span>1.5</span><span>2</span>
+                    <span>2.5</span><span>3</span><span>3.5</span><span>4</span><span>4.5</span><span>5</span>
                 </div>
-
-                <textarea placeholder="Rövid indoklás"></textarea>
+                <div class="pont-kijelzo">Adott pont: <span id="ertek10">0</span></div>
+                <textarea id="megjegyzes10" placeholder="Rövid indoklás (opcionális)"></textarea>
             </div>
+
         </div>
+
+
+        <div id="szoveges-szekció">
+            <h2>A dolgozat rövid szöveges értékelése (opcionális)</h2>
+            <textarea id="rovidErtekeles" placeholder="Írja be a rövid szöveges értékelést..."></textarea>
+        </div>
+
+
+        <div id="biraloi-szekció">
+            <h2>A bíráló javaslatai a védéshez (opcionális)</h2>
+            <textarea id="bitraloiJavaslat" placeholder="Írja be a védéshez kapcsolódó javaslatokat..."></textarea>
+        </div>
+
+
+        <div id="kerdesek-szekció">
+            <h2>A hallgató által megválaszolandó kérdések <span class="kotelezo">*</span></h2>
+            <ul id="kerdesek-lista">
+                <li><input type="text" class="kerdes-input" placeholder="1. kérdés"></li>
+                <li><input type="text" class="kerdes-input" placeholder="2. kérdés"></li>
+            </ul>
+            <button type="button" id="uj-kerdes-gomb" onclick="ujKerdesHozzaad()">+ Új kérdés hozzáadása</button>
+        </div>
+
     </div>
 
     <hr>
-        
+
     <footer>
-        <p>Összpontszám: <span id="osszpontszam">0</span> / 50</p>
-
-        <p>Javasolt érdemjegy: <span id="javaslat">-</span></p>
-
-        <button onclick="downloadpdf()">PDF letöltése</button>
-        <button onclick="downloadxml()">XML letöltése</button>
-        <button onclick="downloadlatex()">Latex letöltése</button>
+        <div id="ossz-info">
+            <p>Összpontszám: <span id="osszpontszam">0</span> / 50</p>
+            <p>Javasolt érdemjegy: <span id="javaslat">-</span></p>
+        </div>
+        <div id="gombok">
+            <button type="button" onclick="downloadpdf()">📄 PDF letöltése</button>
+            <button type="button" onclick="downloadword()">📝 Word letöltése</button>
+            <button type="button" onclick="downloadlatex()">🔤 LaTeX letöltése</button>
+        </div>
     </footer>
+
 </div>
 <script src="javas.js"></script>
 </body>
