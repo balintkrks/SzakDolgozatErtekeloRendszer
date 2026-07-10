@@ -22,15 +22,19 @@ namespace SzakdolgozatErtekeloApi.Controllers
             folder = Path.Combine(env.ContentRootPath, "Doksik");
         }
 
-        //Pdf generalasa
-        [HttpPost("get-pdf")]
-        public IActionResult GetPdf([FromBody] AdatokDTO adatok)
+        private void KonyvtarEllenorzes()
         {
-
             if (!Directory.Exists(folder))
             {
                 Directory.CreateDirectory(folder);
             }
+        }
+
+        //Pdf generalasa
+        [HttpPost("get-pdf")]
+        public IActionResult GetPdf([FromBody] AdatokDTO adatok)
+        {
+            KonyvtarEllenorzes();
 
             string path = Path.Combine(folder, "Biralat.pdf");
 
@@ -55,6 +59,7 @@ namespace SzakdolgozatErtekeloApi.Controllers
         [HttpPost("get-word")]
         public IActionResult GetWord([FromBody] AdatokDTO adatok)
         {
+            KonyvtarEllenorzes();
 
             string path = Path.Combine(folder, "Biralat.docx");
 
@@ -79,6 +84,7 @@ namespace SzakdolgozatErtekeloApi.Controllers
         [HttpPost("get-latex")]
         public IActionResult GetLaTex(string asd)
         {
+            KonyvtarEllenorzes();
 
             string path = Path.Combine(_env.ContentRootPath, "Doksik", "Biralat.tex");
 
