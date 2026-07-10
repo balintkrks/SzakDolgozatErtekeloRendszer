@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|solutionrelative:services\\pdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|c:\\users\\geri\\desktop\\szakmai gyakorlat\\szakdolgozatertekelorendszer\\szakdolgozatertekeloapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|c:\\users\\geri\\desktop\\szakmai gyakorlat\\szakdolgozatertekelorendszer\\szakdolgozatertekeloapi\\templates\\evaluationcriterion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|solutionrelative:templates\\evaluationcriterion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|c:\\users\\geri\\desktop\\szakmai gyakorlat\\szakdolgozatertekelorendszer\\szakdolgozatertekeloapi\\controllers\\adatokcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|solutionrelative:controllers\\adatokcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|c:\\users\\geri\\desktop\\szakmai gyakorlat\\szakdolgozatertekelorendszer\\szakdolgozatertekeloapi\\templates\\evaluationcriterion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|solutionrelative:templates\\evaluationcriterion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|c:\\users\\geri\\desktop\\szakmai gyakorlat\\szakdolgozatertekelorendszer\\szakdolgozatertekeloapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|c:\\users\\geri\\desktop\\szakmai gyakorlat\\szakdolgozatertekelorendszer\\szakdolgozatertekeloapi\\templates\\evaulationtemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,7 +34,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -43,8 +43,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-08T09:02:13.171Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -56,18 +55,17 @@
               "RelativeToolTip": "Templates\\EvaulationTemplate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAHMAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T09:52:40.052Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-09T09:52:40.052Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "EvaluationCriterion.cs",
               "DocumentMoniker": "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Templates\\EvaluationCriterion.cs",
               "RelativeDocumentMoniker": "Templates\\EvaluationCriterion.cs",
               "ToolTip": "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Templates\\EvaluationCriterion.cs",
               "RelativeToolTip": "Templates\\EvaluationCriterion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-09T09:52:18.863Z",
               "EditorCaption": ""
@@ -80,7 +78,7 @@
               "RelativeDocumentMoniker": "Services\\PdfService.cs",
               "ToolTip": "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Services\\PdfService.cs",
               "RelativeToolTip": "Services\\PdfService.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAQwCIAAABPAAAAAAAAAA==",
+              "ViewState": "AgIAACQBAAAAAAAAAADwvz8BAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-09T09:44:27.717Z",
               "EditorCaption": ""
@@ -93,10 +91,9 @@
               "RelativeDocumentMoniker": "Controllers\\AdatokController.cs",
               "ToolTip": "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Controllers\\AdatokController.cs",
               "RelativeToolTip": "Controllers\\AdatokController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T07:54:43.247Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-09T07:54:43.247Z"
             }
           ]
         }
