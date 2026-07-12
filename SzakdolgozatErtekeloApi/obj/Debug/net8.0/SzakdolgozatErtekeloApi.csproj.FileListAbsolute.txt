@@ -1,181 +1,8 @@
-C:\Dolgok\Programozás\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\appsettings.Development.json
-C:\Dolgok\Programozás\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\appsettings.json
-C:\Dolgok\Programozás\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\SzakdolgozatErtekeloApi.staticwebassets.endpoints.json
-C:\Dolgok\Programozás\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\SzakdolgozatErtekeloApi.exe
-C:\Dolgok\Programozás\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\SzakdolgozatErtekeloApi.deps.json
-C:\Dolgok\Programozás\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\SzakdolgozatErtekeloApi.runtimeconfig.json
-C:\Dolgok\Programozás\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\SzakdolgozatErtekeloApi.dll
-C:\Dolgok\Programozás\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\SzakdolgozatErtekeloApi.pdb
-C:\Dolgok\Programozás\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\Microsoft.OpenApi.dll
-C:\Dolgok\Programozás\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Dolgok\Programozás\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Dolgok\Programozás\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Dolgok\Programozás\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\SzakdolgozatErtekeloApi.csproj.AssemblyReference.cache
-C:\Dolgok\Programozás\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\rpswa.dswa.cache.json
-C:\Dolgok\Programozás\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\SzakdolgozatErtekeloApi.GeneratedMSBuildEditorConfig.editorconfig
-C:\Dolgok\Programozás\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\SzakdolgozatErtekeloApi.AssemblyInfoInputs.cache
-C:\Dolgok\Programozás\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\SzakdolgozatErtekeloApi.AssemblyInfo.cs
-C:\Dolgok\Programozás\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\SzakdolgozatErtekeloApi.csproj.CoreCompileInputs.cache
-C:\Dolgok\Programozás\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\SzakdolgozatErtekeloApi.MvcApplicationPartsAssemblyInfo.cs
-C:\Dolgok\Programozás\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\SzakdolgozatErtekeloApi.MvcApplicationPartsAssemblyInfo.cache
-C:\Dolgok\Programozás\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\rjimswa.dswa.cache.json
-C:\Dolgok\Programozás\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
-C:\Dolgok\Programozás\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
-C:\Dolgok\Programozás\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\scopedcss\bundle\SzakdolgozatErtekeloApi.styles.css
-C:\Dolgok\Programozás\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\staticwebassets.build.json
-C:\Dolgok\Programozás\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\staticwebassets.build.json.cache
-C:\Dolgok\Programozás\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\staticwebassets.development.json
-C:\Dolgok\Programozás\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Dolgok\Programozás\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
-C:\Dolgok\Programozás\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\Szakdolg.13731D5B.Up2Date
-C:\Dolgok\Programozás\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\SzakdolgozatErtekeloApi.dll
-C:\Dolgok\Programozás\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\refint\SzakdolgozatErtekeloApi.dll
-C:\Dolgok\Programozás\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\SzakdolgozatErtekeloApi.pdb
-C:\Dolgok\Programozás\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\SzakdolgozatErtekeloApi.genruntimeconfig.cache
-C:\Dolgok\Programozás\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\ref\SzakdolgozatErtekeloApi.dll
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\appsettings.Development.json
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\appsettings.json
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\SzakdolgozatErtekeloApi.staticwebassets.endpoints.json
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\Lato-Black.ttf
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\Lato-BlackItalic.ttf
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\Lato-Bold.ttf
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\Lato-BoldItalic.ttf
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\Lato-ExtraBold.ttf
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\Lato-ExtraBoldItalic.ttf
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\Lato-ExtraLight.ttf
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\Lato-ExtraLightItalic.ttf
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\Lato-Italic.ttf
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\Lato-Light.ttf
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\Lato-LightItalic.ttf
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\Lato-Medium.ttf
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\Lato-MediumItalic.ttf
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\Lato-Regular.ttf
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\Lato-SemiBold.ttf
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\Lato-SemiBoldItalic.ttf
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\Lato-Thin.ttf
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\Lato-ThinItalic.ttf
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\OFL.txt
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\SzakdolgozatErtekeloApi.exe
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\SzakdolgozatErtekeloApi.deps.json
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\SzakdolgozatErtekeloApi.runtimeconfig.json
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\SzakdolgozatErtekeloApi.dll
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\SzakdolgozatErtekeloApi.pdb
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\Microsoft.OpenApi.dll
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\QuestPDF.dll
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\runtimes\linux-arm64\native\libQuestPdfSkia.so
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\runtimes\linux-arm64\native\libqpdf.so
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\runtimes\linux-musl-x64\native\libQuestPdfSkia.so
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\runtimes\linux-musl-x64\native\libqpdf.so
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\runtimes\linux-x64\native\libQuestPdfSkia.so
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\runtimes\linux-x64\native\libqpdf.so
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\runtimes\osx-arm64\native\libQuestPdfSkia.dylib
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\runtimes\osx-arm64\native\libqpdf.dylib
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\runtimes\osx-x64\native\libQuestPdfSkia.dylib
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\runtimes\osx-x64\native\libqpdf.dylib
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\runtimes\win-arm64\native\QuestPdfSkia.dll
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\runtimes\win-arm64\native\qpdf.dll
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\runtimes\win-x64\native\QuestPdfSkia.dll
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\runtimes\win-x64\native\qpdf.dll
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\runtimes\win-x86\native\QuestPdfSkia.dll
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\bin\Debug\net8.0\runtimes\win-x86\native\qpdf.dll
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\SzakdolgozatErtekeloApi.csproj.AssemblyReference.cache
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\rpswa.dswa.cache.json
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\SzakdolgozatErtekeloApi.GeneratedMSBuildEditorConfig.editorconfig
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\SzakdolgozatErtekeloApi.AssemblyInfoInputs.cache
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\SzakdolgozatErtekeloApi.AssemblyInfo.cs
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\SzakdolgozatErtekeloApi.csproj.CoreCompileInputs.cache
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\SzakdolgozatErtekeloApi.MvcApplicationPartsAssemblyInfo.cs
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\SzakdolgozatErtekeloApi.MvcApplicationPartsAssemblyInfo.cache
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\rjimswa.dswa.cache.json
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\scopedcss\bundle\SzakdolgozatErtekeloApi.styles.css
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\staticwebassets.build.json
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\staticwebassets.build.json.cache
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\staticwebassets.development.json
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\Szakdolg.13731D5B.Up2Date
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\SzakdolgozatErtekeloApi.dll
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\refint\SzakdolgozatErtekeloApi.dll
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\SzakdolgozatErtekeloApi.pdb
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\SzakdolgozatErtekeloApi.genruntimeconfig.cache
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakdolgozatErtekeloApi\obj\Debug\net8.0\ref\SzakdolgozatErtekeloApi.dll
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\appsettings.Development.json
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\appsettings.json
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\Lato-Black.ttf
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\Lato-BlackItalic.ttf
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\Lato-Bold.ttf
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\Lato-BoldItalic.ttf
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\Lato-ExtraBold.ttf
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\Lato-ExtraBoldItalic.ttf
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\Lato-ExtraLight.ttf
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\Lato-ExtraLightItalic.ttf
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\Lato-Italic.ttf
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\Lato-Light.ttf
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\Lato-LightItalic.ttf
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\Lato-Medium.ttf
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\Lato-MediumItalic.ttf
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\Lato-Regular.ttf
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\Lato-SemiBold.ttf
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\Lato-SemiBoldItalic.ttf
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\Lato-Thin.ttf
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\Lato-ThinItalic.ttf
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\OFL.txt
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\SzakdolgozatErtekeloApi.exe
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\SzakdolgozatErtekeloApi.deps.json
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\SzakdolgozatErtekeloApi.runtimeconfig.json
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\SzakdolgozatErtekeloApi.dll
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\SzakdolgozatErtekeloApi.pdb
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\Microsoft.OpenApi.dll
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\QuestPDF.dll
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\runtimes\linux-arm64\native\libQuestPdfSkia.so
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\runtimes\linux-arm64\native\libqpdf.so
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\runtimes\linux-musl-x64\native\libQuestPdfSkia.so
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\runtimes\linux-musl-x64\native\libqpdf.so
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\runtimes\linux-x64\native\libQuestPdfSkia.so
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\runtimes\linux-x64\native\libqpdf.so
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\runtimes\osx-arm64\native\libQuestPdfSkia.dylib
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\runtimes\osx-arm64\native\libqpdf.dylib
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\runtimes\osx-x64\native\libQuestPdfSkia.dylib
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\runtimes\osx-x64\native\libqpdf.dylib
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\runtimes\win-arm64\native\QuestPdfSkia.dll
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\runtimes\win-arm64\native\qpdf.dll
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\runtimes\win-x64\native\QuestPdfSkia.dll
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\runtimes\win-x64\native\qpdf.dll
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\runtimes\win-x86\native\QuestPdfSkia.dll
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\runtimes\win-x86\native\qpdf.dll
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\obj\Debug\net8.0\SzakdolgozatErtekeloApi.csproj.AssemblyReference.cache
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\obj\Debug\net8.0\SzakdolgozatErtekeloApi.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\obj\Debug\net8.0\SzakdolgozatErtekeloApi.AssemblyInfoInputs.cache
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\obj\Debug\net8.0\SzakdolgozatErtekeloApi.AssemblyInfo.cs
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\obj\Debug\net8.0\SzakdolgozatErtekeloApi.csproj.CoreCompileInputs.cache
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\obj\Debug\net8.0\SzakdolgozatErtekeloApi.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\obj\Debug\net8.0\SzakdolgozatErtekeloApi.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\obj\Debug\net8.0\SzakdolgozatErtekeloApi.sourcelink.json
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\obj\Debug\net8.0\staticwebassets.build.json
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\obj\Debug\net8.0\staticwebassets.development.json
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\obj\Debug\net8.0\staticwebassets\msbuild.SzakdolgozatErtekeloApi.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\obj\Debug\net8.0\staticwebassets\msbuild.build.SzakdolgozatErtekeloApi.props
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.SzakdolgozatErtekeloApi.props
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.SzakdolgozatErtekeloApi.props
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\obj\Debug\net8.0\scopedcss\bundle\SzakdolgozatErtekeloApi.styles.css
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\obj\Debug\net8.0\Szakdolg.13731D5B.Up2Date
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\obj\Debug\net8.0\SzakdolgozatErtekeloApi.dll
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\obj\Debug\net8.0\refint\SzakdolgozatErtekeloApi.dll
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\obj\Debug\net8.0\SzakdolgozatErtekeloApi.pdb
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\obj\Debug\net8.0\SzakdolgozatErtekeloApi.genruntimeconfig.cache
-C:\Users\geri\Desktop\Szakmai gyakorlat\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\obj\Debug\net8.0\ref\SzakdolgozatErtekeloApi.dll
 D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\appsettings.Development.json
 D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\appsettings.json
 D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\SzakdolgozatErtekeloApi.staticwebassets.endpoints.json
+D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\Templates\BiralatiLapTemplate.docx
+D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\Templates\BiralatiLapTemplate.tex
 D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\Lato-Black.ttf
 D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\Lato-BlackItalic.ttf
 D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\LatoFont\Lato-Bold.ttf
@@ -200,11 +27,14 @@ D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakDolgozatErtekeloRendszer\SzakdolgozatErtek
 D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\SzakdolgozatErtekeloApi.runtimeconfig.json
 D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\SzakdolgozatErtekeloApi.dll
 D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\SzakdolgozatErtekeloApi.pdb
+D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\DocumentFormat.OpenXml.dll
+D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\DocumentFormat.OpenXml.Framework.dll
 D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\Microsoft.OpenApi.dll
 D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\QuestPDF.dll
 D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\System.IO.Packaging.dll
 D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\runtimes\linux-arm64\native\libQuestPdfSkia.so
 D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\runtimes\linux-arm64\native\libqpdf.so
 D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\runtimes\linux-musl-x64\native\libQuestPdfSkia.so
@@ -245,6 +75,3 @@ D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakDolgozatErtekeloRendszer\SzakdolgozatErtek
 D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\obj\Debug\net8.0\SzakdolgozatErtekeloApi.pdb
 D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\obj\Debug\net8.0\SzakdolgozatErtekeloApi.genruntimeconfig.cache
 D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\obj\Debug\net8.0\ref\SzakdolgozatErtekeloApi.dll
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\DocumentFormat.OpenXml.dll
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\DocumentFormat.OpenXml.Framework.dll
-D:\Prog_gyak\Egyetem\Gyak\Projekt\SzakDolgozatErtekeloRendszer\SzakdolgozatErtekeloApi\bin\Debug\net8.0\System.IO.Packaging.dll

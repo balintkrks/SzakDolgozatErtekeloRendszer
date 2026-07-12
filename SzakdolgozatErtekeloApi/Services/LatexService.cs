@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using SzakdolgozatErtekeloApi.DTO;
 using SzakdolgozatErtekeloApi.Templates;
 
-namespace SzakdogaBiralatTeszt
+namespace SzakdolgozatErtekeloApi.Services
 {
     public class LatexService
     {

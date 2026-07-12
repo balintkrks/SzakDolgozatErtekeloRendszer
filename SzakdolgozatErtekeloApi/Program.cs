@@ -11,6 +11,7 @@ namespace SzakdolgozatErtekeloApi
         {
             services.AddScoped<PdfService>();
             services.AddScoped<WordService>();
+            services.AddScoped<LatexService>();
         }
 
         public static void Main(string[] args)

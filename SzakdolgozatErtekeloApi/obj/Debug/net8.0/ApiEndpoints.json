@@ -8,9 +8,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "asd",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "adatok",
+        "Type": "SzakdolgozatErtekeloApi.DTO.AdatokDTO",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -56,9 +56,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "asd",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "adatok",
+        "Type": "SzakdolgozatErtekeloApi.DTO.AdatokDTO",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
