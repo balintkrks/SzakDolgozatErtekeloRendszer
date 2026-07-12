@@ -1,29 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Prog_gyak\\Egyetem\\Gyak\\Projekt\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\",
+  "WorkspaceRootPath": "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|d:\\prog_gyak\\egyetem\\gyak\\projekt\\szakdolgozatertekelorendszer\\szakdolgozatertekeloapi\\controllers\\adatokcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|solutionrelative:controllers\\adatokcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|c:\\users\\geri\\desktop\\szakmai gyakorlat\\szakdolgozatertekelorendszer\\szakdolgozatertekeloapi\\services\\latexservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|solutionrelative:services\\latexservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|d:\\prog_gyak\\egyetem\\gyak\\projekt\\szakdolgozatertekelorendszer\\szakdolgozatertekeloapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|d:\\prog_gyak\\egyetem\\gyak\\projekt\\szakdolgozatertekelorendszer\\szakdolgozatertekeloapi\\services\\pdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|solutionrelative:services\\pdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|d:\\prog_gyak\\egyetem\\gyak\\projekt\\szakdolgozatertekelorendszer\\szakdolgozatertekeloapi\\services\\wordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|c:\\users\\geri\\desktop\\szakmai gyakorlat\\szakdolgozatertekelorendszer\\szakdolgozatertekeloapi\\services\\wordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|solutionrelative:services\\wordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|d:\\prog_gyak\\egyetem\\gyak\\projekt\\szakdolgozatertekelorendszer\\szakdolgozatertekeloapi\\templates\\evaluationcriterion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|c:\\users\\geri\\desktop\\szakmai gyakorlat\\szakdolgozatertekelorendszer\\szakdolgozatertekeloapi\\controllers\\adatokcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|solutionrelative:controllers\\adatokcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|c:\\users\\geri\\desktop\\szakmai gyakorlat\\szakdolgozatertekelorendszer\\szakdolgozatertekeloapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|c:\\users\\geri\\desktop\\szakmai gyakorlat\\szakdolgozatertekelorendszer\\szakdolgozatertekeloapi\\services\\pdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|solutionrelative:services\\pdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|c:\\users\\geri\\desktop\\szakmai gyakorlat\\szakdolgozatertekelorendszer\\szakdolgozatertekeloapi\\templates\\evaluationcriterion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|solutionrelative:templates\\evaluationcriterion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|d:\\prog_gyak\\egyetem\\gyak\\projekt\\szakdolgozatertekelorendszer\\szakdolgozatertekeloapi\\templates\\evaulationtemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|c:\\users\\geri\\desktop\\szakmai gyakorlat\\szakdolgozatertekelorendszer\\szakdolgozatertekeloapi\\templates\\evaulationtemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|solutionrelative:templates\\evaulationtemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,15 +38,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Prog_gyak\\Egyetem\\Gyak\\Projekt\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Prog_gyak\\Egyetem\\Gyak\\Projekt\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Program.cs",
+              "ToolTip": "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -51,11 +55,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "AdatokController.cs",
-              "DocumentMoniker": "D:\\Prog_gyak\\Egyetem\\Gyak\\Projekt\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Controllers\\AdatokController.cs",
+              "DocumentMoniker": "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Controllers\\AdatokController.cs",
               "RelativeDocumentMoniker": "Controllers\\AdatokController.cs",
-              "ToolTip": "D:\\Prog_gyak\\Egyetem\\Gyak\\Projekt\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Controllers\\AdatokController.cs",
+              "ToolTip": "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Controllers\\AdatokController.cs",
               "RelativeToolTip": "Controllers\\AdatokController.cs",
               "ViewState": "AgIAAFIAAAAAAAAAAAAkwEsAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -65,23 +69,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "WordService.cs",
-              "DocumentMoniker": "D:\\Prog_gyak\\Egyetem\\Gyak\\Projekt\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Services\\WordService.cs",
-              "RelativeDocumentMoniker": "Services\\WordService.cs",
-              "ToolTip": "D:\\Prog_gyak\\Egyetem\\Gyak\\Projekt\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Services\\WordService.cs",
-              "RelativeToolTip": "Services\\WordService.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwEcAAABDAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "LatexService.cs",
+              "DocumentMoniker": "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Services\\LatexService.cs",
+              "RelativeDocumentMoniker": "Services\\LatexService.cs",
+              "ToolTip": "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Services\\LatexService.cs",
+              "RelativeToolTip": "Services\\LatexService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T11:34:31.556Z"
+              "WhenOpened": "2026-07-12T14:58:39.574Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
+              "Title": "WordService.cs",
+              "DocumentMoniker": "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Services\\WordService.cs",
+              "RelativeDocumentMoniker": "Services\\WordService.cs",
+              "ToolTip": "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Services\\WordService.cs",
+              "RelativeToolTip": "Services\\WordService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-10T11:34:31.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "EvaulationTemplate.cs",
-              "DocumentMoniker": "D:\\Prog_gyak\\Egyetem\\Gyak\\Projekt\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Templates\\EvaulationTemplate.cs",
+              "DocumentMoniker": "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Templates\\EvaulationTemplate.cs",
               "RelativeDocumentMoniker": "Templates\\EvaulationTemplate.cs",
-              "ToolTip": "D:\\Prog_gyak\\Egyetem\\Gyak\\Projekt\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Templates\\EvaulationTemplate.cs",
+              "ToolTip": "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Templates\\EvaulationTemplate.cs",
               "RelativeToolTip": "Templates\\EvaulationTemplate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -89,11 +107,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "EvaluationCriterion.cs",
-              "DocumentMoniker": "D:\\Prog_gyak\\Egyetem\\Gyak\\Projekt\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Templates\\EvaluationCriterion.cs",
+              "DocumentMoniker": "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Templates\\EvaluationCriterion.cs",
               "RelativeDocumentMoniker": "Templates\\EvaluationCriterion.cs",
-              "ToolTip": "D:\\Prog_gyak\\Egyetem\\Gyak\\Projekt\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Templates\\EvaluationCriterion.cs",
+              "ToolTip": "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Templates\\EvaluationCriterion.cs",
               "RelativeToolTip": "Templates\\EvaluationCriterion.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -101,11 +119,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "PdfService.cs",
-              "DocumentMoniker": "D:\\Prog_gyak\\Egyetem\\Gyak\\Projekt\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Services\\PdfService.cs",
+              "DocumentMoniker": "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Services\\PdfService.cs",
               "RelativeDocumentMoniker": "Services\\PdfService.cs",
-              "ToolTip": "D:\\Prog_gyak\\Egyetem\\Gyak\\Projekt\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Services\\PdfService.cs",
+              "ToolTip": "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Services\\PdfService.cs",
               "RelativeToolTip": "Services\\PdfService.cs",
               "ViewState": "AgIAAH4AAAAAAAAAAAAYwI8AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

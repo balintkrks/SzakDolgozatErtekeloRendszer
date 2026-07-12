@@ -20,4 +20,13 @@
     <Folder Include="Doksik\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Templates\BiralatiLapTemplate.docx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\BiralatiLapTemplate.tex">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
