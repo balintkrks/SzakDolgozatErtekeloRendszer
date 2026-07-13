@@ -73,24 +73,27 @@ function getPointsArray(index, max) {
     }
 }
 
+function updateSliderFill(input) {
+    let pct = (parseFloat(input.value) / parseFloat(input.max)) * 100;
+    input.style.background = "linear-gradient(to right, #4964e7 " + pct + "%, #e0e7ff " + pct + "%)";
+}
+
 function updateScore() {
     let pts = getPointsArray(1, 10);
-    let total = 0;
-    if (hasZero(pts)) {
-        total = 0;
-    } else {
-        total = sumList(pts);
-    }
-    total = Math.round(total * 10) / 10;
+    let total = Math.round(sumList(pts) * 10) / 10;
+    let grade = hasZero(pts) ? "Elégtelen (1)" : getGrade(total);
 
     document.getElementById("osszpontszam").textContent = total;
-    document.getElementById("javaslat").textContent = getGrade(total);
+    document.getElementById("javaslat").textContent = grade;
+    document.getElementById("osszpontszam-sticky").textContent = total;
+    document.getElementById("javaslat-sticky").textContent = grade;
 
     for (let i = 1; i <= 10; i++) {
         let inp = document.getElementById("pont" + i);
         let kijelzo = document.getElementById("ertek" + i);
         if (inp && kijelzo) {
             kijelzo.textContent = parseFloat(inp.value);
+            updateSliderFill(inp);
         }
     }
 }
@@ -239,6 +242,10 @@ function downloadword() {
 
 function downloadlatex() {
     sendData("/szakdolgozatErtekelo/Adatok/get-latex", "Biralat.tex");
+}
+
+function downloadzip() {
+    sendData("/szakdolgozatErtekelo/Adatok/get-zip", "Dokumentumok.zip");
 }
 
 window.onload = function() {

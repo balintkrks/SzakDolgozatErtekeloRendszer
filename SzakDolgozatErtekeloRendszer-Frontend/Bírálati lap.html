@@ -237,13 +237,21 @@
             <p>Javasolt érdemjegy: <span id="javaslat">-</span></p>
         </div>
         <div id="gombok">
-            <button type="button" onclick="downloadpdf()">📄 PDF letöltése</button>
-            <button type="button" onclick="downloadword()">📝 Word letöltése</button>
-            <button type="button" onclick="downloadlatex()">🔤 LaTeX letöltése</button>
+            <button type="button" onclick="downloadpdf()">&#128196; PDF letöltése</button>
+            <button type="button" onclick="downloadword()">&#128221; Word letöltése</button>
+            <button type="button" onclick="downloadlatex()">&#128288; LaTeX letöltése</button>
+            <button type="button" onclick="downloadzip()">&#128230; ZIP letöltése</button>
         </div>
     </footer>
 
 </div>
+
+<div id="sticky-bar">
+    <span>Összpontszám: <strong id="osszpontszam-sticky">0</strong> / 50</span>
+    <span id="sticky-sep">|</span>
+    <span>Javasolt érdemjegy: <strong id="javaslat-sticky">-</strong></span>
+</div>
+
 <script src="javas.js"></script>
 </body>
 </html>
