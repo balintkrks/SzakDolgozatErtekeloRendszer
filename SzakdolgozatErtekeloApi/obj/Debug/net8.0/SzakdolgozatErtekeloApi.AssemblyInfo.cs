@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SzakdolgozatErtekeloApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6a67a3b70563eb05a5bee2b61e62123d2c19ef87")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+61239fddd626c576292ced666860f6b177661dcf")]
 [assembly: System.Reflection.AssemblyProductAttribute("SzakdolgozatErtekeloApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SzakdolgozatErtekeloApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

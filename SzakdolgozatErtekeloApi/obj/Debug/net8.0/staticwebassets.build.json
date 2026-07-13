@@ -1,1 +1,11 @@
-{"Version":1,"Hash":"W98qqaNUw2eF5knaKWGJs21egSBVwBh+/LizOIxKH+g=","Source":"SzakdolgozatErtekeloApi","BasePath":"_content/SzakdolgozatErtekeloApi","Mode":"Default","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}
+{
+  "Version": 1,
+  "Hash": "gQv+zk0jXBy4PCNj1jHb0PvG/fIWFey9e2UwQKDPhoo=",
+  "Source": "SzakdolgozatErtekeloApi",
+  "BasePath": "_content/SzakdolgozatErtekeloApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

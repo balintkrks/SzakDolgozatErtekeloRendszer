@@ -1,21 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Prog_gyak\\Egyetem\\Gyak\\Projekt\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\",
+  "WorkspaceRootPath": "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|d:\\prog_gyak\\egyetem\\gyak\\projekt\\szakdolgozatertekelorendszer\\szakdolgozatertekeloapi\\controllers\\adatokcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|c:\\users\\geri\\desktop\\szakmai gyakorlat\\szakdolgozatertekelorendszer\\szakdolgozatertekeloapi\\services\\latexservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|solutionrelative:services\\latexservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|c:\\users\\geri\\desktop\\szakmai gyakorlat\\szakdolgozatertekelorendszer\\szakdolgozatertekeloapi\\services\\pdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|solutionrelative:services\\pdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|c:\\users\\geri\\desktop\\szakmai gyakorlat\\szakdolgozatertekelorendszer\\szakdolgozatertekeloapi\\services\\wordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|solutionrelative:services\\wordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|c:\\users\\geri\\desktop\\szakmai gyakorlat\\szakdolgozatertekelorendszer\\szakdolgozatertekeloapi\\controllers\\adatokcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|solutionrelative:controllers\\adatokcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|d:\\prog_gyak\\egyetem\\gyak\\projekt\\szakdolgozatertekelorendszer\\szakdolgozatertekeloapi\\enumok\\adatokdtoenums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|c:\\users\\geri\\desktop\\szakmai gyakorlat\\szakdolgozatertekelorendszer\\szakdolgozatertekeloapi\\enumok\\adatokdtoenums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|solutionrelative:enumok\\adatokdtoenums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|d:\\prog_gyak\\egyetem\\gyak\\projekt\\szakdolgozatertekelorendszer\\szakdolgozatertekeloapi\\dto\\adatokdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|c:\\users\\geri\\desktop\\szakmai gyakorlat\\szakdolgozatertekelorendszer\\szakdolgozatertekeloapi\\dto\\adatokdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|solutionrelative:dto\\adatokdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|d:\\prog_gyak\\egyetem\\gyak\\projekt\\szakdolgozatertekelorendszer\\szakdolgozatertekeloapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|c:\\users\\geri\\desktop\\szakmai gyakorlat\\szakdolgozatertekelorendszer\\szakdolgozatertekeloapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -26,60 +38,93 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Prog_gyak\\Egyetem\\Gyak\\Projekt\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Prog_gyak\\Egyetem\\Gyak\\Projekt\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Program.cs",
+              "ToolTip": "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-12T16:17:51.279Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AdatokDTOEnums.cs",
-              "DocumentMoniker": "D:\\Prog_gyak\\Egyetem\\Gyak\\Projekt\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Enumok\\AdatokDTOEnums.cs",
-              "RelativeDocumentMoniker": "Enumok\\AdatokDTOEnums.cs",
-              "ToolTip": "D:\\Prog_gyak\\Egyetem\\Gyak\\Projekt\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Enumok\\AdatokDTOEnums.cs",
-              "RelativeToolTip": "Enumok\\AdatokDTOEnums.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "LatexService.cs",
+              "DocumentMoniker": "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Services\\LatexService.cs",
+              "RelativeDocumentMoniker": "Services\\LatexService.cs",
+              "ToolTip": "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Services\\LatexService.cs",
+              "RelativeToolTip": "Services\\LatexService.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAgwBQAAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-12T18:31:27.351Z",
+              "WhenOpened": "2026-07-13T12:33:08.289Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AdatokDTO.cs",
-              "DocumentMoniker": "D:\\Prog_gyak\\Egyetem\\Gyak\\Projekt\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\DTO\\AdatokDTO.cs",
-              "RelativeDocumentMoniker": "DTO\\AdatokDTO.cs",
-              "ToolTip": "D:\\Prog_gyak\\Egyetem\\Gyak\\Projekt\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\DTO\\AdatokDTO.cs",
-              "RelativeToolTip": "DTO\\AdatokDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Title": "WordService.cs",
+              "DocumentMoniker": "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Services\\WordService.cs",
+              "RelativeDocumentMoniker": "Services\\WordService.cs",
+              "ToolTip": "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Services\\WordService.cs",
+              "RelativeToolTip": "Services\\WordService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBwAAABnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-12T18:31:18.163Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-13T12:32:45.816Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "PdfService.cs",
+              "DocumentMoniker": "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Services\\PdfService.cs",
+              "RelativeDocumentMoniker": "Services\\PdfService.cs",
+              "ToolTip": "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Services\\PdfService.cs",
+              "RelativeToolTip": "Services\\PdfService.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAYwEsAAABtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-13T12:32:04.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdatokDTOEnums.cs",
+              "DocumentMoniker": "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Enumok\\AdatokDTOEnums.cs",
+              "RelativeDocumentMoniker": "Enumok\\AdatokDTOEnums.cs",
+              "ToolTip": "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Enumok\\AdatokDTOEnums.cs",
+              "RelativeToolTip": "Enumok\\AdatokDTOEnums.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-12T18:31:27.351Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdatokDTO.cs",
+              "DocumentMoniker": "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\DTO\\AdatokDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\AdatokDTO.cs",
+              "ToolTip": "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\DTO\\AdatokDTO.cs",
+              "RelativeToolTip": "DTO\\AdatokDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-12T18:31:18.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "AdatokController.cs",
-              "DocumentMoniker": "D:\\Prog_gyak\\Egyetem\\Gyak\\Projekt\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Controllers\\AdatokController.cs",
+              "DocumentMoniker": "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Controllers\\AdatokController.cs",
               "RelativeDocumentMoniker": "Controllers\\AdatokController.cs",
-              "ToolTip": "D:\\Prog_gyak\\Egyetem\\Gyak\\Projekt\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Controllers\\AdatokController.cs",
+              "ToolTip": "C:\\Users\\geri\\Desktop\\Szakmai gyakorlat\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Controllers\\AdatokController.cs",
               "RelativeToolTip": "Controllers\\AdatokController.cs",
               "ViewState": "AgIAAIEAAAAAAAAAAAAowDwAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-12T16:22:10.516Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-12T16:22:10.516Z"
             }
           ]
         }

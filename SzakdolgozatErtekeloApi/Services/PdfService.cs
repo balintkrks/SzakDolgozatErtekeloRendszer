@@ -73,7 +73,7 @@ namespace SzakdolgozatErtekeloApi.Services
 
                 AddStudentRow(table, "A hallgató neve:", adatok.Hallgato.Nev);
                 AddStudentRow(table, "A hallgató Neptun kódja:", adatok.Hallgato.Netpun);
-                AddStudentRow(table, "A hallgató szakja:", adatok.Hallgato.Szak.ToString());
+                AddStudentRow(table, "A hallgató szakja:", adatok.Hallgato.Szak.ToString().Replace("_"," "));
                 AddStudentRow(table, "A szakdolgozat címe:", adatok.Hallgato.SzakdolgozatCime);
             });
 

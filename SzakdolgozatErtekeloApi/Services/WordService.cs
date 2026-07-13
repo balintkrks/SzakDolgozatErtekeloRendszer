@@ -26,7 +26,7 @@ namespace SzakdolgozatErtekeloApi.Services
 
             ReplaceContentControl(document, "HallgatoNev", adatok.Hallgato.Nev);
             ReplaceContentControl(document, "Neptun", adatok.Hallgato.Netpun);
-            ReplaceContentControl(document, "Szak", adatok.Hallgato.Szak.ToString());
+            ReplaceContentControl(document, "Szak", adatok.Hallgato.Szak.ToString().Replace("_", " "));
             ReplaceContentControl(document, "Cim", adatok.Hallgato.SzakdolgozatCime);
 
             FillEvaluationTables(document, adatok);

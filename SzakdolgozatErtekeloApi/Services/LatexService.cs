@@ -18,7 +18,7 @@ namespace SzakdolgozatErtekeloApi.Services
 
             latex = Replace(latex, "HallgatoNev", adatok.Hallgato.Nev);
             latex = Replace(latex, "Neptun", adatok.Hallgato.Netpun);
-            latex = Replace(latex, "Szak", adatok.Hallgato.Szak.ToString());
+            latex = Replace(latex, "Szak", adatok.Hallgato.Szak.ToString().Replace("_", " "));
             latex = Replace(latex, "Cim", adatok.Hallgato.SzakdolgozatCime);
 
             FillEvaluationTables(ref latex, adatok);
