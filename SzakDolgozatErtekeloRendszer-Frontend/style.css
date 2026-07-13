@@ -292,23 +292,32 @@ button:hover{
 }
 
 .skala{
-    display:flex;
-    font-size:12px;
-    margin-top:0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 11px;
+    font-size: 11px;
+    color: gray;
+    margin-top: 4px;
     margin-bottom: 10px;
-    color:gray;
+    box-sizing: border-box;
 }
 
 .skala span{
-    text-align:center;
-    flex:1;
+    width: 0;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    white-space: nowrap;
 }
 
 .skala span::before{
     content:"|";
-    display:block;
-    color:gray;
-    line-height:1;
+    display: block;
+    color: #ccc;
+    font-size: 10px;
+    line-height: 1;
 }
 
 .cim{

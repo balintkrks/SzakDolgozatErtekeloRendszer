@@ -43,21 +43,11 @@ function hasZero(lst) {
 }
 
 function getGrade(score) {
-    if (score === 0) {
-        return "Elégtelen (1)";
-    } else if (score >= 8 && score <= 25) {
-        return "Elégtelen (1)";
-    } else if (score >= 26 && score <= 32) {
-        return "Elégséges (2)";
-    } else if (score >= 33 && score <= 38) {
-        return "Közepes (3)";
-    } else if (score >= 39 && score <= 44) {
-        return "Jó (4)";
-    } else if (score >= 45 && score <= 50) {
-        return "Jeles (5)";
-    } else {
-        return "-";
-    }
+    if (score <= 25) return "Elégtelen (1)";
+    if (score <= 32) return "Elégséges (2)";
+    if (score <= 38) return "Közepes (3)";
+    if (score <= 44) return "Jó (4)";
+    return "Jeles (5)";
 }
 
 function getPointsArray(index, max) {
@@ -81,12 +71,14 @@ function updateSliderFill(input) {
 function updateScore() {
     let pts = getPointsArray(1, 10);
     let total = Math.round(sumList(pts) * 10) / 10;
-    let grade = hasZero(pts) ? "Elégtelen (1)" : getGrade(total);
+    let grade = getGrade(total);
 
     document.getElementById("osszpontszam").textContent = total;
     document.getElementById("javaslat").textContent = grade;
-    document.getElementById("osszpontszam-sticky").textContent = total;
-    document.getElementById("javaslat-sticky").textContent = grade;
+    let stickyP = document.getElementById("osszpontszam-sticky");
+    let stickyJ = document.getElementById("javaslat-sticky");
+    if (stickyP) stickyP.textContent = total;
+    if (stickyJ) stickyJ.textContent = grade;
 
     for (let i = 1; i <= 10; i++) {
         let inp = document.getElementById("pont" + i);
