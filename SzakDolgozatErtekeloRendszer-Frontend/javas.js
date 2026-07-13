@@ -191,12 +191,11 @@ function getAllData() {
         javasoltErdemjegy: javasoltErdemjegy,
         bitraloiJavaslat: document.getElementById("bitraloiJavaslat").value.trim(),
         kerdesek: getKerdesek(),
-        ertekeloSzerepe: szerepkor,
-        formatum: 0
+        ertekeloSzerepe: szerepkor
     };
 }
 
-const BACKEND_URL = "";
+const BACKEND_URL = "http://localhost:5039/";
 
 function sendData(endpoint, filename) {
     let data = getAllData();
