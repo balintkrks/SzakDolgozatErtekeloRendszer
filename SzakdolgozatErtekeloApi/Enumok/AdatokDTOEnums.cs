@@ -11,12 +11,4 @@
         Konzulens,
         Opponens
     }
-
-    public enum Formatum
-    {
-        PDF,
-        Wrod,
-        LaTex,
-        Osszes
-    }
 }

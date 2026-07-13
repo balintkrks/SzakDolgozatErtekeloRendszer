@@ -9,6 +9,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|d:\\prog_gyak\\egyetem\\gyak\\projekt\\szakdolgozatertekelorendszer\\szakdolgozatertekeloapi\\controllers\\adatokcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|solutionrelative:controllers\\adatokcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|d:\\prog_gyak\\egyetem\\gyak\\projekt\\szakdolgozatertekelorendszer\\szakdolgozatertekeloapi\\enumok\\adatokdtoenums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|solutionrelative:enumok\\adatokdtoenums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|d:\\prog_gyak\\egyetem\\gyak\\projekt\\szakdolgozatertekelorendszer\\szakdolgozatertekeloapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|d:\\prog_gyak\\egyetem\\gyak\\projekt\\szakdolgozatertekelorendszer\\szakdolgozatertekeloapi\\dto\\adatokdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5A717CA-A350-46C7-827C-2ECB22AFB429}|SzakdolgozatErtekeloApi.csproj|solutionrelative:dto\\adatokdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,10 +40,49 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Prog_gyak\\Egyetem\\Gyak\\Projekt\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAYwDcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-12T16:17:51.279Z",
               "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Prog_gyak\\Egyetem\\Gyak\\Projekt\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "D:\\Prog_gyak\\Egyetem\\Gyak\\Projekt\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-07-13T11:51:24.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdatokDTOEnums.cs",
+              "DocumentMoniker": "D:\\Prog_gyak\\Egyetem\\Gyak\\Projekt\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Enumok\\AdatokDTOEnums.cs",
+              "RelativeDocumentMoniker": "Enumok\\AdatokDTOEnums.cs",
+              "ToolTip": "D:\\Prog_gyak\\Egyetem\\Gyak\\Projekt\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Enumok\\AdatokDTOEnums.cs",
+              "RelativeToolTip": "Enumok\\AdatokDTOEnums.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-12T18:31:27.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdatokDTO.cs",
+              "DocumentMoniker": "D:\\Prog_gyak\\Egyetem\\Gyak\\Projekt\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\DTO\\AdatokDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\AdatokDTO.cs",
+              "ToolTip": "D:\\Prog_gyak\\Egyetem\\Gyak\\Projekt\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\DTO\\AdatokDTO.cs",
+              "RelativeToolTip": "DTO\\AdatokDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-12T18:31:18.163Z",
               "EditorCaption": ""
             },
             {
@@ -42,7 +93,7 @@
               "RelativeDocumentMoniker": "Controllers\\AdatokController.cs",
               "ToolTip": "D:\\Prog_gyak\\Egyetem\\Gyak\\Projekt\\SzakDolgozatErtekeloRendszer\\SzakdolgozatErtekeloApi\\Controllers\\AdatokController.cs",
               "RelativeToolTip": "Controllers\\AdatokController.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAuwBsAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAgwDwAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-12T16:22:10.516Z",
               "EditorCaption": ""

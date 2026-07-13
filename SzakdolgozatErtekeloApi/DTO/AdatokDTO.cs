@@ -12,6 +12,5 @@ namespace SzakdolgozatErtekeloApi.DTO
         public string BitraloiJavaslat { get; set; }
         public List<string> Kerdesek { get; set; }
         public ErtekeloSzerepe ErtekeloSzerepe { get; set; }
-        public Formatum Formatum { get; set; }
     }
 }

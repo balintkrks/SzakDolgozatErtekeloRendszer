@@ -170,9 +170,6 @@
           },
           "ertekeloSzerepe": {
             "$ref": "#/components/schemas/ErtekeloSzerepe"
-          },
-          "formatum": {
-            "$ref": "#/components/schemas/Formatum"
           }
         },
         "additionalProperties": false
@@ -199,16 +196,6 @@
         "enum": [
           0,
           1
-        ],
-        "type": "integer",
-        "format": "int32"
-      },
-      "Formatum": {
-        "enum": [
-          0,
-          1,
-          2,
-          3
         ],
         "type": "integer",
         "format": "int32"

@@ -10,7 +10,7 @@ namespace SzakdolgozatErtekeloApi.Controllers
     [ApiController]
     public class AdatokController : ControllerBase
     {
-        private readonly IWebHostEnvironment _env;
+        //private readonly IWebHostEnvironment _env;
         private readonly PdfService _pdfService;
         private readonly WordService _wordService;
         private readonly LatexService _latexService;
@@ -18,7 +18,7 @@ namespace SzakdolgozatErtekeloApi.Controllers
 
         public AdatokController(IWebHostEnvironment env, PdfService pdfService, WordService wordService, LatexService latexService)
         {
-            _env = env;
+            //_env = env;
             _pdfService = pdfService;
             _wordService = wordService;
             _latexService = latexService;
@@ -154,7 +154,6 @@ namespace SzakdolgozatErtekeloApi.Controllers
                 {
                     zipArchive.CreateEntryFromFile(file, Path.GetFileName(file));
                 }
-
 
                 zipArchive.Dispose();
 
