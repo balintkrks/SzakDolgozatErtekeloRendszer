@@ -190,7 +190,7 @@ function getAllData() {
     };
 }
 
-const BACKEND_URL = "http://localhost:5039/";
+const BACKEND_URL = "http://localhost:5039";
 
 function sendData(endpoint, filename) {
     let data = getAllData();
