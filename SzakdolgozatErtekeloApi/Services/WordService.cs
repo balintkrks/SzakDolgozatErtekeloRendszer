@@ -37,6 +37,15 @@ namespace SzakdolgozatErtekeloApi.Services
             ReplaceContentControl(document, "BiroiJavaslat", adatok.BitraloiJavaslat ?? "");
             ReplaceContentControl(document, "Kerdesek", string.Join("\r\n", adatok.Kerdesek.Select((x, i) => $"{i + 1}. {x}")));
 
+            var parts = adatok.JavasoltErdemjegy.Split('(');
+
+            string erdemjegySzoveg = parts[0].Trim();
+            string erdemjegySzam = parts[1].Replace(")", "").Trim();
+
+            ReplaceContentControl(document, "JavasoltErdemjegySzoveg", erdemjegySzoveg);
+            ReplaceContentControl(document, "JavasoltErdemjegySzam", erdemjegySzam);
+
+
             ReplaceContentControl(document, "Datum", $"Eger, {DateTime.Now:yyyy.MM.dd.}");
 
             ReplaceContentControl(document, "ErtekeloSzerepe", adatok.ErtekeloSzerepe.ToString());

@@ -227,7 +227,13 @@ namespace SzakdolgozatErtekeloApi.Services
         {
             column.Item().PaddingTop(20);
 
-            column.Item().Text("Javasolt érdemjegy megállapítása (kötelező): ").Bold();
+            column.Item().Text(text =>
+            {
+                text.Span("Javasolt érdemjegy megállapítása (kötelező): ")
+                    .Bold();
+
+                text.Span(adatok.JavasoltErdemjegy);
+            });
 
             column.Item().PaddingTop(5);
 
@@ -294,13 +300,21 @@ namespace SzakdolgozatErtekeloApi.Services
             {
                 table.ColumnsDefinition(columns =>
                 {
-                    
+                    columns.RelativeColumn(2);
                     columns.RelativeColumn();
                     columns.RelativeColumn();
                 });
 
+                var parts = adatok.JavasoltErdemjegy.Split('(');
+
+                string erdemjegySzoveg = parts[0].Trim();
+                string erdemjegySzam = parts[1].Replace(")", "").Trim();
+
+
+
                 table.Cell().Text("A szakdolgozat értékelése:").Bold();
-                table.Cell().Text(adatok.JavasoltErdemjegy);
+                table.Cell().Text($"betűvel: {erdemjegySzoveg}");
+                table.Cell().Text($"számmal: {erdemjegySzam}");
             });
 
             column.Item().PaddingTop(40);

@@ -30,6 +30,14 @@ namespace SzakdolgozatErtekeloApi.Services
             latex = Replace(latex, "Kerdesek", FormatQuestions(adatok.Kerdesek));
             latex = Replace(latex, "ErtekeloSzerepe", adatok.ErtekeloSzerepe.ToString());
 
+            var parts = adatok.JavasoltErdemjegy.Split('(');
+
+            string erdemjegySzoveg = parts[0].Trim();
+            string erdemjegySzam = parts[1].Replace(")", "").Trim();
+
+            latex = Replace(latex, "JavasoltErdemjegySzoveg", erdemjegySzoveg);
+            latex = Replace(latex, "JavasoltErdemjegySzam", erdemjegySzam);
+
             File.WriteAllText(outputPath, latex);
         }
 
