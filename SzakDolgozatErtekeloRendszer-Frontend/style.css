@@ -26,6 +26,7 @@ header p{
 }
 
 #szerepkor {
+    width: 180px;
     padding: 8px 12px;
     font-size: 26px;
 }
