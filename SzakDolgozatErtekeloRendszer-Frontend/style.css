@@ -104,6 +104,37 @@ header p{
     gap: 10px;
 }
 
+.kerdes-sor {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.kerdes-sor .kerdes-input {
+    flex: 1;
+}
+
+.kerdes-torol {
+    background: transparent;
+    color: #aaa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 34px;
+    height: 34px;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 0;
+    flex-shrink: 0;
+    transition: background 0.15s, color 0.15s;
+}
+
+.kerdes-torol:hover {
+    background: #fee2e2;
+    color: #e03f3f;
+    border-color: #fca5a5;
+}
+
 .kerdes-input {
     width: 100%;
     padding: 12px;

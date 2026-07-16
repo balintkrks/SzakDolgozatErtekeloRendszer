@@ -11,7 +11,7 @@
 
     <header>
         <h1>EKKE</h1>
-        <h2>Szakdolgozati Bírálati Lap</h2>
+        <h2 id="header-cim">Szakdolgozati Bírálati Lap</h2>
         <p>
             <select id="szerepkor">
                 <option value="0">Konzulens</option>
@@ -23,23 +23,22 @@
     <hr>
 
     <div id="tartalom">
-        <h2>Hallgató adatai</h2>
+        <h2 id="hallgato-adatai-cim">Hallgató adatai</h2>
 
         <div id="hallgato-panel">
-            
             <div id="adatok">
                 <div>
-                    <label>A hallgató neve: <span class="kotelezo">*</span></label>
+                    <label id="nev-label">A hallgató neve: <span class="kotelezo">*</span></label>
                     <input type="text" id="nev" placeholder="Pl. Kovács János">
                 </div>
 
                 <div>
-                    <label>A hallgató Neptun kódja: <span class="kotelezo">*</span></label>
+                    <label id="kod-label">A hallgató Neptun kódja: <span class="kotelezo">*</span></label>
                     <input type="text" id="kod" placeholder="6 karakter (pl. AB1234)" maxlength="6">
                 </div>
 
                 <div>
-                    <label>A hallgató szakja: <span class="kotelezo">*</span></label>
+                    <label id="szak-label">A hallgató szakja: <span class="kotelezo">*</span></label>
                     <select id="szak">
                         <option value="0">Programtervező informatikus</option>
                         <option value="1">Gazdasági Informatikus</option>
@@ -47,25 +46,26 @@
                 </div>
 
                 <div>
-                    <label>A szakdolgozat címe: <span class="kotelezo">*</span></label>
+                    <label id="cim-label">A szakdolgozat címe: <span class="kotelezo">*</span></label>
                     <input type="text" id="cim" placeholder="A szakdolgozat teljes címe">
                 </div>
             </div>
         </div>
-        <h1>Értékelési szempontok</h1>
+
+        <h1 id="ertekelesek-cim">Értékelési szempontok</h1>
 
         <div id="ertekelesek">
 
             <div class="ertekeles">
                 <div class="cim">
                     <p class="number">1.</p>
-                    <h2>A szakdolgozat szerkezeti felépítése, tartalmi tagolása, alaki megjelenése.</h2>
+                    <h2 id="criterion-cim-1">A szakdolgozat szerkezeti felépítése, tartalmi tagolása, alaki megjelenése.</h2>
                 </div>
-                <p>A dolgozat szerkezeti felépítése és alaki megjelenése.</p>
-                <ul>
+                <p id="criterion-leiras-1">A dolgozat szerkezeti felépítése és alaki megjelenése.</p>
+                <ul id="criterion-pontok-1">
                     <li>0: A dolgozat nem felel meg az EKKE szakdolgozati követelményeinek</li>
-                    <li>1-2: A követelmények-nek lényegében megfelel, de nagyobb hiányosságokkal.</li>
-                    <li>3-4: A követelmé-nyeknek lényegében megfelel, kisebb hiányos-ságokkal.</li>
+                    <li>1-2: A követelményeknek lényegében megfelel, de nagyobb hiányosságokkal.</li>
+                    <li>3-4: A követelményeknek lényegében megfelel, kisebb hiányosságokkal.</li>
                     <li>5: Kifogástalan szerkezet, tartalmi tagolás, szép kivitel.</li>
                 </ul>
                 <input type="range" id="pont1" min="0" max="5" step="0.5" value="0">
@@ -73,17 +73,17 @@
                     <span>0</span><span>0.5</span><span>1</span><span>1.5</span><span>2</span>
                     <span>2.5</span><span>3</span><span>3.5</span><span>4</span><span>4.5</span><span>5</span>
                 </div>
-                <div class="pont-kijelzo">Adott pont: <span id="ertek1">0</span></div>
+                <div class="pont-kijelzo"><span id="pont-kijelzo-label-1">Adott pont:</span> <span id="ertek1">0</span></div>
                 <textarea id="megjegyzes1" placeholder="Rövid indoklás (opcionális)"></textarea>
             </div>
 
             <div class="ertekeles">
                 <div class="cim">
                     <p class="number">2.</p>
-                    <h2>Nyelvezet és stílus</h2>
+                    <h2 id="criterion-cim-2">Nyelvezet és stílus</h2>
                 </div>
-                <p>A dolgozat nyelvezete és stílusa.</p>
-                <ul>
+                <p id="criterion-leiras-2">A dolgozat nyelvezete és stílusa.</p>
+                <ul id="criterion-pontok-2">
                     <li>0: Nyelvezete mondatszerkesztése erősen kifogásolható, durva helyesírási hibákat tartalmaz.</li>
                     <li>1-2: Nyelvezet, stílusa sok hiányossággal, kisebb helyesírási hibákat tartalmaz.</li>
                     <li>3-4: Nyelvezete megfelelő, kevés stílushibával.</li>
@@ -94,20 +94,20 @@
                     <span>0</span><span>0.5</span><span>1</span><span>1.5</span><span>2</span>
                     <span>2.5</span><span>3</span><span>3.5</span><span>4</span><span>4.5</span><span>5</span>
                 </div>
-                <div class="pont-kijelzo">Adott pont: <span id="ertek2">0</span></div>
+                <div class="pont-kijelzo"><span id="pont-kijelzo-label-2">Adott pont:</span> <span id="ertek2">0</span></div>
                 <textarea id="megjegyzes2" placeholder="Rövid indoklás (opcionális)"></textarea>
             </div>
 
             <div class="ertekeles">
                 <div class="cim">
                     <p class="number">3.</p>
-                    <h2>Szakirodalmi háttér</h2>
+                    <h2 id="criterion-cim-3">Szakirodalmi háttér</h2>
                 </div>
-                <p>A felhasznált szakirodalom minősége.</p>
-                <ul>
-                    <li>0: A szakirodalom nem releváns. A hivatkozások hiányoznak, vagy nem szakszerűek. </li>
-                    <li>1-2: A szakirodalom feltárása szűk körű, csak tankönyvek, vagy jegyzetek anyagát tartalmazza. Hivatkozásai több </li>
-                    <li>3-4: Legfontosabb szakirodalmakat, korrekt hivatkozásokat tartalmaz a dolgozat. Az elmélet koherens, </li>
+                <p id="criterion-leiras-3">A felhasznált szakirodalom minősége.</p>
+                <ul id="criterion-pontok-3">
+                    <li>0: A szakirodalom nem releváns. A hivatkozások hiányoznak, vagy nem szakszerűek.</li>
+                    <li>1-2: A szakirodalom feltárása szűk körű, csak tankönyvek, vagy jegyzetek anyagát tartalmazza.</li>
+                    <li>3-4: Legfontosabb szakirodalmakat, korrekt hivatkozásokat tartalmaz a dolgozat.</li>
                     <li>5: Legújabb széles körű szakirodalom alapján íródott a dolgozat. Hivatkozások pontosak.</li>
                 </ul>
                 <input type="range" id="pont3" min="0" max="5" step="0.5" value="0">
@@ -115,20 +115,20 @@
                     <span>0</span><span>0.5</span><span>1</span><span>1.5</span><span>2</span>
                     <span>2.5</span><span>3</span><span>3.5</span><span>4</span><span>4.5</span><span>5</span>
                 </div>
-                <div class="pont-kijelzo">Adott pont: <span id="ertek3">0</span></div>
+                <div class="pont-kijelzo"><span id="pont-kijelzo-label-3">Adott pont:</span> <span id="ertek3">0</span></div>
                 <textarea id="megjegyzes3" placeholder="Rövid indoklás (opcionális)"></textarea>
             </div>
 
             <div class="ertekeles">
                 <div class="cim">
                     <p class="number">4.</p>
-                    <h2>A megvalósított feladat nehézsége</h2>
+                    <h2 id="criterion-cim-4">A megvalósított feladat nehézsége</h2>
                 </div>
-                <p>A szakmai színvonal és bonyolultság.</p>
-                <ul>
-                    <li>0: A megvalósított feladat nem teljesíti a szakdolgozattól elvárt nehézségi szintet. </li>
-                    <li>1-2: A megvalósított feladat éppen teljesíti a szakdolgozattól elvárt nehézségi szintet.  </li>
-                    <li>3-4: A megvalósított feladat teljesíti a szakdolgozattól elvárt nehézségi szintet. </li>
+                <p id="criterion-leiras-4">A szakmai színvonal és bonyolultság.</p>
+                <ul id="criterion-pontok-4">
+                    <li>0: A megvalósított feladat nem teljesíti a szakdolgozattól elvárt nehézségi szintet.</li>
+                    <li>1-2: A megvalósított feladat éppen teljesíti a szakdolgozattól elvárt nehézségi szintet.</li>
+                    <li>3-4: A megvalósított feladat teljesíti a szakdolgozattól elvárt nehézségi szintet.</li>
                     <li>5: A megvalósított feladat túlmutat a szakdolgozattól elvárt nehézségi szinten.</li>
                 </ul>
                 <input type="range" id="pont4" min="0" max="5" step="0.5" value="0">
@@ -136,154 +136,159 @@
                     <span>0</span><span>0.5</span><span>1</span><span>1.5</span><span>2</span>
                     <span>2.5</span><span>3</span><span>3.5</span><span>4</span><span>4.5</span><span>5</span>
                 </div>
-                <div class="pont-kijelzo">Adott pont: <span id="ertek4">0</span></div>
+                <div class="pont-kijelzo"><span id="pont-kijelzo-label-4">Adott pont:</span> <span id="ertek4">0</span></div>
                 <textarea id="megjegyzes4" placeholder="Rövid indoklás (opcionális)"></textarea>
             </div>
 
             <div class="ertekeles">
                 <div class="cim">
                     <p class="number">5.</p>
-                    <h2>Megvalósítás minősége I.</h2>
+                    <h2 id="criterion-cim-5">Megvalósítás minősége I.</h2>
                 </div>
-                <p>A feladat ismertetése, a célkitűzés definiálása (specifikáció, megvalósítási terv, összefüggések elemzése).</p>
-                <ul>
-                    <li>0: A dolgozatból a feladat ismertetése, illetve a célkitűzés definiálása teljes mértékben hiányzik. </li>
-                    <li>1-2: A dolgozatban megjelenik a feladat ismertetése, továbbá a célkitűzés definiálása, de a leírás alapszintű, elnagyolt, hiányos. </li>
-                    <li>3-4: A dolgozatban a feladat ismertetése, illetve a célkitűzés definiálása formailag megfelelő, egy alapszintű leíráson túlmutat, szakmailag megfelelő, de nem teljes és ellentmondásmentes. </li>
-                    <li>5: A dolgozatban  a feladat ismertetése, illetve a célkitűzések definiálása szakmailag korrekt, formailag megfelelő, teljes és ellentmondásmentes.</li>
+                <p id="criterion-leiras-5">A feladat ismertetése, a célkitűzés definiálása (specifikáció, megvalósítási terv, összefüggések elemzése).</p>
+                <ul id="criterion-pontok-5">
+                    <li>0: A dolgozatból a feladat ismertetése, illetve a célkitűzés definiálása teljes mértékben hiányzik.</li>
+                    <li>1-2: A dolgozatban megjelenik a feladat ismertetése, de a leírás alapszintű, elnagyolt, hiányos.</li>
+                    <li>3-4: A feladat ismertetése formailag megfelelő, egy alapszintű leíráson túlmutat, de nem teljes.</li>
+                    <li>5: A feladat ismertetése szakmailag korrekt, formailag megfelelő, teljes és ellentmondásmentes.</li>
                 </ul>
                 <input type="range" id="pont5" min="0" max="5" step="0.5" value="0">
                 <div class="skala">
                     <span>0</span><span>0.5</span><span>1</span><span>1.5</span><span>2</span>
                     <span>2.5</span><span>3</span><span>3.5</span><span>4</span><span>4.5</span><span>5</span>
                 </div>
-                <div class="pont-kijelzo">Adott pont: <span id="ertek5">0</span></div>
+                <div class="pont-kijelzo"><span id="pont-kijelzo-label-5">Adott pont:</span> <span id="ertek5">0</span></div>
                 <textarea id="megjegyzes5" placeholder="Rövid indoklás (opcionális)"></textarea>
             </div>
 
             <div class="ertekeles">
                 <div class="cim">
                     <p class="number">6.</p>
-                    <h2>Megvalósítás minősége II.</h2>
+                    <h2 id="criterion-cim-6">Megvalósítás minősége II.</h2>
                 </div>
-                <p>Kódminőség.</p>
-                <ul>
-                    <li>0: A forráskód tartalma, mennyisége, szerkezete nem megfelelő. </li>
-                    <li>1-2: A forráskód tartalma, mennyisége, szerkezete megfelelő, de nehézen áttekinthető, terjengős, strukturálatlan, és helyenként indokolatlan nyelvi elemeket tartalmaz. Nem tartalmazza a szükséges ellenőrzési, hibakezelési funkciókat. </li>
-                    <li>3-4: A forráskód tartalma, mennyisége, összetettsége jó. A forráskódban megjelennek a korszerű, hatékony nyelvi elemek. Jól strukturált, áttekinthető, tartalmazza a szükséges ellenőrzési, hibakezelési funkciókat. </li>
-                    <li>5: A forráskód tartalma, mennyisége, összetettsége kiváló. Korszerű, hatékony nyelvi elemeket tartalmaz. Jól strukturált, áttekinthető, öndokumentáló, újrafelhasználható. Megvalósított a teljeskörű hiba- és kivételkezelés. Erőforrás-ütemezés szempontjából optimalizált.</li>
+                <p id="criterion-leiras-6">Kódminőség.</p>
+                <ul id="criterion-pontok-6">
+                    <li>0: A forráskód tartalma, mennyisége, szerkezete nem megfelelő.</li>
+                    <li>1-2: A forráskód megfelelő, de nehezen áttekinthető, strukturálatlan.</li>
+                    <li>3-4: A forráskód tartalma, mennyisége, összetettsége jó. Jól strukturált, áttekinthető.</li>
+                    <li>5: A forráskód kiváló. Korszerű, hatékony, öndokumentáló, újrafelhasználható.</li>
                 </ul>
                 <input type="range" id="pont6" min="0" max="5" step="0.5" value="0">
                 <div class="skala">
                     <span>0</span><span>0.5</span><span>1</span><span>1.5</span><span>2</span>
                     <span>2.5</span><span>3</span><span>3.5</span><span>4</span><span>4.5</span><span>5</span>
                 </div>
-                <div class="pont-kijelzo">Adott pont: <span id="ertek6">0</span></div>
+                <div class="pont-kijelzo"><span id="pont-kijelzo-label-6">Adott pont:</span> <span id="ertek6">0</span></div>
                 <textarea id="megjegyzes6" placeholder="Rövid indoklás (opcionális)"></textarea>
             </div>
 
             <div class="ertekeles">
                 <div class="cim">
                     <p class="number">7.</p>
-                    <h2>Megvalósítás minősége III.</h2>
+                    <h2 id="criterion-cim-7">Megvalósítás minősége III.</h2>
                 </div>
-                <p>Fejlesztési- és felhasználói dokumentáció.</p>
-                <ul>
-                    <li>0: A Fejlesztési- és felhasználói dokumentáció nem felel meg a követelményeknek </li>
-                    <li>1-2: A Fejlesztési- és felhasználói dokumentáció elnagyolt, hiányos, szerkezete logikátlan. </li>
-                    <li>3-4: A Fejlesztési- és felhasználói dokumentáció tartalmazza a fontosabb fejezeteket, szerkezete logikus, a fejezetek közötti kohézió jó. </li>
-                    <li>5: A Fejlesztési- és felhasználói dokumentáció kiváló színvonalú, a dokumentálási szabályoknak teljes mértékben megfelel.</li>
+                <p id="criterion-leiras-7">Fejlesztési- és felhasználói dokumentáció.</p>
+                <ul id="criterion-pontok-7">
+                    <li>0: A Fejlesztési- és felhasználói dokumentáció nem felel meg a követelményeknek.</li>
+                    <li>1-2: A dokumentáció elnagyolt, hiányos, szerkezete logikátlan.</li>
+                    <li>3-4: A dokumentáció tartalmazza a fontosabb fejezeteket, szerkezete logikus.</li>
+                    <li>5: A dokumentáció kiváló színvonalú, a dokumentálási szabályoknak teljes mértékben megfelel.</li>
                 </ul>
                 <input type="range" id="pont7" min="0" max="5" step="0.5" value="0">
                 <div class="skala">
                     <span>0</span><span>0.5</span><span>1</span><span>1.5</span><span>2</span>
                     <span>2.5</span><span>3</span><span>3.5</span><span>4</span><span>4.5</span><span>5</span>
                 </div>
-                <div class="pont-kijelzo">Adott pont: <span id="ertek7">0</span></div>
+                <div class="pont-kijelzo"><span id="pont-kijelzo-label-7">Adott pont:</span> <span id="ertek7">0</span></div>
                 <textarea id="megjegyzes7" placeholder="Rövid indoklás (opcionális)"></textarea>
             </div>
 
             <div class="ertekeles">
                 <div class="cim">
                     <p class="number">8.</p>
-                    <h2>Megvalósítás minősége IV.</h2>
+                    <h2 id="criterion-cim-8">Megvalósítás minősége IV.</h2>
                 </div>
-                <p>Tesztelés, futtatás.</p>
-                <ul>
-                    <li>0: A dolgozat nem tartalmaz teszteléshez köthető részeket. A szoftver nem futtatható és/vagy nem a terveknek megfelelően működik. </li>
-                    <li>1-2: A dolgozatban megjelennek a teszteléssel kapcsolatos törekvések, de elnagyoltak, hiányosak. </li>
+                <p id="criterion-leiras-8">Tesztelés, futtatás.</p>
+                <ul id="criterion-pontok-8">
+                    <li>0: A dolgozat nem tartalmaz teszteléshez köthető részeket. A szoftver nem futtatható.</li>
+                    <li>1-2: A dolgozatban megjelennek a teszteléssel kapcsolatos törekvések, de elnagyoltak, hiányosak.</li>
                     <li>3-4: Jó színvonalú, de nem teljes körű tesztelés.</li>
-                    <li>5: Teljes körű és jól dokumentált validáció és verifikáció (formális módszerek, tesztelési terv, tesztelési jegyzőkönyv és jelentés). </li>
+                    <li>5: Teljes körű és jól dokumentált validáció és verifikáció.</li>
                 </ul>
                 <input type="range" id="pont8" min="0" max="5" step="0.5" value="0">
                 <div class="skala">
                     <span>0</span><span>0.5</span><span>1</span><span>1.5</span><span>2</span>
                     <span>2.5</span><span>3</span><span>3.5</span><span>4</span><span>4.5</span><span>5</span>
                 </div>
-                <div class="pont-kijelzo">Adott pont: <span id="ertek8">0</span></div>
+                <div class="pont-kijelzo"><span id="pont-kijelzo-label-8">Adott pont:</span> <span id="ertek8">0</span></div>
                 <textarea id="megjegyzes8" placeholder="Rövid indoklás (opcionális)"></textarea>
             </div>
 
             <div class="ertekeles">
                 <div class="cim">
                     <p class="number">9.</p>
-                    <h2>A szakdolgozat összefoglalása.</h2>
+                    <h2 id="criterion-cim-9">A szakdolgozat összefoglalása.</h2>
                 </div>
-                <ul>
-                    <li>0: Zavaros, leíró összefoglalás, tézisek nélkül. </li>
-                    <li>1-2: Leíró jellegű összefoglalás, elnagyolt. </li>
+                <p id="criterion-leiras-9"></p>
+                <ul id="criterion-pontok-9">
+                    <li>0: Zavaros, leíró összefoglalás, tézisek nélkül.</li>
+                    <li>1-2: Leíró jellegű összefoglalás, elnagyolt.</li>
                     <li>3-4: Világos tagolt összefoglalás, korrekt.</li>
-                    <li>5: Kifogástalan, lényegre törő, továbbtervező. </li>
+                    <li>5: Kifogástalan, lényegre törő, továbbtervező.</li>
                 </ul>
                 <input type="range" id="pont9" min="0" max="5" step="0.5" value="0">
                 <div class="skala">
                     <span>0</span><span>0.5</span><span>1</span><span>1.5</span><span>2</span>
                     <span>2.5</span><span>3</span><span>3.5</span><span>4</span><span>4.5</span><span>5</span>
                 </div>
-                <div class="pont-kijelzo">Adott pont: <span id="ertek9">0</span></div>
+                <div class="pont-kijelzo"><span id="pont-kijelzo-label-9">Adott pont:</span> <span id="ertek9">0</span></div>
                 <textarea id="megjegyzes9" placeholder="Rövid indoklás (opcionális)"></textarea>
             </div>
 
             <div class="ertekeles">
                 <div class="cim">
                     <p class="number">10.</p>
-                    <h2>Összbenyomás, konzulens/opponens véleménye</h2>
+                    <h2 id="criterion-cim-10">Összbenyomás, konzulens/opponens véleménye</h2>
                 </div>
-                <ul>
-                    <li>0: A dolgozat szakmailag nem releváns, tartalmi formai követelményeknek nem felel meg. </li>
-                    <li>1-2: A dolgozat szakmailag kevésbé releváns, tartalmi formai követelményeknek megfelel. </li>
+                <p id="criterion-leiras-10"></p>
+                <ul id="criterion-pontok-10">
+                    <li>0: A dolgozat szakmailag nem releváns, tartalmi formai követelményeknek nem felel meg.</li>
+                    <li>1-2: A dolgozat szakmailag kevésbé releváns, tartalmi formai követelményeknek megfelel.</li>
                     <li>3-4: A dolgozat korrekt szakmai és módszertani felkészültséget tükröz.</li>
-                    <li>5: A dolgozat kiváló szakmai felkészültséget tükröz. </li>
+                    <li>5: A dolgozat kiváló szakmai felkészültséget tükröz.</li>
                 </ul>
                 <input type="range" id="pont10" min="0" max="5" step="0.5" value="0">
                 <div class="skala">
                     <span>0</span><span>0.5</span><span>1</span><span>1.5</span><span>2</span>
                     <span>2.5</span><span>3</span><span>3.5</span><span>4</span><span>4.5</span><span>5</span>
                 </div>
-                <div class="pont-kijelzo">Adott pont: <span id="ertek10">0</span></div>
+                <div class="pont-kijelzo"><span id="pont-kijelzo-label-10">Adott pont:</span> <span id="ertek10">0</span></div>
                 <textarea id="megjegyzes10" placeholder="Rövid indoklás (opcionális)"></textarea>
             </div>
 
         </div>
 
-
         <div id="szoveges-szekció">
-            <h2>A dolgozat rövid szöveges értékelése (opcionális)</h2>
+            <h2 id="szoveges-ertekeles-cim">A dolgozat rövid szöveges értékelése (opcionális)</h2>
             <textarea id="rovidErtekeles" placeholder="Írja be a rövid szöveges értékelést..."></textarea>
         </div>
 
-
         <div id="biraloi-szekció">
-            <h2>A bíráló javaslatai a védéshez (opcionális)</h2>
+            <h2 id="biraloi-javaslat-cim">A bíráló javaslatai a védéshez (opcionális)</h2>
             <textarea id="bitraloiJavaslat" placeholder="Írja be a védéshez kapcsolódó javaslatokat..."></textarea>
         </div>
 
-
         <div id="kerdesek-szekció">
-            <h2>A hallgató által megválaszolandó kérdések <span class="kotelezo">*</span></h2>
+            <h2 id="kerdesek-cim">A hallgató által megválaszolandó kérdések <span class="kotelezo">*</span></h2>
             <ul id="kerdesek-lista">
-                <li><input type="text" class="kerdes-input" placeholder="1. kérdés"></li>
-                <li><input type="text" class="kerdes-input" placeholder="2. kérdés"></li>
+                <li class="kerdes-sor">
+                    <input type="text" class="kerdes-input" placeholder="1. kérdés">
+                    <button type="button" class="kerdes-torol" onclick="this.parentElement.remove()">&#215;</button>
+                </li>
+                <li class="kerdes-sor">
+                    <input type="text" class="kerdes-input" placeholder="2. kérdés">
+                    <button type="button" class="kerdes-torol" onclick="this.parentElement.remove()">&#215;</button>
+                </li>
             </ul>
             <button type="button" id="uj-kerdes-gomb" onclick="ujKerdesHozzaad()">+ Új kérdés hozzáadása</button>
         </div>
@@ -294,8 +299,8 @@
 
     <footer>
         <div id="ossz-info">
-            <p>Összpontszám: <span id="osszpontszam">0</span> / 50</p>
-            <p>Javasolt érdemjegy: <span id="javaslat">-</span></p>
+            <p><span id="ossz-label">Összpontszám:</span> <span id="osszpontszam">0</span> / 50</p>
+            <p><span id="javaslat-label">Javasolt érdemjegy:</span> <span id="javaslat">-</span></p>
         </div>
         <div id="gombok">
             <button type="button" onclick="downloadpdf()">&#128196; PDF letöltése</button>
@@ -308,9 +313,9 @@
 </div>
 
 <div id="sticky-bar">
-    <span>Összpontszám: <strong id="osszpontszam-sticky">0</strong> / 50</span>
+    <span><span id="sticky-ossz-label">Összpontszám:</span> <strong id="osszpontszam-sticky">0</strong> / 50</span>
     <span id="sticky-sep">|</span>
-    <span>Javasolt érdemjegy: <strong id="javaslat-sticky">-</strong></span>
+    <span><span id="sticky-javaslat-label">Javasolt érdemjegy:</span> <strong id="javaslat-sticky">-</strong></span>
 </div>
 
 <script src="javas.js"></script>
