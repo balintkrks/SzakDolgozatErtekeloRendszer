@@ -1,18 +1,142 @@
-{
-"cimSor": "Szakdolgozati Bírálati Lap",
-"ertekelo":["Opponens", "Konzulens"],
-"hallgato":{
-	"cimSor": "Hallgató adatai",
-	"nev": "Hallgató neve:",
-	"neptun": "A hallgató Neptun kódja:",
-	"szak": "A hallgató szakja:",
-	"cim": "A szakdolgozat címe:"
-	},
-	
-"ertekelesReszCimsor": "Értékelési szempontok",
-"elso":{
-	"cimSor": "A szakdolgozat szerkezeti felépítése, tartalmi tagolása, alaki megjelenése.",
-	"magyarazat": "A dolgozat szerkezeti felépítése és alaki megjelenése.",
-	"szempontok": ["0: A dolgozat nem felel meg az EKKE szakdolgozati követelményeinek", "1-2: A követelményeknek lényegében megfelel, de nagyobb hiányosságokkal.", "3-4: A követelményeknek lényegében megfelel, kisebb hiányosságokkal.", "5: Kifogástalan szerkezet, tartalmi tagolás, szép kivitel."]
-	}
-}
+hu: {
+        pageTitle: "Szakdolgozati Bírálati Lap",
+        headerCim: "Szakdolgozati Bírálati Lap",
+        szerepkorKonzulens: "Konzulens",
+        szerepkorOpponens: "Opponens",
+        hallgatoAdatai: "Hallgató adatai",
+        hallgatoNeve: "A hallgató neve:",
+        hallgatoNeptun: "A hallgató Neptun kódja:",
+        hallgatoSzak: "A hallgató szakja:",
+        hallgatoCim: "A szakdolgozat címe:",
+        szakProgramtervezo: "Programtervező informatikus",
+        szakGazdasagi: "Gazdasági Informatikus",
+        ertekelesekCim: "Értékelési szempontok",
+        adottPont: "Adott pont:",
+        megjegyzesPlaceholder: "Rövid indoklás (opcionális)",
+        szovegesErtekelesCim: "A dolgozat rövid szöveges értékelése (opcionális)",
+        szovegesErtekelesPlaceholder: "Írja be a rövid szöveges értékelést...",
+        biraloiJavaslatkCim: "A bíráló javaslatai a védéshez (opcionális)",
+        biraloiJavaslatkPlaceholder: "Írja be a védéshez kapcsolódó javaslatokat...",
+        kerdesekCim: "A hallgató által megválaszolandó kérdések",
+        kerdesPlaceholder: "kérdés",
+        ujKerdesGomb: "+ Új kérdés hozzáadása",
+        osszpontszam: "Összpontszám:",
+        javasoltErdemjegy: "Javasolt érdemjegy:",
+        pdfGomb: "📄 PDF letöltése",
+        wordGomb: "📝 Word letöltése",
+        latexGomb: "🔤 LaTeX letöltése",
+        zipGomb: "📦 ZIP letöltése",
+        elegtelenLabel: "Elégtelen (1)",
+        elegsegessLabel: "Elégséges (2)",
+        kozepesLabel: "Közepes (3)",
+        joLabel: "Jó (4)",
+        jelesLabel: "Jeles (5)",
+        validNevKotelezo: "A hallgató neve kötelező!",
+        validNevSzam: "A hallgató neve nem tartalmazhat számot!",
+        validNeptun: "A Neptun kód pontosan 6 karakter lehet, csak betű és szám!",
+        validCim: "A szakdolgozat címe kötelező!",
+        hibaSzerver: "A szerver hibát adott vissza: ",
+        hibaLetoltes: "Hiba a letöltés során: ",
+        criteria: [
+            {
+                cim: "A szakdolgozat szerkezeti felépítése, tartalmi tagolása, alaki megjelenése.",
+                leiras: "A dolgozat szerkezeti felépítése és alaki megjelenése.",
+                pontok: [
+                    "0: A dolgozat nem felel meg az EKKE szakdolgozati követelményeinek",
+                    "1-2: A követelményeknek lényegében megfelel, de nagyobb hiányosságokkal.",
+                    "3-4: A követelményeknek lényegében megfelel, kisebb hiányosságokkal.",
+                    "5: Kifogástalan szerkezet, tartalmi tagolás, szép kivitel."
+                ]
+            },
+            {
+                cim: "Nyelvezet és stílus",
+                leiras: "A dolgozat nyelvezete és stílusa.",
+                pontok: [
+                    "0: Nyelvezete mondatszerkesztése erősen kifogásolható, durva helyesírási hibákat tartalmaz.",
+                    "1-2: Nyelvezet, stílusa sok hiányossággal, kisebb helyesírási hibákat tartalmaz.",
+                    "3-4: Nyelvezete megfelelő, kevés stílushibával.",
+                    "5: Kifogástalan nyelvezet és stílus."
+                ]
+            },
+            {
+                cim: "Szakirodalmi háttér",
+                leiras: "A felhasznált szakirodalom minősége.",
+                pontok: [
+                    "0: A szakirodalom nem releváns. A hivatkozások hiányoznak, vagy nem szakszerűek.",
+                    "1-2: A szakirodalom feltárása szűk körű, csak tankönyvek, vagy jegyzetek anyagát tartalmazza.",
+                    "3-4: Legfontosabb szakirodalmakat, korrekt hivatkozásokat tartalmaz a dolgozat.",
+                    "5: Legújabb széles körű szakirodalom alapján íródott a dolgozat. Hivatkozások pontosak."
+                ]
+            },
+            {
+                cim: "A megvalósított feladat nehézsége",
+                leiras: "A szakmai színvonal és bonyolultság.",
+                pontok: [
+                    "0: A megvalósított feladat nem teljesíti a szakdolgozattól elvárt nehézségi szintet.",
+                    "1-2: A megvalósított feladat éppen teljesíti a szakdolgozattól elvárt nehézségi szintet.",
+                    "3-4: A megvalósított feladat teljesíti a szakdolgozattól elvárt nehézségi szintet.",
+                    "5: A megvalósított feladat túlmutat a szakdolgozattól elvárt nehézségi szinten."
+                ]
+            },
+            {
+                cim: "Megvalósítás minősége I.",
+                leiras: "A feladat ismertetése, a célkitűzés definiálása (specifikáció, megvalósítási terv, összefüggések elemzése).",
+                pontok: [
+                    "0: A dolgozatból a feladat ismertetése, illetve a célkitűzés definiálása teljes mértékben hiányzik.",
+                    "1-2: A dolgozatban megjelenik a feladat ismertetése, de a leírás alapszintű, elnagyolt, hiányos.",
+                    "3-4: A feladat ismertetése formailag megfelelő, egy alapszintű leíráson túlmutat, de nem teljes.",
+                    "5: A feladat ismertetése szakmailag korrekt, formailag megfelelő, teljes és ellentmondásmentes."
+                ]
+            },
+            {
+                cim: "Megvalósítás minősége II.",
+                leiras: "Kódminőség.",
+                pontok: [
+                    "0: A forráskód tartalma, mennyisége, szerkezete nem megfelelő.",
+                    "1-2: A forráskód megfelelő, de nehezen áttekinthető, strukturálatlan.",
+                    "3-4: A forráskód tartalma, mennyisége, összetettsége jó. Jól strukturált, áttekinthető.",
+                    "5: A forráskód kiváló. Korszerű, hatékony, öndokumentáló, újrafelhasználható."
+                ]
+            },
+            {
+                cim: "Megvalósítás minősége III.",
+                leiras: "Fejlesztési- és felhasználói dokumentáció.",
+                pontok: [
+                    "0: A Fejlesztési- és felhasználói dokumentáció nem felel meg a követelményeknek.",
+                    "1-2: A dokumentáció elnagyolt, hiányos, szerkezete logikátlan.",
+                    "3-4: A dokumentáció tartalmazza a fontosabb fejezeteket, szerkezete logikus.",
+                    "5: A dokumentáció kiváló színvonalú, a dokumentálási szabályoknak teljes mértékben megfelel."
+                ]
+            },
+            {
+                cim: "Megvalósítás minősége IV.",
+                leiras: "Tesztelés, futtatás.",
+                pontok: [
+                    "0: A dolgozat nem tartalmaz teszteléshez köthető részeket. A szoftver nem futtatható.",
+                    "1-2: A dolgozatban megjelennek a teszteléssel kapcsolatos törekvések, de elnagyoltak, hiányosak.",
+                    "3-4: Jó színvonalú, de nem teljes körű tesztelés.",
+                    "5: Teljes körű és jól dokumentált validáció és verifikáció."
+                ]
+            },
+            {
+                cim: "A szakdolgozat összefoglalása.",
+                leiras: "",
+                pontok: [
+                    "0: Zavaros, leíró összefoglalás, tézisek nélkül.",
+                    "1-2: Leíró jellegű összefoglalás, elnagyolt.",
+                    "3-4: Világos tagolt összefoglalás, korrekt.",
+                    "5: Kifogástalan, lényegre törő, továbbtervező."
+                ]
+            },
+            {
+                cim: "Összbenyomás, konzulens/opponens véleménye",
+                leiras: "",
+                pontok: [
+                    "0: A dolgozat szakmailag nem releváns, tartalmi formai követelményeknek nem felel meg.",
+                    "1-2: A dolgozat szakmailag kevésbé releváns, tartalmi formai követelményeknek megfelel.",
+                    "3-4: A dolgozat korrekt szakmai és módszertani felkészültséget tükröz.",
+                    "5: A dolgozat kiváló szakmai felkészültséget tükröz."
+                ]
+            }
+        ]
+    }
