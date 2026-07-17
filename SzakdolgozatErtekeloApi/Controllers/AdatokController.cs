@@ -22,15 +22,17 @@ namespace SzakdolgozatErtekeloApi.Controllers
             _pdfService = pdfService;
             _wordService = wordService;
             _latexService = latexService;
-            folder = Path.Combine(env.ContentRootPath, "Doksik");
+            folder = Path.Combine(env.ContentRootPath);
         }
 
         //Letezik-e a mappa ha nem megcsinálni
-        private void KonyvtarEllenorzes()
+        private void KonyvtarEllenorzes(string konyvtar)
         {
-            if (!Directory.Exists(folder))
+            string ut = Path.Combine(folder, konyvtar);
+
+            if (!Directory.Exists(ut))
             {
-                Directory.CreateDirectory(folder);
+                Directory.CreateDirectory(ut);
             }
         }
 
@@ -40,7 +42,7 @@ namespace SzakdolgozatErtekeloApi.Controllers
         {
             try
             {
-                KonyvtarEllenorzes();
+                KonyvtarEllenorzes("Doksik");
 
                 string path = Path.Combine(folder, "Biralat.pdf");
 
@@ -73,7 +75,7 @@ namespace SzakdolgozatErtekeloApi.Controllers
         {
             try
             {
-                KonyvtarEllenorzes();
+                KonyvtarEllenorzes("Doksik");
 
                 string path = Path.Combine(folder, "Biralat.docx");
 
@@ -106,7 +108,7 @@ namespace SzakdolgozatErtekeloApi.Controllers
         {
             try
             {
-                KonyvtarEllenorzes();
+                KonyvtarEllenorzes("Doksik");
 
                 string path = Path.Combine(folder, "Biralat.tex");
 
@@ -160,6 +162,59 @@ namespace SzakdolgozatErtekeloApi.Controllers
                 memoryStream.Position = 0;
 
                 return File(memoryStream.ToArray(), "application/zip", "Dokumentumok.zip");
+            }
+            catch (Exception)
+            {
+                return StatusCode(500);
+            }
+
+        }
+
+        //Loakalizációs file visszaadása
+        [HttpPost("get-lokalizacio")]
+        public IActionResult GetLokalizacio([FromBody] LokalizacioDTO adatok)//nincs meg
+        {
+            try
+            {
+                KonyvtarEllenorzes("Lokalizacio");
+                string path = string.Empty;
+                string fileName = string.Empty;
+
+                switch (adatok.Nyelv)
+                {
+                    case Enumok.Nyelv.Hu:
+                        {
+                            path = Path.Combine(folder, "Magyar.json");
+                            fileName = "Magyar.json";
+                            break;
+                        }
+
+                    case Enumok.Nyelv.En:
+                        {
+                            path = Path.Combine(folder, "Angol.json");
+                            fileName = "Angol.json";
+                            break;
+                        }
+
+                    default:
+                        {
+                            return BadRequest();
+                        }
+                }
+
+                if (!System.IO.File.Exists(path))
+                {
+                    return NotFound("Nincs ilyen lokalizálás!");
+                }
+
+                FileExtensionContentTypeProvider provider = new FileExtensionContentTypeProvider();
+
+                if (!provider.TryGetContentType(path, out string? contentType))
+                {
+                    contentType = "application/json";
+                }
+
+                return PhysicalFile(path, "text/json", fileName);
             }
             catch (Exception)
             {

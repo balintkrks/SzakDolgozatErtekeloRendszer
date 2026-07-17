@@ -11,4 +11,16 @@
         Konzulens,
         Opponens
     }
+
+    public enum Nyelv
+    {
+        Hu,
+        En
+    }
+
+    public enum Laptipus
+    {
+        Allatalanos,
+        Tudomanyos
+    }
 }

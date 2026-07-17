@@ -1,0 +1,18 @@
+{
+"cimSor": "Szakdolgozati Bírálati Lap",
+"ertekelo":["Opponens", "Konzulens"],
+"hallgato":{
+	"cimSor": "Hallgató adatai",
+	"nev": "Hallgató neve:",
+	"neptun": "A hallgató Neptun kódja:",
+	"szak": "A hallgató szakja:",
+	"cim": "A szakdolgozat címe:"
+	},
+	
+"ertekelesReszCimsor": "Értékelési szempontok",
+"elso":{
+	"cimSor": "A szakdolgozat szerkezeti felépítése, tartalmi tagolása, alaki megjelenése.",
+	"magyarazat": "A dolgozat szerkezeti felépítése és alaki megjelenése.",
+	"szempontok": ["0: A dolgozat nem felel meg az EKKE szakdolgozati követelményeinek", "1-2: A követelményeknek lényegében megfelel, de nagyobb hiányosságokkal.", "3-4: A követelményeknek lényegében megfelel, kisebb hiányosságokkal.", "5: Kifogástalan szerkezet, tartalmi tagolás, szép kivitel."]
+	}
+}
