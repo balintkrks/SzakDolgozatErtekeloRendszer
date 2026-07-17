@@ -174,14 +174,14 @@ function getAllData() {
 
 var lang = "hu";
 
-var i18n = {
-    hu: {
-        pageTitle: "Szakdolgozati Bírálati Lap",
-        headerCim: "Szakdolgozati Bírálati Lap",
-        szerepkorKonzulens: "Konzulens",
-        szerepkorOpponens: "Opponens",
-        hallgatoAdatai: "Hallgató adatai",
-        hallgatoNeve: "A hallgató neve:",
+var i18n = {                                                                // var i18n = {
+    hu: {                                                                       //hu : {
+        pageTitle: "Szakdolgozati Bírálati Lap",                                     //alt: {       (ez a magyar általános lenne és a többi is így tehát négy ilyen tudom elvileg a tudományos angol nem kell de most miért ne legyen nem sokkal több dolog)
+        headerCim: "Szakdolgozati Bírálati Lap",                                        //},
+        szerepkorKonzulens: "Konzulens",                                            //tud:{
+        szerepkorOpponens: "Opponens",                                              //}
+        hallgatoAdatai: "Hallgató adatai",                                      //},
+        hallgatoNeve: "A hallgató neve:",                                       //en: { .....}
         hallgatoNeptun: "A hallgató Neptun kódja:",
         hallgatoSzak: "A hallgató szakja:",
         hallgatoCim: "A szakdolgozat címe:",
@@ -461,9 +461,9 @@ var i18n = {
     }
 };
 
-function setLanguage(newLang) {
-    lang = newLang;
-    var t = i18n[lang];
+function setLanguage(newLang) {                     // function valaminev(newLang, newMode)
+    lang = newLang;                                 // lang = newlang;  mode = newMode
+    var t = i18n[lang];                             // var t = i18n[lang][mode]
 
     document.title = t.pageTitle;
     document.documentElement.lang = lang;
@@ -558,5 +558,49 @@ function neptunSzures() {
 window.onload = function() {
     attachListeners(1, 10);
     document.getElementById("kod").addEventListener("input", neptunSzures);
-    setLanguage("hu");
+    
+    const langText = document.getElementById("langText");
+
+    var currentlang = "hu";
+    var currentmod = "alt";
+
+    document.getElementById("langSwitch").addEventListener("change", function(){
+
+            if(this.checked){           
+                setLanguage("en");        //currentlang = "en";
+                langText.textContent = "Angol";
+
+            }
+            else{
+
+                setLanguage("hu");          //currentlang = "hu"
+                langText.textContent = "Magyar";
+
+            }
+            //majd itt a függvényhívás csak már akkor két paraméteres   valaminev(currentlang, currentmod)
+
+    });
+
+    const modeText = document.getElementById("modeText");
+
+    document.getElementById("modeSwitch").addEventListener("change", function(){
+
+        if(this.checked){
+
+            modeText.textContent = "Tudományos";
+
+            // Ide jön majd a függvényhívás
+
+        }
+        else{
+
+            modeText.textContent = "Általános";
+
+            // Ide jön majd a függvényhívás
+
+        }
+
+    });
 };
+
+
