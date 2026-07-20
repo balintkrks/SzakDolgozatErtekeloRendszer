@@ -23,16 +23,29 @@ namespace SzakdolgozatErtekeloApi.Services
 
                     page.Content().Column(column =>
                     {
-                        CreateHeader(column);
+                        CreateHeader(column, adatok);
                         CreateStudentInfo(column, adatok);
 
-                        var templates = EvaulationTemplate.GetDefaultCriteria();
+                        List<EvaluationCriterion> templates;
 
-                        foreach (var ertekeles in adatok.Ertekelesek)
+                        if (adatok.OldalNyelve == Nyelv.En)
                         {
-                            var template = templates.FirstOrDefault(x => x.ID == ertekeles.ID);
+                            templates = EvaulationTemplate.GetEnglishCriteria();
+                        }
+                        else if (adatok.Laptipusa == Laptipus.Tudomanyos)
+                        {
+                            templates = EvaulationTemplate.GetScientificCriteria();
+                        }
+                        else
+                        {
+                            templates = EvaulationTemplate.GetDefaultCriteria();
+                        }
 
-                            CreateEvaluationTable(column, template, ertekeles);
+                        foreach (ErtekelesDTO ertekeles in adatok.Ertekelesek)
+                        {
+                            EvaluationCriterion template = templates.FirstOrDefault(x => x.ID == ertekeles.ID);
+
+                            CreateEvaluationTable(column, template, ertekeles, adatok);
                         }
 
                         CreateSummary(column, adatok);
@@ -43,26 +56,46 @@ namespace SzakdolgozatErtekeloApi.Services
             }).GeneratePdf(filePath);
         }
 
-        private void CreateHeader(ColumnDescriptor column)
+        private void CreateHeader(ColumnDescriptor column, AdatokDTO adatok)
         {
-            column.Item()
-                .AlignCenter()
-                .Text("ESZTERHÁZY KÁROLY KATOLIKUS EGYETEM")
-                .Bold()
-                .FontSize(14);
+            if (adatok.OldalNyelve == Nyelv.En)
+            {
+                column.Item()
+                    .AlignCenter()
+                    .Text("ESZTERHÁZY KÁROLY CATHOLIC UNIVERSITY")
+                    .Bold()
+                    .FontSize(14);
 
-            column.Item()
-                .PaddingTop(10)
-                .AlignCenter()
-                .Text("SZAKDOLGOZAT BÍRÁLATI LAP")
-                .Bold()
-                .FontSize(18);
+                column.Item()
+                    .PaddingTop(10)
+                    .AlignCenter()
+                    .Text("THESIS WORK REVIEW SHEET")
+                    .Bold()
+                    .FontSize(18);
+            }
+            else
+            {
+                column.Item()
+                    .AlignCenter()
+                    .Text("ESZTERHÁZY KÁROLY KATOLIKUS EGYETEM")
+                    .Bold()
+                    .FontSize(14);
+
+                column.Item()
+                    .PaddingTop(10)
+                    .AlignCenter()
+                    .Text("SZAKDOLGOZAT BÍRÁLATI LAP")
+                    .Bold()
+                    .FontSize(18);
+            }
 
             column.Item().PaddingTop(30);
         }
 
         private void CreateStudentInfo(ColumnDescriptor column, AdatokDTO adatok)
         {
+            bool en = adatok.OldalNyelve == Nyelv.En;
+
             column.Item().Table(table =>
             {
                 table.ColumnsDefinition(columns =>
@@ -71,10 +104,21 @@ namespace SzakdolgozatErtekeloApi.Services
                     columns.RelativeColumn(2);
                 });
 
-                AddStudentRow(table, "A hallgató neve:", adatok.Hallgato.Nev);
-                AddStudentRow(table, "A hallgató Neptun kódja:", adatok.Hallgato.Netpun);
-                AddStudentRow(table, "A hallgató szakja:", adatok.Hallgato.Szak.ToString().Replace("_"," "));
-                AddStudentRow(table, "A szakdolgozat címe:", adatok.Hallgato.SzakdolgozatCime);
+                AddStudentRow(table,
+                    en ? "Name of the student:" : "A hallgató neve:",
+                    adatok.Hallgato.Nev);
+
+                AddStudentRow(table,
+                    en ? "The student's Neptun code:" : "A hallgató Neptun kódja:",
+                    adatok.Hallgato.Netpun);
+
+                AddStudentRow(table,
+                    en ? "The student's major:" : "A hallgató szakja:",
+                    adatok.Hallgato.Szak.ToString().Replace("_", " "));
+
+                AddStudentRow(table,
+                    en ? "Title of the thesis:" : "A szakdolgozat címe:",
+                    adatok.Hallgato.SzakdolgozatCime);
             });
 
             column.Item().PaddingTop(20);
@@ -92,8 +136,10 @@ namespace SzakdolgozatErtekeloApi.Services
                 .Text(value);
         }
 
-        private void CreateEvaluationTable(ColumnDescriptor column, EvaluationCriterion criterion,ErtekelesDTO ertekeles)
+        private void CreateEvaluationTable(ColumnDescriptor column, EvaluationCriterion criterion,ErtekelesDTO ertekeles, AdatokDTO adatok)
         {
+            bool en = adatok.OldalNyelve == Nyelv.En;
+
             column.Item().PaddingTop(15);
 
             column.Item().Table(table =>
@@ -114,7 +160,7 @@ namespace SzakdolgozatErtekeloApi.Services
                     .Padding(5)
                     .AlignCenter()
                     .AlignMiddle()
-                    .Text("Értékelési\nszempont")
+                    .Text(en ? "Evaluation\ncriteria" : "Értékelési\nszempont")
                     .Bold();
 
                 table.Cell()
@@ -122,7 +168,7 @@ namespace SzakdolgozatErtekeloApi.Services
                     .Border(1)
                     .Padding(5)
                     .AlignCenter()
-                    .Text("Adható pontszám")
+                    .Text(en ? "Awardable score" : "Adható pontszám")
                     .Bold();
 
                 table.Cell()
@@ -131,7 +177,7 @@ namespace SzakdolgozatErtekeloApi.Services
                     .Padding(5)
                     .AlignCenter()
                     .AlignMiddle()
-                    .Text("Elért\npontszám")
+                    .Text(en ? "Score\nachieved" : "Elért\npontszám")
                     .Bold();
 
                 table.Cell().Border(1).Padding(5).AlignCenter().Text("0").Bold();
@@ -154,25 +200,38 @@ namespace SzakdolgozatErtekeloApi.Services
                     .AlignMiddle()
                     .Text(ertekeles.Jegy.ToString())
                     .Bold();
-                    
+
             });
 
-            column.Item().PaddingTop(10);
+            if (en)
+            {
+                column.Item().PaddingTop(10);
+            }
+            else
+            {
+                column.Item().PaddingTop(adatok.Laptipusa == Laptipus.Tudomanyos ? 25 : 15);
+            }
+
+
 
             column.Item().Text(text =>
             {
-                text.Span("Rövid indoklás (opcionális): ").FontSize(9);
+                text.Span(en ? "Short justification (optional): " : "Rövid indoklás (opcionális): ").FontSize(9);
                 text.Span(ertekeles.Megjegyzes).FontSize(9);
             });
 
-            column.Item().PaddingBottom(30);
+            column.Item().PaddingBottom(adatok.Laptipusa == Laptipus.Tudomanyos ? 25 : 20);
         }
 
         private void CreateSummary(ColumnDescriptor column, AdatokDTO adatok)
         {
+            bool en = adatok.OldalNyelve == Nyelv.En;
+
             column.Item().PaddingTop(20);
 
             column.Item().Text(
+                en ?
+                "If one of the evaluation criteria is zero, then all scores are zero. Half points can also be given for evaluation." :
                 "Amennyiben az értékelési szempontok közül valamelyik nulla pont, akkor az összes pontszám is nulla. Értékelésnél fél pontok is adhatók.")
                 .FontSize(11);
 
@@ -196,7 +255,7 @@ namespace SzakdolgozatErtekeloApi.Services
                            table.Cell()
                                 .Border(1)
                                 .Padding(5)
-                                .Text("Összes pontszám")
+                                .Text(en ? "Total score:" : "Összes pontszám:")
                                 .Bold();
 
                            table.Cell()
@@ -213,7 +272,7 @@ namespace SzakdolgozatErtekeloApi.Services
             column.Item().PaddingTop(20);
 
             column.Item()
-                .Text("A dolgozat rövid szöveges értékelése (opcionális):")
+                .Text(en ? "Short text evaluation of the thesis (optional):" : "A dolgozat rövid szöveges értékelése (opcionális):")
                 .Bold()
                 .FontSize(12);
 
@@ -225,19 +284,20 @@ namespace SzakdolgozatErtekeloApi.Services
 
         private void CreateGradeSection(ColumnDescriptor column, AdatokDTO adatok)
         {
+            bool en = adatok.OldalNyelve == Nyelv.En;
+
             column.Item().PaddingTop(20);
+
+
+            column.Item().PaddingTop(5);
 
             column.Item().Text(text =>
             {
-                text.Span("Javasolt érdemjegy megállapítása (kötelező): ")
+                text.Span(en ? "Determination of recommended grade (required): " : "Javasolt érdemjegy megállapítása (kötelező): ")
                     .Bold();
 
                 text.Span(adatok.JavasoltErdemjegy);
             });
-
-            column.Item().PaddingTop(5);
-
-            column.Item().Text("A szakdolgozat javasolt érdemjegye az összesített pontszám alapján:");
 
             column.Item().PaddingTop(10);
 
@@ -260,17 +320,17 @@ namespace SzakdolgozatErtekeloApi.Services
                         .Text(points).FontSize(8);
                 }
 
-                AddRow("Elégtelen:", "8–25 pont");
-                AddRow("Elégséges:", "26–32 pont");
-                AddRow("Közepes:", "33–38 pont");
-                AddRow("Jó:", "39–44 pont");
-                AddRow("Jeles:", "45–50 pont");
+                AddRow(en ? "Insufficient:" : "Elégtelen:", en ? "8–25 points" : "8–25 pont");
+                AddRow(en ? "Sufficient:" : "Elégséges:", en ? "26–32 points" : "26–32 pont");
+                AddRow(en ? "Medium:" : "Közepes:", en ? "33–38 points" : "33–38 pont");
+                AddRow(en ? "Good:" : "Jó:", en ? "39–44 points" : "39–44 pont");
+                AddRow(en ? "Marked" : "Jeles:", en ? "45–50 points" : "45–50 pont");
             });
 
             column.Item().PaddingTop(20);
 
             column.Item()
-                .Text("A bíráló javaslatai a védéshez (opcionális):")
+                .Text(en ? "Reviewer's suggestions for defense (optional):" : "A bíráló javaslatai a védéshez (opcionális):")
                 .Bold();
 
             column.Item()
@@ -281,10 +341,12 @@ namespace SzakdolgozatErtekeloApi.Services
 
         private void CreateFinalSection(ColumnDescriptor column, AdatokDTO adatok)
         {
+            bool en = adatok.OldalNyelve == Nyelv.En;
+
             column.Item().PaddingTop(20);
 
             column.Item()
-                .Text("A hallgató által megválaszolandó kérdések (kötelező):")
+                .Text(en ? "Questions to be answered by the student (mandatory):" : "A hallgató által megválaszolandó kérdések (kötelező):")
                 .Bold();
 
             column.Item().PaddingTop(5);
@@ -305,19 +367,19 @@ namespace SzakdolgozatErtekeloApi.Services
                     columns.RelativeColumn();
                 });
 
-                var parts = adatok.JavasoltErdemjegy.Split('(');
+                string[] parts = adatok.JavasoltErdemjegy.Split('(');
 
                 string erdemjegySzoveg = parts[0].Trim();
                 string erdemjegySzam = parts[1].Replace(")", "").Trim();
 
 
 
-                table.Cell().Text("A szakdolgozat értékelése:").Bold();
-                table.Cell().Text($"betűvel: {erdemjegySzoveg}");
-                table.Cell().Text($"számmal: {erdemjegySzam}");
+                table.Cell().Text(en ? "of the thesis: " : "A szakdolgozat értékelése:").Bold();
+                table.Cell().Text(en ? $"by letter: {erdemjegySzoveg}" : $"betűvel: {erdemjegySzoveg}");
+                table.Cell().Text(en ? $"by number: {erdemjegySzam}" : $"számmal: {erdemjegySzam}");
             });
 
-            column.Item().PaddingTop(40);
+            column.Item().PaddingTop(90);
 
             column.Item().Row(row =>
             {
@@ -328,7 +390,7 @@ namespace SzakdolgozatErtekeloApi.Services
                     .AlignRight()
                     .Column(col =>
                     {
-                        col.Item().AlignCenter().Text($"{adatok.ErtekeloSzerepe} aláírása");
+                        col.Item().AlignCenter().Text(en ? $"Signature of {adatok.ErtekeloSzerepe}" : $"{adatok.ErtekeloSzerepe} aláírása");
                     });
             });
         }

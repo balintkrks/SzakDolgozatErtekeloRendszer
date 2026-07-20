@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SzakdolgozatErtekeloApi.DTO;
+using SzakdolgozatErtekeloApi.Enumok;
 using SzakdolgozatErtekeloApi.Templates;
 
 namespace SzakdolgozatErtekeloApi.Services
@@ -12,9 +13,20 @@ namespace SzakdolgozatErtekeloApi.Services
     {
         public void Generate(string outputPath, AdatokDTO adatok)
         {
-            var templatePath = Path.Combine(AppContext.BaseDirectory,"Templates","BiralatiLapTemplate.tex");
+            string templateName;
 
-            var latex = File.ReadAllText(templatePath);
+            if (adatok.OldalNyelve == Nyelv.En)
+            {
+                templateName = "BiralatiLapTemplateEn.tex";
+            }
+            else
+            {
+                templateName = "BiralatiLapTemplate.tex";
+            }
+
+            string templatePath = Path.Combine(AppContext.BaseDirectory, "Templates", templateName);
+
+            string latex = File.ReadAllText(templatePath);
 
             latex = Replace(latex, "HallgatoNev", adatok.Hallgato.Nev);
             latex = Replace(latex, "Neptun", adatok.Hallgato.Netpun);
@@ -30,7 +42,7 @@ namespace SzakdolgozatErtekeloApi.Services
             latex = Replace(latex, "Kerdesek", FormatQuestions(adatok.Kerdesek));
             latex = Replace(latex, "ErtekeloSzerepe", adatok.ErtekeloSzerepe.ToString());
 
-            var parts = adatok.JavasoltErdemjegy.Split('(');
+            string[] parts = adatok.JavasoltErdemjegy.Split('(');
 
             string erdemjegySzoveg = parts[0].Trim();
             string erdemjegySzam = parts[1].Replace(")", "").Trim();
@@ -50,11 +62,24 @@ namespace SzakdolgozatErtekeloApi.Services
 
         private void FillEvaluationTables(ref string latex, AdatokDTO adatok)
         {
-            var criteria = EvaulationTemplate.GetDefaultCriteria();
+            List<EvaluationCriterion> criteria;
 
-            foreach (var ertekeles in adatok.Ertekelesek)
+            if (adatok.OldalNyelve == Nyelv.En)
             {
-                var criterion = criteria.FirstOrDefault(x => x.ID == ertekeles.ID);
+                criteria = EvaulationTemplate.GetEnglishCriteria();
+            }
+            else if (adatok.Laptipusa == Laptipus.Tudomanyos)
+            {
+                criteria = EvaulationTemplate.GetScientificCriteria();
+            }
+            else
+            {
+                criteria = EvaulationTemplate.GetDefaultCriteria();
+            }
+
+            foreach (ErtekelesDTO ertekeles in adatok.Ertekelesek)
+            {
+                EvaluationCriterion criterion = criteria.FirstOrDefault(x => x.ID == ertekeles.ID);
 
                 if (criterion == null)
                     continue;

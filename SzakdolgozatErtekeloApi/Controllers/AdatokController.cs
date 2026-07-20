@@ -34,6 +34,7 @@ namespace SzakdolgozatErtekeloApi.Controllers
             {
                 Directory.CreateDirectory(ut);
             }
+            folder = Path.Combine(ut);
         }
 
         //Pdf generalasa
@@ -62,7 +63,7 @@ namespace SzakdolgozatErtekeloApi.Controllers
 
                 return PhysicalFile(path, "application/pdf", "Biralat.pdf");
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 return StatusCode(500);
             }
@@ -95,9 +96,9 @@ namespace SzakdolgozatErtekeloApi.Controllers
 
                 return PhysicalFile(path, "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "Biralat.docx");
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                return StatusCode(500);
+                return StatusCode(500,e.Message);
             }
 
         }

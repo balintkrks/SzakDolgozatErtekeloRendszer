@@ -1,6 +1,7 @@
 ﻿using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Wordprocessing;
 using SzakdolgozatErtekeloApi.DTO;
+using SzakdolgozatErtekeloApi.Enumok;
 using SzakdolgozatErtekeloApi.Templates;
 
 namespace SzakdolgozatErtekeloApi.Services
@@ -9,19 +10,24 @@ namespace SzakdolgozatErtekeloApi.Services
     {
         public void Generate(string outputPath, AdatokDTO adatok)
         {
-            var templatePath = Path.Combine(
-                AppContext.BaseDirectory,
-                "Templates",
-                "BiralatiLapTemplate.docx");
+            string templateName;
+
+            if (adatok.OldalNyelve == Nyelv.En)
+            {
+                templateName = "BiralatiLapTemplateEn.docx";
+            }
+            else
+            {
+                templateName = "BiralatiLapTemplate.docx";
+            }
+
+            string templatePath = Path.Combine(AppContext.BaseDirectory, "Templates", templateName);
 
 
-            File.Copy(
-                templatePath,
-                outputPath,
-                true);
+            File.Copy(templatePath, outputPath, true);
 
 
-            using var document = WordprocessingDocument.Open(outputPath, true);
+            using WordprocessingDocument document = WordprocessingDocument.Open(outputPath, true);
 
 
             ReplaceContentControl(document, "HallgatoNev", adatok.Hallgato.Nev);
@@ -37,14 +43,13 @@ namespace SzakdolgozatErtekeloApi.Services
             ReplaceContentControl(document, "BiroiJavaslat", adatok.BitraloiJavaslat ?? "");
             ReplaceContentControl(document, "Kerdesek", string.Join("\r\n", adatok.Kerdesek.Select((x, i) => $"{i + 1}. {x}")));
 
-            var parts = adatok.JavasoltErdemjegy.Split('(');
+            string[] parts = adatok.JavasoltErdemjegy.Split('(');
 
             string erdemjegySzoveg = parts[0].Trim();
             string erdemjegySzam = parts[1].Replace(")", "").Trim();
 
             ReplaceContentControl(document, "JavasoltErdemjegySzoveg", erdemjegySzoveg);
             ReplaceContentControl(document, "JavasoltErdemjegySzam", erdemjegySzam);
-
 
             ReplaceContentControl(document, "Datum", $"Eger, {DateTime.Now:yyyy.MM.dd.}");
 
@@ -55,9 +60,9 @@ namespace SzakdolgozatErtekeloApi.Services
 
         private void ReplaceContentControl(WordprocessingDocument document, string tag, string value)
         {
-            foreach (var control in document.MainDocumentPart!.Document.Descendants<SdtElement>())
+            foreach (SdtElement control in document.MainDocumentPart!.Document.Descendants<SdtElement>())
             {
-                var tagElement = control.SdtProperties?.GetFirstChild<Tag>();
+                Tag tagElement = control.SdtProperties?.GetFirstChild<Tag>();
 
                 if (tagElement == null)
                     continue;
@@ -65,7 +70,7 @@ namespace SzakdolgozatErtekeloApi.Services
                 if (tagElement.Val != tag)
                     continue;
 
-                var text = control.Descendants<Text>().FirstOrDefault();
+                Text text = control.Descendants<Text>().FirstOrDefault();
 
                 if (text != null)
                 {
@@ -78,12 +83,25 @@ namespace SzakdolgozatErtekeloApi.Services
 
         private void FillEvaluationTables(WordprocessingDocument document, AdatokDTO adatok)
         {
-            var criteria = EvaulationTemplate.GetDefaultCriteria();
+            List<EvaluationCriterion> criteria;
+
+            if (adatok.OldalNyelve == Nyelv.En)
+            {
+                criteria = EvaulationTemplate.GetEnglishCriteria();
+            }
+            else if (adatok.Laptipusa == Laptipus.Tudomanyos)
+            {
+                criteria = EvaulationTemplate.GetScientificCriteria();
+            }
+            else
+            {
+                criteria = EvaulationTemplate.GetDefaultCriteria();
+            }
 
             for (int i = 0; i < adatok.Ertekelesek.Count; i++)
             {
-                var ertekeles = adatok.Ertekelesek[i];
-                var criterion = criteria.First(x => x.ID == ertekeles.ID);
+                ErtekelesDTO ertekeles = adatok.Ertekelesek[i];
+                EvaluationCriterion criterion = criteria.First(x => x.ID == ertekeles.ID);
 
                 ReplaceContentControl(document, $"C{i + 1}Title", criterion.Title);
                 ReplaceContentControl(document, $"C{i + 1}Zero", criterion.ZeroPointText);
