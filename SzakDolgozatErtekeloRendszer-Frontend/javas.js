@@ -263,12 +263,24 @@ function applyTranslations(t) {
 }
 
 function updateModeSwitchVisibility() {
-    var modeInput = document.getElementById("modeSwitch");
-    if (!modeInput) return;
-    var modeLabel = modeInput.nextElementSibling;
-    var vis = lang === "en" ? "none" : "";
-    modeInput.style.display = vis;
-    if (modeLabel) modeLabel.style.display = vis;
+    var modeLabel = document.getElementById("modeSwitch");
+    if (!modeLabel) return;
+    var modeBox = modeLabel.nextElementSibling;
+    if (lang === "en") {
+        modeLabel.disabled = true;
+        if (modeBox) {
+            modeBox.style.opacity = "0.38";
+            modeBox.style.pointerEvents = "none";
+            modeBox.style.cursor = "default";
+        }
+    } else {
+        modeLabel.disabled = false;
+        if (modeBox) {
+            modeBox.style.opacity = "1";
+            modeBox.style.pointerEvents = "";
+            modeBox.style.cursor = "pointer";
+        }
+    }
 }
 
 function setLanguage(newLang) {

@@ -23,12 +23,37 @@ header {
 
 header p{
     justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #szerepkor {
-    width: 180px;
-    padding: 8px 12px;
-    font-size: 26px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' viewBox='0 0 12 7'%3E%3Cpath d='M1 1l5 4 5-4' stroke='white' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat right 16px center, linear-gradient(135deg, #4964e7, #314bd1);
+    color: white;
+    border: none;
+    padding: 11px 42px 11px 24px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(73,100,231,0.35);
+    transition: box-shadow 0.2s, transform 0.15s;
+    min-width: 160px;
+    text-align-last: center;
+}
+
+#szerepkor:hover {
+    box-shadow: 0 6px 22px rgba(73,100,231,0.5);
+    transform: translateY(-1px);
+}
+
+#szerepkor option {
+    background: white;
+    color: #1a1a1a;
+    font-weight: 500;
 }
 
 #tartalom{
@@ -249,12 +274,7 @@ header h2{
     text-align: center;
 }
 
-header select{
-    padding:12px 20px;
-    border-radius:12px;
-    border:1px solid #ccc;
-    font-size:16px;
-}
+
 
 input[type="range"]{
     -webkit-appearance: none;
@@ -473,6 +493,8 @@ button:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 16px;
+    padding: 8px 0;
 }
 
 #langSwitch{
@@ -480,74 +502,67 @@ button:hover{
 }
 
 .switch-box{
+    width: 150px;
+    height: 50px;
+    background: #e8ecff;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 20px;
+    transition: box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(73,100,231,0.12);
+}
 
-    width:150px;
-    height:50px;
-
-    background:#ddd;
-    border-radius:25px;
-
-    position:relative;
-
-    cursor:pointer;
-    user-select:none;
-
-    margin-left: 40px;
-    margin-bottom: 40px;
+.switch-box:hover {
+    box-shadow: 0 4px 14px rgba(73,100,231,0.22);
 }
 
 .lang-left{
-
-    position:absolute;
-    left:12px;
-    top:50%;
-
-    transform:translateY(-50%);
-
-    font-size:14px;
-    font-weight:bold;
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 13px;
+    font-weight: 700;
+    color: #4964e7;
+    transition: color 0.2s;
 }
 
 .lang-right{
-
-    position:absolute;
-    right:12px;
-    top:50%;
-
-    transform:translateY(-50%);
-
-    font-size:14px;
-    font-weight:bold;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 13px;
+    font-weight: 600;
+    color: #aab;
+    transition: color 0.2s;
 }
 
+#langSwitch:checked + .switch-box .lang-left { color: #aab; }
+#langSwitch:checked + .switch-box .lang-right { color: #4964e7; }
+
 .lang-circle{
-
-    width:74px;
-    height:46px;
-
-    background:white;
-
-    border-radius:23px;
-
-    position:absolute;
-
-    left:2px;
-    top:2px;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    font-weight:bold;
-
-    transition:0.3s;
-
-    box-shadow:0 2px 6px rgba(0,0,0,0.2);
+    width: 74px;
+    height: 46px;
+    background: linear-gradient(135deg, #4964e7, #314bd1);
+    border-radius: 23px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 13px;
+    color: white;
+    transition: 0.28s cubic-bezier(.4,0,.2,1);
+    box-shadow: 0 3px 10px rgba(73,100,231,0.45);
 }
 
 #langSwitch:checked + .switch-box .lang-circle{
-
-    transform:translateX(72px);
+    transform: translateX(72px);
 }
 
 #modeSwitch{
@@ -555,75 +570,65 @@ button:hover{
 }
 
 .mode-box{
+    width: 220px;
+    height: 50px;
+    background: #e8ecff;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 20px;
+    transition: box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(73,100,231,0.12);
+}
 
-    width:220px;
-    height:50px;
-
-    background:#ddd;
-    border-radius:25px;
-
-    position:relative;
-
-    cursor:pointer;
-    user-select:none;
-
-    margin-right: 40px;
-    margin-bottom: 40px;
+.mode-box:hover {
+    box-shadow: 0 4px 14px rgba(73,100,231,0.22);
 }
 
 .mode-left{
-
-    position:absolute;
-
-    left:12px;
-    top:50%;
-
-    transform:translateY(-50%);
-
-    font-size:14px;
-    font-weight:bold;
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 13px;
+    font-weight: 700;
+    color: #4964e7;
+    transition: color 0.2s;
 }
 
 .mode-right{
-
-    position:absolute;
-
-    right:12px;
-    top:50%;
-
-    transform:translateY(-50%);
-
-    font-size:14px;
-    font-weight:bold;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 13px;
+    font-weight: 600;
+    color: #aab;
+    transition: color 0.2s;
 }
 
+#modeSwitch:checked + .mode-box .mode-left { color: #aab; }
+#modeSwitch:checked + .mode-box .mode-right { color: #4964e7; }
+
 .mode-circle{
-
-    width:108px;
-    height:46px;
-
-    background:white;
-
-    border-radius:23px;
-
-    position:absolute;
-
-    left:2px;
-    top:2px;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    font-size:14px;
-    font-weight:bold;
-
-    transition:0.3s;
-
-    box-shadow:0 2px 6px rgba(0,0,0,0.2);
+    width: 108px;
+    height: 46px;
+    background: linear-gradient(135deg, #4964e7, #314bd1);
+    border-radius: 23px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 700;
+    color: white;
+    transition: 0.28s cubic-bezier(.4,0,.2,1);
+    box-shadow: 0 3px 10px rgba(73,100,231,0.45);
 }
 
 #modeSwitch:checked + .mode-box .mode-circle{
-
-    transform:translateX(108px);
+    transform: translateX(108px);
 }
