@@ -192,7 +192,7 @@ namespace SzakdolgozatErtekeloApi.Controllers
 
                     case Enumok.Nyelv.En:
                         {
-                            path = Path.Combine(folder, "Angol.json");
+                            path = Path.Combine(folder, "Lokalizacio", "Angol.json");
                             fileName = "Angol.json";
                             break;
                         }
