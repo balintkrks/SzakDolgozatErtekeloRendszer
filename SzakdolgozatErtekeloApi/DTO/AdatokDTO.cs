@@ -12,7 +12,7 @@ namespace SzakdolgozatErtekeloApi.DTO
         public string BitraloiJavaslat { get; set; }
         public List<string> Kerdesek { get; set; }
         public ErtekeloSzerepe ErtekeloSzerepe { get; set; }
-        public Nyelv OldalNyelve { get; set; } //kell?
+        public Nyelv OldalNyelve { get; set; }
         public Laptipus Laptipusa { get; set; }
     }
 }

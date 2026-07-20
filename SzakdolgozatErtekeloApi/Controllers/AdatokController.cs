@@ -34,7 +34,7 @@ namespace SzakdolgozatErtekeloApi.Controllers
             {
                 Directory.CreateDirectory(ut);
             }
-            folder = Path.Combine(ut);
+            
         }
 
         //Pdf generalasa
@@ -45,7 +45,7 @@ namespace SzakdolgozatErtekeloApi.Controllers
             {
                 KonyvtarEllenorzes("Doksik");
 
-                string path = Path.Combine(folder, "Biralat.pdf");
+                string path = Path.Combine(folder,"Doksik", "Biralat.pdf");
 
                 _pdfService.Generate(path, adatok);
 
@@ -63,7 +63,7 @@ namespace SzakdolgozatErtekeloApi.Controllers
 
                 return PhysicalFile(path, "application/pdf", "Biralat.pdf");
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return StatusCode(500);
             }
@@ -78,7 +78,7 @@ namespace SzakdolgozatErtekeloApi.Controllers
             {
                 KonyvtarEllenorzes("Doksik");
 
-                string path = Path.Combine(folder, "Biralat.docx");
+                string path = Path.Combine(folder, "Doksik", "Biralat.docx");
 
                 _wordService.Generate(path, adatok);
 
@@ -96,9 +96,9 @@ namespace SzakdolgozatErtekeloApi.Controllers
 
                 return PhysicalFile(path, "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "Biralat.docx");
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                return StatusCode(500,e.Message);
+                return StatusCode(500);
             }
 
         }
@@ -111,7 +111,7 @@ namespace SzakdolgozatErtekeloApi.Controllers
             {
                 KonyvtarEllenorzes("Doksik");
 
-                string path = Path.Combine(folder, "Biralat.tex");
+                string path = Path.Combine(folder, "Doksik", "Biralat.tex");
 
                 _latexService.Generate(path, adatok);
 
@@ -173,7 +173,7 @@ namespace SzakdolgozatErtekeloApi.Controllers
 
         //Loakalizációs file visszaadása
         [HttpPost("get-lokalizacio")]
-        public IActionResult GetLokalizacio([FromBody] LokalizacioDTO adatok)//nincs meg
+        public IActionResult GetLokalizacio([FromBody] LokalizacioDTO adatok)
         {
             try
             {
