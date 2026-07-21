@@ -40,7 +40,7 @@ en: {
         criteria: [
             {
                 cim: "The thesis's structure, content division, and appearance.",
-                leiras: "The thesis's structure, content division, and appearance.",
+                leiras: "",
                 pontok: [
                     "0: The thesis does not meet the thesis requirements of EKKE.",
                     "1-2: It meets the requirements, but with major shortcomings.",
@@ -50,27 +50,27 @@ en: {
             },
             {
                 cim: "The language, style and linguistic correctness of the thesis.",
-                leiras: "The language, style and linguistic correctness of the thesis.",
+                leiras: "",
                 pontok: [
-                    "0: Highly objectionable sentence structure, contains gross spelling errors.",
+                    "0: The sentence structure of his language is highly objectionable, it contains gross spelling errors.",
                     "1-2: Language and style with many shortcomings and minor spelling errors.",
                     "3-4: His language is appropriate, with few stylistic errors.",
                     "5: Impeccable language and style."
                 ]
             },
             {
-                cim: "Exploration of the technical literature background.",
-                leiras: "Professionalism and correctness of the references.",
+                cim: "The exploration of the technical literature background of the thesis, its professionalism, and the correctness of the references.",
+                leiras: "",
                 pontok: [
                     "0: The literature is not relevant. References are missing or not professional.",
-                    "1-2: The exploration of the literature is narrow, only includes textbooks or notes.",
-                    "3-4: The thesis contains the most important literature and correct references.",
+                    "1-2: The exploration of the literature is narrow, it only includes material from textbooks or notes. Your references are inaccurate in several places.",
+                    "3-4: The thesis contains the most important literature and correct references. The theory is coherent and forms a unity.",
                     "5: The thesis was written based on the latest extensive literature. Links are accurate."
                 ]
             },
             {
-                cim: "The difficulty and complexity of the implemented task.",
-                leiras: "Professional level and complexity.",
+                cim: "The difficulty and complexity of the implemented task (program).",
+                leiras: "",
                 pontok: [
                     "0: The completed task does not meet the level of difficulty expected from the thesis.",
                     "1-2: The completed task meets the level of difficulty expected from the thesis.",
@@ -82,10 +82,10 @@ en: {
                 cim: "Quality of implementation I.",
                 leiras: "Description of the task, definition of the objective (specification, implementation plan, analysis of correlations).",
                 pontok: [
-                    "0: The description of the task and the definition of the objective are completely missing.",
-                    "1-2: The thesis contains a description, but it is basic, rough, and incomplete.",
-                    "3-4: The description is formally appropriate, beyond basic level, but not complete.",
-                    "5: The description is professionally correct, formally appropriate, complete and without contradictions."
+                    "0: The description of the task and the definition of the objective are completely missing from the thesis.",
+                    "1-2: The thesis contains a description of the task and a definition of the objective, but the description is basic, rough, and incomplete.",
+                    "3-4: The description of the task and the definition of the objective in the thesis are formally appropriate, go beyond a basic level description, professionally appropriate, but not complete and without contradictions.",
+                    "5: The description of the task and the definition of the objectives in the thesis are professionally correct, formally appropriate, complete and without contradictions."
                 ]
             },
             {
@@ -93,9 +93,9 @@ en: {
                 leiras: "Code quality.",
                 pontok: [
                     "0: The content, quantity, and structure of the source code are not appropriate.",
-                    "1-2: The source code is adequate, but difficult to understand, extensive, unstructured.",
-                    "3-4: The source code content is good. Modern, efficient language elements. Well structured.",
-                    "5: Excellent source code. Modern, effective, well structured, self-documenting, reusable."
+                    "1-2: The content, amount, and structure of the source code is adequate, but it is difficult to understand, extensive, unstructured, and sometimes contains unjustified language elements. It does not include the necessary control and error management functions.",
+                    "3-4: The content, quantity and complexity of the source code are good. Modern, efficient language elements appear in the source code. It is well structured, transparent, and contains the necessary control and error management functions.",
+                    "5: The content, quantity and complexity of the source code are excellent. It contains modern, effective language elements. Well structured, clear, self-documenting, reusable. Complete error and exception handling has been implemented. Optimized for resource scheduling."
                 ]
             },
             {
@@ -103,19 +103,19 @@ en: {
                 leiras: "Development and user documentation.",
                 pontok: [
                     "0: The Development and User Documentation does not meet the requirements.",
-                    "1-2: The documentation is rough, incomplete, and its structure is illogical.",
-                    "3-4: The documentation contains the most important chapters, its structure is logical.",
-                    "5: The documentation is of excellent quality and fully complies with the documentation rules."
+                    "1-2: The Development and user documentation is rough, incomplete, and its structure is illogical.",
+                    "3-4: The Development and User Documentation contains the most important chapters, its structure is logical, and the cohesion between the chapters is good.",
+                    "5: The Development and user documentation is of excellent quality and fully complies with the documentation rules."
                 ]
             },
             {
                 cim: "Quality of implementation IV.",
                 leiras: "Testing, running.",
                 pontok: [
-                    "0: The thesis does not contain parts related to testing. The software does not run.",
+                    "0: The thesis does not contain parts related to testing. The software does not run and/or does not work as intended.",
                     "1-2: Attempts related to testing appear in the thesis, but they are rough and incomplete.",
                     "3-4: Good quality, but not comprehensive testing.",
-                    "5: Comprehensive and well-documented validation and verification."
+                    "5: Comprehensive and well-documented validation and verification (formal methods, test plan, test protocol and report)."
                 ]
             },
             {

@@ -185,9 +185,16 @@ namespace SzakdolgozatErtekeloApi.Controllers
                 {
                     case Enumok.Nyelv.Hu:
                         {
-                            path = Path.Combine(folder,"Lokalizacio", "Magyar.json");
-                            fileName = "Magyar.json";
+                            if (adatok.Laptipus == Enumok.Laptipus.Allatalanos)
+                            {
+                                path = Path.Combine(folder, "Lokalizacio", "Magyar.json");
+                                fileName = "Magyar.json";
+                                break;
+                            }
+                            path = Path.Combine(folder, "Lokalizacio", "MagyarB.json");
+                            fileName = "MagyarB.json";
                             break;
+
                         }
 
                     case Enumok.Nyelv.En:

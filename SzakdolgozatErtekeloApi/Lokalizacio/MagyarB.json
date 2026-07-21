@@ -1,0 +1,142 @@
+hu: {
+    pageTitle: "Szakdolgozati Bírálati Lap",
+    headerCim: "SZAKDOLGOZAT BÍRÁLATI LAP",
+    szerepkorKonzulens: "Konzulens",
+    szerepkorOpponens: "Opponens",
+    hallgatoAdatai: "Hallgató adatai",
+    hallgatoNeve: "A hallgató neve:",
+    hallgatoNeptun: "A hallgató Neptun kódja:",
+    hallgatoSzak: "A hallgató szakja:",
+    hallgatoCim: "A szakdolgozat címe:",
+    szakProgramtervezo: "Programtervező informatikus",
+    szakGazdasagi: "Gazdasági Informatikus",
+    ertekelesekCim: "Értékelési szempontok",
+    adottPont: "Adott pont:",
+    megjegyzesPlaceholder: "Rövid indoklás (opcionális)",
+    szovegesErtekelesCim: "A dolgozat rövid szöveges értékelése (opcionális)",
+    szovegesErtekelesPlaceholder: "Írja be a rövid szöveges értékelést...",
+    biraloiJavaslatkCim: "A bíráló javaslatai a védéshez (opcionális)",
+    biraloiJavaslatkPlaceholder: "Írja be a védéshez kapcsolódó javaslatokat...",
+    kerdesekCim: "A hallgató által megválaszolandó kérdések (kötelező)",
+    kerdesPlaceholder: "kérdés",
+    ujKerdesGomb: "+ Új kérdés hozzáadása",
+    osszpontszam: "Összes pontszám:",
+    javasoltErdemjegy: "Javasolt érdemjegy:",
+    pdfGomb: "📄 PDF letöltése",
+    wordGomb: "📝 Word letöltése",
+    latexGomb: "🔤 LaTeX letöltése",
+    zipGomb: "📦 ZIP letöltése",
+    elegtelenLabel: "Elégtelen (1) (8-25 pont)",
+    elegsegessLabel: "Elégséges (2) (26-32 pont)",
+    kozepesLabel: "Közepes (3) (33-38 pont)",
+    joLabel: "Jó (4) (39-44 pont)",
+    jelesLabel: "Jeles (5) (45-50 pont)",
+    validNevKotelezo: "A hallgató neve kötelező!",
+    validNevSzam: "A hallgató neve nem tartalmazhat számot!",
+    validNeptun: "A Neptun kód pontosan 6 karakter lehet, csak betű és szám!",
+    validCim: "A szakdolgozat címe kötelező!",
+    hibaSzerver: "A szerver hibát adott vissza: ",
+    hibaLetoltes: "Hiba a letöltés során: ",
+    criteria: [
+        {
+            cim: "1. A szakdolgozat szerkezeti felépítése, tartalmi tagolása, alaki megjelenése.",
+            leiras: "A szakdolgozat szerkezeti felépítése, tartalmi tagolása, alaki megjelenése.",
+            pontok: [
+                "0: A dolgozat nem felel meg az EKKE szakdolgozati követelményeinek.",
+                "1-2: A követelményeknek lényegében megfelel, de nagyobb hiányosságokkal.",
+                "3-4: A követelményeknek lényegében megfelel, kisebb hiányosságokkal.",
+                "5: Kifogástalan szerkezet, tartalmi tagolás, szép kivitel."
+            ]
+        },
+        {
+            cim: "2. A szakdolgozat nyelvezete, stílusa, nyelvi helyessége.",
+            leiras: "A szakdolgozat nyelvezete, stílusa, nyelvi helyessége.",
+            pontok: [
+                "0: Nyelvezete mondatszerkesztése erősen kifogásolható, durva helyesírási hibákat tartalmaz.",
+                "1-2: Nyelvezet, stílusa sok hiányossággal, kisebb helyesírási hibákat tartalmaz.",
+                "3-4: Nyelvezete megfelelő, kevés stílushibával.",
+                "5: Kifogástalan nyelvezet és stílus."
+            ]
+        },
+        {
+            cim: "3. A dolgozat szakirodalmi hátterének feltárása, szakszerűsége, a hivatkozások helyessége.",
+            leiras: "A dolgozat szakirodalmi hátterének feltárása, szakszerűsége, a hivatkozások helyessége.",
+            pontok: [
+                "0: A szakirodalom nem releváns. A hivatkozások hiányoznak, vagy nem szakszerűek.",
+                "1-2: A szakirodalom feltárása szűk körű, csak tankönyvek, vagy jegyzetek anyagát tartalmazza. Hivatkozásai több helyen pontatlanok.",
+                "3-4: Legfontosabb szakirodalmakat, korrekt hivatkozásokat tartalmaz a dolgozat. Az elmélet koherens, egységet alkot.",
+                "5: Legújabb széles körű szakirodalom alapján íródott a dolgozat. Hivatkozások pontosak."
+            ]
+        },
+        {
+            cim: "4. A vizsgált probléma nehézsége, összetettsége.",
+            leiras: "A vizsgált probléma nehézsége, összetettsége.",
+            pontok: [
+                "0: A vizsgált nehézsége, összetettsége nem teljesíti a szakdolgozattól elvárt nehézségi szintet.",
+                "1-2: A vizsgált probléma nehézsége, összetettsége éppen teljesíti a szakdolgozattól elvárt nehézségi szintet.",
+                "3-4: A vizsgált probléma nehézsége, összetettsége teljesíti a szakdolgozattól elvárt nehézségi szintet.",
+                "5: A vizsgált probléma nehézsége, összetettsége túlmutat a szakdolgozattól elvárt nehézségi szinten."
+            ]
+        },
+        {
+            cim: "5. A dolgozat újszerűsége, a célkitűzés definiálása (összefüggések elemzése).",
+            leiras: "A dolgozat újszerűsége, a célkitűzés definiálása (összefüggések elemzése).",
+            pontok: [
+                "0: A dolgozat az adott tématerületen létező, ismert eljárások megvalósítása, újszerű eredményeket nem tartalmaz.",
+                "1-2: A dolgozat ismert eljárás(ok) megvalósítása, de újszerű eredményeket, összehasonlításokat is tartalmaz.",
+                "3-4: A dolgozat magas színvonalú. Az eredményeket ismert eljárások eredményével összeveti.",
+                "5: A dolgozat eredeti és újszerű elgondolást ismertet."
+            ]
+        },
+        {
+            cim: "6. A dolgozat tartalmi megvalósítása, kidolgozottsága.",
+            leiras: "A dolgozat tartalmi megvalósítása, kidolgozottsága.",
+            pontok: [
+                "0: A dolgozat témája jól ismert, a tartalma elmélyült tudást nem igényelt.",
+                "1-2: A dolgozat témája korszerű, de jól ismert, a szakirodalomban jól kidolgozott, a munka jórészt reproduktív jellegű.",
+                "3-4: A dolgozat témája korszerű, de jól ismert, a szakirodalomban jól kidolgozott, azonban a vizsgálata alapos, elmélyült tudást, illetve széleskörű ismeretet igényelt.",
+                "5: A dolgozat témája korszerű, vizsgálata elmélyült, magas szintű tudást igényelt."
+            ]
+        },
+        {
+            cim: "7. Az eredmények igazoltsága.",
+            leiras: "Az eredmények igazoltsága.",
+            pontok: [
+                "0: Az eredmények igazolása nem valósult meg.",
+                "1-2: Az eredmények igazoltsága nem meggyőző.",
+                "3-4: Az eredmények igazolásához további vizsgálatok lehetnek szükségesek.",
+                "5: Az eredmények matematikailag bizonyítottak, statisztikailag vagy reprezentatív mintán ellenőrzöttek, vagy más módon kielégítően igazoltak/validáltak."
+            ]
+        },
+        {
+            cim: "8. Az elért eredmények elméleti/tudományos értéke.",
+            leiras: "Az elért eredmények elméleti/tudományos értéke.",
+            pontok: [
+                "0: A dolgozat nem képvisel ilyen jellegű értéket.",
+                "1-2: A dolgozat további kutatómunka révén használható eredmény felmutatására lenne alkalmas.",
+                "3-4: A dolgozat eredménye, innovációs értéke jó.",
+                "5: A dolgozat eredménye, innovációs értéke nemzetközi jelentőséggel bír. Az eredmény kiváló."
+            ]
+        },
+        {
+            cim: "9. A szakdolgozat összefoglalása.",
+            leiras: "A szakdolgozat összefoglalása.",
+            pontok: [
+                "0: Zavaros, leíró összefoglalás, tézisek nélkül.",
+                "1-2: Leíró jellegű összefoglalás, elnagyolt.",
+                "3-4: Világos tagolt összefoglalás, korrekt.",
+                "5: Kifogástalan, lényegre törő, továbbtervező."
+            ]
+        },
+        {
+            cim: "10. Összbenyomás, konzulens/opponens véleménye",
+            leiras: "Összbenyomás, konzulens/opponens véleménye",
+            pontok: [
+                "0: A dolgozat szakmailag nem releváns, tartalmi formai követelményeknek nem felel meg.",
+                "1-2: A dolgozat szakmailag kevésbé releváns, tartalmi formai követelményeknek megfelel.",
+                "3-4: A dolgozat korrekt szakmai és módszertani felkészültséget tükröz.",
+                "5: A dolgozat kiváló szakmai felkészültséget tükröz."
+            ]
+        }
+    ]
+}
