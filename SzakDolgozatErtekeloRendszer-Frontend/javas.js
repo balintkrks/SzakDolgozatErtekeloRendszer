@@ -335,6 +335,12 @@ window.onload = function() {
     document.getElementById("langSwitch").addEventListener("change", function() {
         if (this.checked) {
             document.getElementById("langText").textContent = "Angol";
+            var modeSwitch = document.getElementById("modeSwitch");
+            if (modeSwitch && modeSwitch.checked) {
+                modeSwitch.checked = false;
+                mode = "alt";
+                document.getElementById("modeText").textContent = "Általános";
+            }
             setLanguage("en");
         } else {
             document.getElementById("langText").textContent = "Magyar";
