@@ -93,6 +93,38 @@ header p{
     border-radius:10px;
     font-size:15px;
     box-sizing:border-box;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+#adatok input:focus,
+#adatok select:focus {
+    outline: none;
+    border-color: #4964e7;
+    box-shadow: 0 0 0 3px rgba(73,100,231,0.12);
+}
+
+.input-hiba {
+    border: 2px solid #e03f3f !important;
+    background: #fff5f5 !important;
+    box-shadow: 0 0 0 3px rgba(224,63,63,0.12) !important;
+    animation: razas 0.35s ease;
+}
+
+@keyframes razas {
+    0%, 100% { transform: translateX(0); }
+    20%       { transform: translateX(-6px); }
+    40%       { transform: translateX(6px); }
+    60%       { transform: translateX(-4px); }
+    80%       { transform: translateX(4px); }
+}
+
+.hiba-szoveg {
+    display: block;
+    color: #e03f3f;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 5px;
+    min-height: 16px;
 }
 
 #ertekelesek{

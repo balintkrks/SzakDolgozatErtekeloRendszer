@@ -131,7 +131,28 @@ function getErtekelesek() {
     return ertekelesek;
 }
 
+function hibaKiemel(id, uzenet) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    el.classList.remove("input-hiba");
+    void el.offsetWidth;
+    el.classList.add("input-hiba");
+    el.focus();
+    var span = document.getElementById(id + "-hiba");
+    if (span) span.textContent = uzenet || "";
+}
+
+function hibaTorles() {
+    ["nev", "kod", "cim"].forEach(function(id) {
+        var el = document.getElementById(id);
+        if (el) el.classList.remove("input-hiba");
+        var span = document.getElementById(id + "-hiba");
+        if (span) span.textContent = "";
+    });
+}
+
 function getAllData() {
+    hibaTorles();
     var nev = document.getElementById("nev").value.trim();
     var neptun = document.getElementById("kod").value.trim();
     var szak = parseInt(document.getElementById("szak").value);
@@ -140,19 +161,19 @@ function getAllData() {
     var t = langCache[lang] || {};
 
     if (nev === "") {
-        alert(t.validNevKotelezo || "A hallgató neve kötelező!");
+        hibaKiemel("nev", t.validNevKotelezo || "A hallgató neve kötelező!");
         return null;
     }
     if (containsDigit(nev)) {
-        alert(t.validNevSzam || "A hallgató neve nem tartalmazhat számot!");
+        hibaKiemel("nev", t.validNevSzam || "A hallgató neve nem tartalmazhat számot!");
         return null;
     }
     if (!isValidNeptun(neptun)) {
-        alert(t.validNeptun || "A Neptun kód pontosan 6 karakter lehet, csak betű és szám!");
+        hibaKiemel("kod", t.validNeptun || "Pontosan 6 karakter, csak betű és szám!");
         return null;
     }
     if (cim === "") {
-        alert(t.validCim || "A szakdolgozat címe kötelező!");
+        hibaKiemel("cim", t.validCim || "A szakdolgozat címe kötelező!");
         return null;
     }
 
@@ -331,6 +352,13 @@ function neptunSzures() {
 window.onload = function() {
     attachListeners(1, 10);
     document.getElementById("kod").addEventListener("input", neptunSzures);
+
+    ["nev", "kod", "cim"].forEach(function(id) {
+        var el = document.getElementById(id);
+        if (el) el.addEventListener("input", function() {
+            el.classList.remove("input-hiba");
+        });
+    });
 
     document.getElementById("langSwitch").addEventListener("change", function() {
         if (this.checked) {
