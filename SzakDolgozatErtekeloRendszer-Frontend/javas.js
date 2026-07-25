@@ -201,15 +201,17 @@ function getAllData() {
 }
 
 function fetchTranslations(targetLang, callback) {
-    if (langCache[targetLang]) {
-        callback(langCache[targetLang]);
+    var laptipusErtek = targetLang === "hu" ? (mode === "alt" ? 0 : 1) : 0;
+    var cacheKey = targetLang + "_" + laptipusErtek;
+    if (langCache[cacheKey]) {
+        callback(langCache[cacheKey]);
         return;
     }
     var nyelvErtek = targetLang === "hu" ? 0 : 1;
     fetch(BACKEND_URL + "/szakdolgozatErtekelo/Adatok/get-lokalizacio", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ Nyelv: nyelvErtek })
+        body: JSON.stringify({ Nyelv: nyelvErtek, Laptipus: laptipusErtek })
     })
     .then(function(r) {
         if (!r.ok) throw new Error("HTTP " + r.status);
@@ -223,7 +225,7 @@ function fetchTranslations(targetLang, callback) {
             t = Function('"use strict"; return ({' + text + '})')();
             t = t[targetLang] || t;
         }
-        langCache[targetLang] = t;
+        langCache[cacheKey] = t;
         callback(t);
     })
     .catch(function(e) {
@@ -316,7 +318,8 @@ function setLanguage(newLang) {
 function sendData(endpoint, filename) {
     var data = getAllData();
     if (data === null) return;
-    var t = langCache[lang] || {};
+    var cacheKey = lang + "_" + (mode === "alt" ? 0 : 1);
+    var t = langCache[cacheKey] || {};
     fetch(BACKEND_URL + endpoint, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -384,6 +387,7 @@ window.onload = function() {
             mode = "alt";
             document.getElementById("modeText").textContent = "Általános";
         }
+        setLanguage(lang);
     });
 
     setLanguage("hu");
