@@ -1,0 +1,122 @@
+{
+  "pageTitle": "Thesis Work Review Sheet",
+  "headerCim": "Thesis Work Review Sheet",
+  "szerepkorKonzulens": "Consultant",
+  "szerepkorOpponens": "Opponent",
+  "hallgatoAdatai": "Student details",
+  "hallgatoNeve": "Name of the student:",
+  "hallgatoNeptun": "The student's Neptun code:",
+  "hallgatoSzak": "The student's major:",
+  "hallgatoCim": "Title of the thesis:",
+  "szakProgramtervezo": "Computer Science",
+  "szakGazdasagi": "Business Informatics",
+  "ertekelesekCim": "Evaluation criteria",
+  "adottPont": "Score achieved:",
+  "megjegyzesPlaceholder": "Short justification (optional)",
+  "szovegesErtekelesCim": "Short text evaluation of the thesis (optional)",
+  "szovegesErtekelesPlaceholder": "Enter the short text evaluation...",
+  "biraloiJavaslatkCim": "Reviewer's suggestions for defense (optional)",
+  "biraloiJavaslatkPlaceholder": "Enter suggestions for the defense...",
+  "kerdesekCim": "Questions to be answered by the student",
+  "kerdesPlaceholder": "question",
+  "ujKerdesGomb": "+ Add new question",
+  "osszpontszam": "Total score:",
+  "javasoltErdemjegy": "Recommended grade:",
+  "pdfGomb": "📄 Download PDF",
+  "wordGomb": "📝 Download Word",
+  "latexGomb": "🔤 Download LaTeX",
+  "zipGomb": "📦 Download ZIP",
+  "elegtelenLabel": "Insufficient (1)",
+  "elegsegessLabel": "Sufficient (2)",
+  "kozepesLabel": "Medium (3)",
+  "joLabel": "Good (4)",
+  "jelesLabel": "Marked (5)",
+  "validNevKotelezo": "The student's name is required!",
+  "validNevSzam": "The student's name must not contain digits!",
+  "validNeptun": "The Neptun code must be exactly 6 characters, letters and digits only!",
+  "validCim": "The title of the thesis is required!",
+  "hibaSzerver": "The server returned an error: ",
+  "hibaLetoltes": "Error during download: ",
+  "criteria": [
+    {
+      "id": 1,
+      "title": "The thesis's structure, content division, and appearance.",
+      "zeroPointText": "0: The thesis does not meet the thesis requirements of EKKE.",
+      "oneTwoPointText": "1-2: It meets the requirements, but with major shortcomings.",
+      "threeFourPointText": "3-4: It essentially meets the requirements, with minor deficiencies.",
+      "fivePointText": "5: Impeccable structure, content division, beautiful design."
+    },
+    {
+      "id": 2,
+      "title": "The language, style and linguistic correctness of the thesis.",
+      "zeroPointText": "0: The sentence structure of his language is highly objectionable, it contains gross spelling errors.",
+      "oneTwoPointText": "1-2: Language and style with many shortcomings and minor spelling errors.",
+      "threeFourPointText": "3-4: His language is appropriate, with few stylistic errors.",
+      "fivePointText": "5: Impeccable language and style."
+    },
+    {
+      "id": 3,
+      "title": "The exploration of the technical literature background of the thesis, its professionalism, and the correctness of the references.",
+      "zeroPointText": "0: The literature is not relevant. References are missing or not professional.",
+      "oneTwoPointText": "1-2: The exploration of the literature is narrow, it only includes material from textbooks or notes. Your references are inaccurate in several places.",
+      "threeFourPointText": "3-4: The thesis contains the most important literature and correct references. The theory is coherent and forms a unity.",
+      "fivePointText": "5: The thesis was written based on the latest extensive literature. Links are accurate."
+    },
+    {
+      "id": 4,
+      "title": "The difficulty and complexity of the implemented task (program).",
+      "zeroPointText": "0: The completed task does not meet the level of difficulty expected from the thesis.",
+      "oneTwoPointText": "1-2: The completed task meets the level of difficulty expected from the thesis.",
+      "threeFourPointText": "3-4: The completed task fulfills the level of difficulty expected from the thesis.",
+      "fivePointText": "5: The completed task goes beyond the level of difficulty expected from a thesis."
+    },
+    {
+      "id": 5,
+      "title": "Quality of implementation I.",
+      "zeroPointText": "0: The description of the task and the definition of the objective are completely missing from the thesis.",
+      "oneTwoPointText": "1-2: The thesis contains a description of the task and a definition of the objective, but the description is basic, rough, and incomplete.",
+      "threeFourPointText": "3-4: The description of the task and the definition of the objective in the thesis are formally appropriate, go beyond a basic level description, professionally appropriate, but not complete and without contradictions.",
+      "fivePointText": "5: The description of the task and the definition of the objectives in the thesis are professionally correct, formally appropriate, complete and without contradictions."
+    },
+    {
+      "id": 6,
+      "title": "Quality of implementation II.",
+      "zeroPointText": "0: The content, quantity, and structure of the source code are not appropriate.",
+      "oneTwoPointText": "1-2: The content, amount, and structure of the source code is adequate, but it is difficult to understand, extensive, unstructured, and sometimes contains unjustified language elements. It does not include the necessary control and error management functions.",
+      "threeFourPointText": "3-4: The content, quantity and complexity of the source code are good. Modern, efficient language elements appear in the source code. It is well structured, transparent, and contains the necessary control and error management functions.",
+      "fivePointText": "5: The content, quantity and complexity of the source code are excellent. It contains modern, effective language elements. Well structured, clear, self-documenting, reusable. Complete error and exception handling has been implemented. Optimized for resource scheduling."
+    },
+    {
+      "id": 7,
+      "title": "Quality of implementation III.",
+      "zeroPointText": "0: The Development and User Documentation does not meet the requirements.",
+      "oneTwoPointText": "1-2: The Development and user documentation is rough, incomplete, and its structure is illogical.",
+      "threeFourPointText": "3-4: The Development and User Documentation contains the most important chapters, its structure is logical, and the cohesion between the chapters is good.",
+      "fivePointText": "5: The Development and user documentation is of excellent quality and fully complies with the documentation rules."
+    },
+    {
+      "id": 8,
+      "title": "Quality of implementation IV.",
+      "zeroPointText": "0: The thesis does not contain parts related to testing. The software does not run and/or does not work as intended.",
+      "oneTwoPointText": "1-2: Attempts related to testing appear in the thesis, but they are rough and incomplete.",
+      "threeFourPointText": "3-4: Good quality, but not comprehensive testing.",
+      "fivePointText": "5: Comprehensive and well-documented validation and verification (formal methods, test plan, test protocol and report)."
+    },
+    {
+      "id": 9,
+      "title": "Summary of the thesis.",
+      "zeroPointText": "0: Confused, descriptive summary, without theses.",
+      "oneTwoPointText": "1-2: Descriptive summary, rough.",
+      "threeFourPointText": "3-4: Clear, segmented summary, correct.",
+      "fivePointText": "5: Impeccable, down-to-earth, progressive designer."
+    },
+    {
+      "id": 10,
+      "title": "Overall impression, consultant/opponent's opinion",
+      "zeroPointText": "0: The thesis is not professionally relevant and does not meet the content and form requirements.",
+      "oneTwoPointText": "1-2: The thesis is less professionally relevant and meets the content and form requirements.",
+      "threeFourPointText": "3-4: The thesis reflects correct professional and methodological preparation.",
+      "fivePointText": "5: The thesis reflects excellent professional preparation."
+    }
+  ]
+}

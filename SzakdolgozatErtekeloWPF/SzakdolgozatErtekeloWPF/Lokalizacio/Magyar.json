@@ -1,0 +1,122 @@
+{
+  "pageTitle": "Szakdolgozati Bírálati Lap",
+  "headerCim": "Szakdolgozati Bírálati Lap",
+  "szerepkorKonzulens": "Konzulens",
+  "szerepkorOpponens": "Opponens",
+  "hallgatoAdatai": "Hallgató adatai",
+  "hallgatoNeve": "A hallgató neve:",
+  "hallgatoNeptun": "A hallgató Neptun kódja:",
+  "hallgatoSzak": "A hallgató szakja:",
+  "hallgatoCim": "A szakdolgozat címe:",
+  "szakProgramtervezo": "Programtervező informatikus",
+  "szakGazdasagi": "Gazdasági Informatikus",
+  "ertekelesekCim": "Értékelési szempontok",
+  "adottPont": "Adott pont:",
+  "megjegyzesPlaceholder": "Rövid indoklás (opcionális)",
+  "szovegesErtekelesCim": "A dolgozat rövid szöveges értékelése (opcionális)",
+  "szovegesErtekelesPlaceholder": "Írja be a rövid szöveges értékelést...",
+  "biraloiJavaslatkCim": "A bíráló javaslatai a védéshez (opcionális)",
+  "biraloiJavaslatkPlaceholder": "Írja be a védéshez kapcsolódó javaslatokat...",
+  "kerdesekCim": "A hallgató által megválaszolandó kérdések",
+  "kerdesPlaceholder": "kérdés",
+  "ujKerdesGomb": "+ Új kérdés hozzáadása",
+  "osszpontszam": "Összpontszám:",
+  "javasoltErdemjegy": "Javasolt érdemjegy:",
+  "pdfGomb": "📄 PDF letöltése",
+  "wordGomb": "📝 Word letöltése",
+  "latexGomb": "🔤 LaTeX letöltése",
+  "zipGomb": "📦 ZIP letöltése",
+  "elegtelenLabel": "Elégtelen (1)",
+  "elegsegessLabel": "Elégséges (2)",
+  "kozepesLabel": "Közepes (3)",
+  "joLabel": "Jó (4)",
+  "jelesLabel": "Jeles (5)",
+  "validNevKotelezo": "A hallgató neve kötelező!",
+  "validNevSzam": "A hallgató neve nem tartalmazhat számot!",
+  "validNeptun": "A Neptun kód pontosan 6 karakter lehet, csak betű és szám!",
+  "validCim": "A szakdolgozat címe kötelező!",
+  "hibaSzerver": "A szerver hibát adott vissza: ",
+  "hibaLetoltes": "Hiba a letöltés során: ",
+  "criteria": [
+    {
+      "id": 1,
+      "title": "A szakdolgozat szerkezeti felépítése, tartalmi tagolása, alaki megjelenése.",
+      "zeroPointText": "0: A dolgozat nem felel meg az EKKE szakdolgozati követelményeinek",
+      "oneTwoPointText": "1-2: A követelményeknek lényegében megfelel, de nagyobb hiányosságokkal.",
+      "threeFourPointText": "3-4: A követelményeknek lényegében megfelel, kisebb hiányosságokkal.",
+      "fivePointText": "5: Kifogástalan szerkezet, tartalmi tagolás, szép kivitel."
+    },
+    {
+      "id": 2,
+      "title": "Nyelvezet és stílus",
+      "zeroPointText": "0: Nyelvezete mondatszerkesztése erősen kifogásolható, durva helyesírási hibákat tartalmaz.",
+      "oneTwoPointText": "1-2: Nyelvezet, stílusa sok hiányossággal, kisebb helyesírási hibákat tartalmaz.",
+      "threeFourPointText": "3-4: Nyelvezete megfelelő, kevés stílushibával.",
+      "fivePointText": "5: Kifogástalan nyelvezet és stílus."
+    },
+    {
+      "id": 3,
+      "title": "Szakirodalmi háttér",
+      "zeroPointText": "0: A szakirodalom nem releváns. A hivatkozások hiányoznak, vagy nem szakszerűek.",
+      "oneTwoPointText": "1-2: A szakirodalom feltárása szűk körű, csak tankönyvek, vagy jegyzetek anyagát tartalmazza.",
+      "threeFourPointText": "3-4: Legfontosabb szakirodalmakat, korrekt hivatkozásokat tartalmaz a dolgozat.",
+      "fivePointText": "5: Legújabb széles körű szakirodalom alapján íródott a dolgozat. Hivatkozások pontosak."
+    },
+    {
+      "id": 4,
+      "title": "A megvalósított feladat nehézsége",
+      "zeroPointText": "0: A megvalósított feladat nem teljesíti a szakdolgozattól elvárt nehézségi szintet.",
+      "oneTwoPointText": "1-2: A megvalósított feladat éppen teljesíti a szakdolgozattól elvárt nehézségi szintet.",
+      "threeFourPointText": "3-4: A megvalósított feladat teljesíti a szakdolgozattól elvárt nehézségi szintet.",
+      "fivePointText": "5: A megvalósított feladat túlmutat a szakdolgozattól elvárt nehézségi szinten."
+    },
+    {
+      "id": 5,
+      "title": "Megvalósítás minősége I.",
+      "zeroPointText": "0: A dolgozatból a feladat ismertetése, illetve a célkitűzés definiálása teljes mértékben hiányzik.",
+      "oneTwoPointText": "1-2: A dolgozatban megjelenik a feladat ismertetése, de a leírás alapszintű, elnagyolt, hiányos.",
+      "threeFourPointText": "3-4: A feladat ismertetése formailag megfelelő, egy alapszintű leíráson túlmutat, de nem teljes.",
+      "fivePointText": "5: A feladat ismertetése szakmailag korrekt, formailag megfelelő, teljes és ellentmondásmentes."
+    },
+    {
+      "id": 6,
+      "title": "Megvalósítás minősége II.",
+      "zeroPointText": "0: A forráskód tartalma, mennyisége, szerkezete nem megfelelő.",
+      "oneTwoPointText": "1-2: A forráskód megfelelő, de nehezen áttekinthető, strukturálatlan.",
+      "threeFourPointText": "3-4: A forráskód tartalma, mennyisége, összetettsége jó. Jól strukturált, áttekinthető.",
+      "fivePointText": "5: A forráskód kiváló. Korszerű, hatékony, öndokumentáló, újrafelhasználható."
+    },
+    {
+      "id": 7,
+      "title": "Megvalósítás minősége III.",
+      "zeroPointText": "0: A Fejlesztési- és felhasználói dokumentáció nem felel meg a követelményeknek.",
+      "oneTwoPointText": "1-2: A dokumentáció elnagyolt, hiányos, szerkezete logikátlan.",
+      "threeFourPointText": "3-4: A dokumentáció tartalmazza a fontosabb fejezeteket, szerkezete logikus.",
+      "fivePointText": "5: A dokumentáció kiváló színvonalú, a dokumentálási szabályoknak teljes mértékben megfelel."
+    },
+    {
+      "id": 8,
+      "title": "Megvalósítás minősége IV.",
+      "zeroPointText": "0: A dolgozat nem tartalmaz teszteléshez köthető részeket. A szoftver nem futtatható.",
+      "oneTwoPointText": "1-2: A dolgozatban megjelennek a teszteléssel kapcsolatos törekvések, de elnagyoltak, hiányosak.",
+      "threeFourPointText": "3-4: Jó színvonalú, de nem teljes körű tesztelés.",
+      "fivePointText": "5: Teljes körű és jól dokumentált validáció és verifikáció."
+    },
+    {
+      "id": 9,
+      "title": "A szakdolgozat összefoglalása.",
+      "zeroPointText": "0: Zavaros, leíró összefoglalás, tézisek nélkül.",
+      "oneTwoPointText": "1-2: Leíró jellegű összefoglalás, elnagyolt.",
+      "threeFourPointText": "3-4: Világos tagolt összefoglalás, korrekt.",
+      "fivePointText": "5: Kifogástalan, lényegre törő, továbbtervező."
+    },
+    {
+      "id": 10,
+      "title": "Összbenyomás, konzulens/opponens véleménye",
+      "zeroPointText": "0: A dolgozat szakmailag nem releváns, tartalmi formai követelményeknek nem felel meg.",
+      "oneTwoPointText": "1-2: A dolgozat szakmailag kevésbé releváns, tartalmi formai követelményeknek megfelel.",
+      "threeFourPointText": "3-4: A dolgozat korrekt szakmai és módszertani felkészültséget tükröz.",
+      "fivePointText": "5: A dolgozat kiváló szakmai felkészültséget tükröz."
+    }
+  ]
+}

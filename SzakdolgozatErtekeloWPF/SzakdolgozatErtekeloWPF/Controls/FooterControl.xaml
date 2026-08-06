@@ -1,0 +1,76 @@
+<UserControl x:Class="SzakdolgozatErtekeloWPF.Controls.FooterControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:SzakdolgozatErtekeloWPF.Controls"
+             mc:Ignorable="d"
+             d:DesignHeight="80" d:DesignWidth="1200">
+
+    <Border
+        Background="#F8F9FF"
+        BorderBrush="#E8E8E8"
+        BorderThickness="0,1,0,0"
+        Padding="30,18">
+
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Bal: Pontszám és jegy -->
+            <StackPanel Grid.Column="0" VerticalAlignment="Center">
+
+                <TextBlock FontSize="18" FontWeight="Bold" Margin="0,0,0,6">
+                    <Run x:Name="OsszpontszamLabelRun" Text="Összpontszám: "/>
+                    <Run x:Name="OsszpontszamValue" Text="0" Foreground="#3F5FE0"/>
+                    <Run Text=" / 50" Foreground="#333333"/>
+                </TextBlock>
+
+                <TextBlock FontSize="18" FontWeight="Bold">
+                    <Run x:Name="JavasoltErdemjegyLabelRun" Text="Javasolt érdemjegy: "/>
+                    <Run x:Name="JavasoltErdemjegyValue" Text="-" Foreground="#3F5FE0"/>
+                </TextBlock>
+
+            </StackPanel>
+
+            <!-- Jobb: Letöltő gombok -->
+            <WrapPanel Grid.Column="1" VerticalAlignment="Center" Orientation="Horizontal">
+
+                <Button
+                    x:Name="PdfButton"
+                    Content="📄 PDF letöltése"
+                    Margin="6,0,0,0"
+                    Style="{StaticResource BlueButton}"
+                    Click="PdfButton_Click"/>
+
+                <Button
+                    x:Name="WordButton"
+                    Content="📝 Word letöltése"
+                    Margin="6,0,0,0"
+                    Style="{StaticResource BlueButton}"
+                    Click="WordButton_Click"/>
+
+                <Button
+                    x:Name="LatexButton"
+                    Content="🖊 LaTeX letöltése"
+                    Margin="6,0,0,0"
+                    Style="{StaticResource BlueButton}"
+                    Click="LatexButton_Click"/>
+
+                <Button
+                    x:Name="ZipButton"
+                    Content="📦 ZIP letöltése"
+                    Margin="6,0,0,0"
+                    Style="{StaticResource BlueButton}"
+                    Click="ZipButton_Click"/>
+
+            </WrapPanel>
+
+        </Grid>
+
+    </Border>
+
+</UserControl>

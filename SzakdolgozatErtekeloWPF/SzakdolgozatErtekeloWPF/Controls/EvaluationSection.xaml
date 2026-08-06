@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="SzakdolgozatErtekeloWPF.Controls.EvaluationSection"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:controls="clr-namespace:SzakdolgozatErtekeloWPF.Controls">
+
+    <StackPanel>
+
+        <TextBlock
+            x:Name="EvaluationTitleText"
+            FontSize="24"
+            FontWeight="Bold"
+            Margin="0,20,0,20"
+            Padding="20"
+        />
+
+        <UniformGrid Columns="2">
+
+            <controls:EvaluationCard x:Name="Card1"/>
+            <controls:EvaluationCard x:Name="Card2"/>
+            <controls:EvaluationCard x:Name="Card3"/>
+            <controls:EvaluationCard x:Name="Card4"/>
+            <controls:EvaluationCard x:Name="Card5"/>
+            <controls:EvaluationCard x:Name="Card6"/>
+            <controls:EvaluationCard x:Name="Card7"/>
+            <controls:EvaluationCard x:Name="Card8"/>
+            <controls:EvaluationCard x:Name="Card9"/>
+            <controls:EvaluationCard x:Name="Card10"/>
+
+        </UniformGrid>
+
+    </StackPanel>
+
+</UserControl>

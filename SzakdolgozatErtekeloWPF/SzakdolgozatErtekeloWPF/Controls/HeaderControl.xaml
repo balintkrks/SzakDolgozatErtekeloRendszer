@@ -1,0 +1,47 @@
+﻿<UserControl x:Class="SzakdolgozatErtekeloWPF.Controls.HeaderControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Width="676">
+
+    <Border Padding="20">
+
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- EKKE -->
+
+            <TextBlock
+                Grid.Column="0"
+                Text="EKKE"
+                FontSize="32"
+                FontWeight="Bold"
+                VerticalAlignment="Center"/>
+
+            <!-- Cím -->
+
+            <TextBlock
+                x:Name="TitleText"
+                Grid.Column="1"
+                FontSize="22"
+                FontWeight="SemiBold"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"/>
+
+            <!-- Szerepkör -->
+
+            <ComboBox
+                x:Name="RoleComboBox"
+                Grid.Column="2"
+                Width="180"
+                VerticalAlignment="Center"/>
+
+        </Grid>
+
+    </Border>
+
+</UserControl>
