@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="SzakdolgozatErtekeloWPF.Controls.SwitchPanelControl"
+<UserControl x:Class="SzakdolgozatErtekeloWPF.Controls.SwitchPanelControl"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
@@ -7,47 +7,54 @@
                 Margin="0,20">
 
         
-        <GroupBox
-                  Margin="0,0,30,0">
-
-            <StackPanel Orientation="Horizontal"
-                        Margin="10,5">
+        <Grid Margin="0,0,30,0">
+            <Border Background="White" CornerRadius="25">
+                <Border.Effect>
+                    <DropShadowEffect Color="Black" Opacity="0.05" BlurRadius="10" ShadowDepth="2"/>
+                </Border.Effect>
+            </Border>
+            <Border Background="White" CornerRadius="25" Padding="5" BorderBrush="#EAEAEA" BorderThickness="1" x:Name="ModeGroupBox">
+                <StackPanel Orientation="Horizontal">
 
                 <RadioButton x:Name="AltalanosRadio"
                              Content="Általános"
                              GroupName="Mode"
                              IsChecked="True"
-                             Margin="10,0"/>
+                             Style="{StaticResource PillRadioButton}"/>
 
                 <RadioButton x:Name="TudomanyosRadio"
                              Content="Tudományos"
                              GroupName="Mode"
-                             Margin="10,0"/>
+                             Style="{StaticResource PillRadioButton}"/>
 
             </StackPanel>
-
-        </GroupBox>
+        </Border>
+        </Grid>
 
         
-        <GroupBox>
-
-            <StackPanel Orientation="Horizontal"
-                        Margin="10,5">
+        <Grid>
+            <Border Background="White" CornerRadius="25">
+                <Border.Effect>
+                    <DropShadowEffect Color="Black" Opacity="0.05" BlurRadius="10" ShadowDepth="2"/>
+                </Border.Effect>
+            </Border>
+            <Border Background="White" CornerRadius="25" Padding="5" BorderBrush="#EAEAEA" BorderThickness="1">
+                <StackPanel Orientation="Horizontal">
 
                 <RadioButton x:Name="MagyarRadio"
                              Content="Magyar"
                              GroupName="Language"
                              IsChecked="True"
-                             Margin="10,0"/>
+                             Style="{StaticResource PillRadioButton}"/>
 
                 <RadioButton x:Name="AngolRadio"
                              Content="Angol"
                              GroupName="Language"
-                             Margin="10,0"/>
+                             Style="{StaticResource PillRadioButton}"/>
 
             </StackPanel>
-
-        </GroupBox>
+        </Border>
+        </Grid>
 
     </StackPanel>
 

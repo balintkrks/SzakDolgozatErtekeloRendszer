@@ -50,11 +50,13 @@ namespace SzakdolgozatErtekeloWPF.Controls
             // Kérdés szövegmező
             TextBox input = new TextBox
             {
-                Height = 35,
+                MinHeight = 35,
                 Padding = new Thickness(10, 5, 10, 5),
                 VerticalContentAlignment = VerticalAlignment.Center,
                 BorderBrush = new SolidColorBrush(Color.FromRgb(0xDD, 0xDD, 0xDD)),
-                BorderThickness = new Thickness(1)
+                BorderThickness = new Thickness(1),
+                TextWrapping = TextWrapping.Wrap,
+                AcceptsReturn = true
             };
 
             deleteBtn.Click += (s, e) =>

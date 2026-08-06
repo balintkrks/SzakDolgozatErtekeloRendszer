@@ -5,12 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:controls="clr-namespace:SzakdolgozatErtekeloWPF.Controls"
         mc:Ignorable="d"
-        Title="Szakdolgozati Bírálati Lap"
-        Height="950"
+        Title="Szakdolgozat Értékelő Rendszer"
+        Height="900"
         Width="1200"
         MinWidth="900"
+        MinHeight="700"
         WindowStartupLocation="CenterScreen"
-        Background="#F5F7FB">
+        Background="#F5F7FB"
+        FontFamily="Segoe UI"
+        FontSize="15"
+        UseLayoutRounding="True"
+        TextOptions.TextFormattingMode="Display">
 
     <Grid>
         <Grid.RowDefinitions>

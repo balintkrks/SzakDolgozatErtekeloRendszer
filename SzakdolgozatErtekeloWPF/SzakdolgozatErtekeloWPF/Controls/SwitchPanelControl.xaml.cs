@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -38,15 +38,18 @@ namespace SzakdolgozatErtekeloWPF.Controls
 
         private void AngolRadio_Checked(object sender, RoutedEventArgs e)
         {
-            LanguageChanged.Invoke(true);
+            AltalanosRadio.IsChecked = true;
+            ModeGroupBox.IsEnabled = false;
+            ModeGroupBox.Opacity = 0.38;
+            LanguageChanged?.Invoke(true);
         }
-
 
         private void MagyarRadio_Checked(object sender, RoutedEventArgs e)
         {
-            LanguageChanged.Invoke(false);
+            ModeGroupBox.IsEnabled = true;
+            ModeGroupBox.Opacity = 1.0;
+            LanguageChanged?.Invoke(false);
         }
-
 
         private void TudomanyosRadio_Checked(object sender, RoutedEventArgs e)
         {

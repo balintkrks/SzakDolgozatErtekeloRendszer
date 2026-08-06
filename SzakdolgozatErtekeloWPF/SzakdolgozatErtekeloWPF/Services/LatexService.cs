@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -47,7 +47,7 @@ namespace SzakdolgozatErtekeloWPF.Services
             string[] parts = adatok.JavasoltErdemjegy.Split('(');
 
             string erdemjegySzoveg = parts[0].Trim();
-            string erdemjegySzam = parts[1].Replace(")", "").Trim();
+            string erdemjegySzam = parts.Length > 1 ? parts[1].Replace(")", "").Trim() : "-";
 
             latex = Replace(latex, "JavasoltErdemjegySzoveg", erdemjegySzoveg);
             latex = Replace(latex, "JavasoltErdemjegySzam", erdemjegySzam);
