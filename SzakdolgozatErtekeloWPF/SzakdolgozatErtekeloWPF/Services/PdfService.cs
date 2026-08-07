@@ -387,11 +387,14 @@ namespace SzakdolgozatErtekeloWPF.Services
                 row.RelativeItem()
                     .Text($"Eger, {DateTime.Now:yyyy.MM.dd.}");
 
+                string szerepkor = en ? (adatok.ErtekeloSzerepe == ErtekeloSzerepe.Konzulens ? "Consultant" : "Opponent")
+                : (adatok.ErtekeloSzerepe == ErtekeloSzerepe.Konzulens ? "Konzulens" : "Opponens");
+
                 row.RelativeItem()
                     .AlignRight()
                     .Column(col =>
                     {
-                        col.Item().AlignCenter().Text(en ? $"Signature of {adatok.ErtekeloSzerepe}" : $"{adatok.ErtekeloSzerepe} aláírása");
+                        col.Item().AlignCenter().Text(en ? $"Signature of {szerepkor}" : $"{szerepkor} aláírása");
                     });
             });
         }

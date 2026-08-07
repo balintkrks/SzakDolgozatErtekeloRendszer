@@ -1,0 +1,310 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[hungarian]{babel}
+
+
+
+\usepackage[a4paper,margin=2.5cm]{geometry}
+
+
+
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{makecell}
+
+
+\usepackage{enumitem}
+
+\usepackage{booktabs}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\setlength{\tabcolsep}{3pt}
+
+\newcommand{\EvaluationTable}[7]{
+
+\renewcommand{\arraystretch}{1.35}
+
+{\fontsize{8pt}{9.5pt}\selectfont
+
+\begin{tabularx}{\textwidth}{|
+>{\raggedright\arraybackslash}p{3.5cm}|
+>{\raggedright\arraybackslash}X|
+>{\raggedright\arraybackslash}X|
+>{\raggedright\arraybackslash}X|
+>{\raggedright\arraybackslash}X|
+>{\centering\arraybackslash}m{1.8cm}|}
+
+\hline
+
+\multirow{2}{=}{\centering\textbf{Evaluation\\criteria}}
+&
+\multicolumn{4}{c|}{\textbf{Awardable score}}
+&
+\multirow{2}{=}{\centering\textbf{Score\\achieved}}
+\\
+
+\cline{2-5}
+
+&
+\textbf{0}
+&
+\textbf{1--2}
+&
+\textbf{3--4}
+&
+\textbf{5}
+&
+\\
+
+\hline
+
+#1
+&
+#2
+&
+#3
+&
+#4
+&
+#5
+&
+\textbf{#6}
+
+\\
+\hline
+
+\end{tabularx}
+
+\vspace{3mm}
+
+\textbf{Short justification (optional):}
+
+\vspace{2mm}
+
+#7
+
+\vspace{8mm}
+
+}
+}
+
+\begin{document}
+
+
+\begin{center}
+
+{\Large\textbf{ESZTERHÁZY KÁROLY CATHOLIC UNIVERSITY}}
+
+\vspace{0.8cm}
+
+{\LARGE\textbf{THESIS WORK REVIEW SHEET}}
+
+\end{center}
+
+\vspace{1cm}
+
+\begin{tabularx}{\textwidth}{>{\bfseries}l X}
+
+Name of the student: &
+{{HallgatoNev}} \\[0.4cm]
+
+The student's Neptun code: &
+{{Neptun}} \\[0.4cm]
+
+The student's major: &
+{{Szak}} \\[0.4cm]
+
+Title of the thesis: &
+{{Cim}}
+
+\end{tabularx}
+
+\vspace{1cm}
+
+\EvaluationTable
+{ {{C1Title}} }
+{ {{C1Zero}} }
+{ {{C1OneTwo}} }
+{ {{C1ThreeFour}} }
+{ {{C1Five}} }
+{ {{C1Jegy}} }
+{ {{C1Megjegyzes}} }
+
+\EvaluationTable
+{ {{C2Title}} }
+{ {{C2Zero}} }
+{ {{C2OneTwo}} }
+{ {{C2ThreeFour}} }
+{ {{C2Five}} }
+{ {{C2Jegy}} }
+{ {{C2Megjegyzes}} }
+
+\EvaluationTable
+{ {{C3Title}} }
+{ {{C3Zero}} }
+{ {{C3OneTwo}} }
+{ {{C3ThreeFour}} }
+{ {{C3Five}} }
+{ {{C3Jegy}} }
+{ {{C3Megjegyzes}} }
+
+\EvaluationTable
+{ {{C4Title}} }
+{ {{C4Zero}} }
+{ {{C4OneTwo}} }
+{ {{C4ThreeFour}} }
+{ {{C4Five}} }
+{ {{C4Jegy}} }
+{ {{C4Megjegyzes}} }
+
+\EvaluationTable
+{ {{C5Title}} }
+{ {{C5Zero}} }
+{ {{C5OneTwo}} }
+{ {{C5ThreeFour}} }
+{ {{C5Five}} }
+{ {{C5Jegy}} }
+{ {{C5Megjegyzes}} }
+
+\EvaluationTable
+{ {{C6Title}} }
+{ {{C6Zero}} }
+{ {{C6OneTwo}} }
+{ {{C6ThreeFour}} }
+{ {{C6Five}} }
+{ {{C6Jegy}} }
+{ {{C6Megjegyzes}} }
+
+\EvaluationTable
+{ {{C7Title}} }
+{ {{C7Zero}} }
+{ {{C7OneTwo}} }
+{ {{C7ThreeFour}} }
+{ {{C7Five}} }
+{ {{C7Jegy}} }
+{ {{C7Megjegyzes}} }
+
+\EvaluationTable
+{ {{C8Title}} }
+{ {{C8Zero}} }
+{ {{C8OneTwo}} }
+{ {{C8ThreeFour}} }
+{ {{C8Five}} }
+{ {{C8Jegy}} }
+{ {{C8Megjegyzes}} }
+
+\EvaluationTable
+{ {{C9Title}} }
+{ {{C9Zero}} }
+{ {{C9OneTwo}} }
+{ {{C9ThreeFour}} }
+{ {{C9Five}} }
+{ {{C9Jegy}} }
+{ {{C9Megjegyzes}} }
+
+\EvaluationTable
+{ {{C10Title}} }
+{ {{C10Zero}} }
+{ {{C10OneTwo}} }
+{ {{C10ThreeFour}} }
+{ {{C10Five}} }
+{ {{C10Jegy}} }
+{ {{C10Megjegyzes}} }
+
+\bigskip
+
+If one of the evaluation criteria is zero, then all scores are zero. Half points can also be given for evaluation.
+
+\bigskip
+
+\begin{center}
+
+\begin{tabular}{|l|c|}
+\hline
+
+\textbf{Total score:} &
+\textbf{{{OsszesitettErtekeles}}}
+
+\\
+\hline
+
+\end{tabular}
+
+\end{center}
+
+\bigskip
+
+\textbf{Short text evaluation of the thesis (optional):}
+
+\vspace{0.3cm}
+
+{{RovidSzovegesErtekeles}}
+
+\vspace{1cm}
+
+\textbf{Determination of recommended grade (required):} {{JavasoltErdemjegy}}
+
+\vspace{0.3cm}
+
+The recommended grade for the thesis based on the total score :
+
+\bigskip
+
+\begin{tabular}{ll}
+
+\textbf{Insufficient:} & 8--25 points \\
+
+\textbf{Sufficient:} & 26--32 points \\
+
+\textbf{Medium:} & 33--38 points \\
+
+\textbf{Good:} & 39--44 points \\
+
+\textbf{Marked:} & 45--50 points \\
+
+\end{tabular}
+
+\bigskip
+
+
+\textbf{Reviewer's suggestions for defense (optional):}
+
+\vspace{0.3cm}
+
+{{BiroiJavaslat}}
+
+\vspace{1cm}
+
+\textbf{Questions to be answered by the student (mandatory):}
+
+\vspace{0.3cm}
+
+{{Kerdesek}}
+
+\vspace{1cm}
+
+\begin{tabularx}{\textwidth}{lX}
+
+\textbf{of the thesis :} &
+by letter: {{JavasoltErdemjegySzoveg}}
+\hspace{1cm}
+by number: {{JavasoltErdemjegySzam}}
+
+\end{tabularx}
+
+\vspace{1.5cm}
+
+\begin{tabularx}{\textwidth}{X X}
+
+Eger, \today &
+\hfill Signature of {{ErtekeloSzerepe}}
+
+\end{tabularx}
+
+
+\end{document}

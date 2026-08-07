@@ -42,7 +42,13 @@ namespace SzakdolgozatErtekeloWPF.Services
             latex = Replace(latex, "JavasoltErdemjegy", adatok.JavasoltErdemjegy);
             latex = Replace(latex, "BiroiJavaslat", EscapeLatex(adatok.BitraloiJavaslat));
             latex = Replace(latex, "Kerdesek", FormatQuestions(adatok.Kerdesek));
-            latex = Replace(latex, "ErtekeloSzerepe", adatok.ErtekeloSzerepe.ToString());
+
+            bool en = adatok.OldalNyelve == Nyelv.En;
+
+            string szerepkor = en ? (adatok.ErtekeloSzerepe == ErtekeloSzerepe.Konzulens ? "Consultant" : "Opponent")
+                : (adatok.ErtekeloSzerepe == ErtekeloSzerepe.Konzulens ? "Konzulens" : "Opponens");
+
+            latex = Replace(latex, "ErtekeloSzerepe", szerepkor);
 
             string[] parts = adatok.JavasoltErdemjegy.Split('(');
 

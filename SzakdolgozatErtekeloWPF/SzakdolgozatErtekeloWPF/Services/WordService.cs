@@ -55,7 +55,13 @@ namespace SzakdolgozatErtekeloWPF.Services
 
             ReplaceContentControl(document, "Datum", $"Eger, {DateTime.Now:yyyy.MM.dd.}");
 
-            ReplaceContentControl(document, "ErtekeloSzerepe", adatok.ErtekeloSzerepe.ToString());
+
+            bool en = adatok.OldalNyelve == Nyelv.En;
+
+            string szerepkor = en ? (adatok.ErtekeloSzerepe == ErtekeloSzerepe.Konzulens ? "Consultant" : "Opponent")
+                : (adatok.ErtekeloSzerepe == ErtekeloSzerepe.Konzulens ? "Konzulens" : "Opponens");
+
+            ReplaceContentControl(document, "ErtekeloSzerepe", szerepkor);
 
             document.MainDocumentPart.Document.Save();
         }
